@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React from 'react';
 import { Metadata } from 'next';
 import '../globals.css';
 import { TranslationsProvider } from '@/context/language-context';
@@ -20,12 +20,13 @@ async function getTranslations(locale: string) {
   }
 }
 
-type Props = {
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
   children: React.ReactNode;
-  params: { locale: string }
-}
-
-export default async function LocaleLayout({ children, params }: Props) {
+  params: { locale: string };
+}) {
   const { locale } = params;
   const translations = await getTranslations(locale);
 
