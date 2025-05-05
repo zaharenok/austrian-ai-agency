@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "button": "Erfahren Sie mehr über unseren Ansatz",
+    "title": "Austrian AI Agency:",
+    "subtitle": "Innovative Lösungen mit KI",
+    "titles": ["innovativ", "fortschrittlich", "intelligent", "kreativ", "österreichisch"],
+    "description": "Wir unterstützen Unternehmen bei der Implementierung moderner KI-Lösungen zur Automatisierung, Optimierung und Skalierung. Unsere Experten erstellen individuelle Lösungen unter Berücksichtigung der Besonderheiten Ihres Unternehmens."
+  },
+  "services": {
+    "strategy": {
+      "title": "KI-Strategie",
+      "description": "Wir entwickeln eine individuelle Strategie zur Implementierung von KI-Lösungen für Ihr Unternehmen unter Berücksichtigung der Branchenmerkmale und Unternehmensbedürfnisse."
+    },
+    "development": {
+      "title": "Lösungsentwicklung",
+      "description": "Wir erstellen maßgeschneiderte KI-Anwendungen, integrieren bestehende Modelle und passen sie an Ihre Geschäftsprozesse an."
+    },
+    "training": {
+      "title": "Teamschulung",
+      "description": "Wir schulen Ihre Mitarbeiter im effektiven Umgang mit neuen KI-Tools und in der Entwicklung von Fähigkeiten im Bereich künstlicher Intelligenz."
+    }
+  },
+  "cta": {
+    "contact": "Kontaktieren Sie uns",
+    "startProject": "Projekt starten"
+  },
+  "footer": {
+    "contacts": "Kontakte",
+    "address": "Adresse",
+    "vienna": "Wien, Österreich",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

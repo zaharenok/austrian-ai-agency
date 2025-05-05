@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "button": "Read our approach",
+    "title": "Austrian AI Agency:",
+    "subtitle": "Innovative solutions powered by AI",
+    "titles": ["innovative", "advanced", "intelligent", "creative", "Austrian"],
+    "description": "We help companies implement modern AI-based solutions for automation, optimization and business scaling. Our experts create individual solutions taking into account the specifics of your business."
+  },
+  "services": {
+    "strategy": {
+      "title": "AI strategy",
+      "description": "We develop an individual strategy for implementing AI solutions for your business, taking into account industry characteristics and company needs."
+    },
+    "development": {
+      "title": "Solutions Development",
+      "description": "We create custom AI applications, integrate existing models and adapt them to your business processes."
+    },
+    "training": {
+      "title": "Team Training",
+      "description": "We train your employees to effectively use new AI tools and develop artificial intelligence skills."
+    }
+  },
+  "cta": {
+    "contact": "Contact us",
+    "startProject": "Start a project"
+  },
+  "footer": {
+    "contacts": "Contacts",
+    "address": "Address",
+    "vienna": "Vienna, Austria",
+    "rights": "All rights reserved."
+  }
+}
