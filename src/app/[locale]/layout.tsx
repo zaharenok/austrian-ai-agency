@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   description: 'Innovative AI solutions for business automation and optimization',
 };
 
+// Определяем типы параметров для динамического сегмента
+type Params = {
+  params: {
+    locale: string;
+  };
+  children: ReactNode;
+};
+
 // Импортируем переводы для каждой локали
 async function getTranslations(locale: string) {
   try {
@@ -22,11 +30,9 @@ async function getTranslations(locale: string) {
 
 export default async function LocaleLayout({ 
   children, 
-  params: { locale } 
-}: { 
-  children: ReactNode;
-  params: { locale: string; }
-}) {
+  params
+}: Params) {
+  const { locale } = params;
   const translations = await getTranslations(locale);
 
   return (
