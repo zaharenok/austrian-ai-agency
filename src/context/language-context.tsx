@@ -3,12 +3,14 @@
 import { createContext, useContext, useMemo, useState } from 'react';
 
 type Locale = 'en' | 'de' | 'ru';
+type TranslationValue = string | string[] | Record<string, unknown>;
+type TranslationsRecord = Record<string, TranslationValue | Record<string, TranslationValue>>;
 
 interface TranslationsContextType {
   locale: Locale;
   setLocale: (locale: Locale) => void;
-  t: (key: string) => string;
-  translations: Record<string, any>;
+  t: (key: string) => string | string[];
+  translations: TranslationsRecord;
 }
 
 const TranslationsContext = createContext<TranslationsContextType | undefined>(undefined);
@@ -20,21 +22,21 @@ export function TranslationsProvider({
 }: {
   children: React.ReactNode;
   locale: Locale;
-  translations: Record<string, any>;
+  translations: TranslationsRecord;
 }) {
   const [locale, setLocale] = useState<Locale>(initialLocale);
   
   const t = useMemo(() => {
     return (key: string) => {
       const keys = key.split('.');
-      let value = translations;
+      let value: unknown = translations;
       
       for (const k of keys) {
-        if (!value[k]) return key;
-        value = value[k];
+        if (typeof value !== 'object' || value === null || !(k in value)) return key;
+        value = (value as Record<string, unknown>)[k];
       }
       
-      return value as string;
+      return value as string | string[];
     };
   }, [translations]);
 
