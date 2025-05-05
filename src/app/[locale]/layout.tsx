@@ -9,7 +9,16 @@ export const metadata: Metadata = {
   description: 'Innovative AI solutions for business automation and optimization',
 };
 
-// Импортируем переводы для каждой локали
+// Генерируем статические параметры для локализации
+export function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'de' },
+    { locale: 'ru' },
+  ];
+}
+
+// Функция для получения переводов
 async function getTranslations(locale: string) {
   try {
     return (await import(`../../locales/${locale}/common.json`)).default;
@@ -20,30 +29,37 @@ async function getTranslations(locale: string) {
   }
 }
 
-export default async function LocaleLayout({
+// Компонент загрузчик для переводов
+async function Translations({
+  locale,
+  children,
+}: {
+  locale: string;
+  children: React.ReactNode;
+}) {
+  const translations = await getTranslations(locale);
+  
+  return (
+    <TranslationsProvider locale={locale as 'en' | 'de' | 'ru'} translations={translations}>
+      {children}
+    </TranslationsProvider>
+  );
+}
+
+// Основной компонент макета
+export default function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const { locale } = params;
-  const translations = await getTranslations(locale);
-
   return (
-    <TranslationsProvider locale={locale as 'en' | 'de' | 'ru'} translations={translations}>
+    <Translations locale={params.locale}>
       <div className="fixed top-4 right-4 z-50">
         <LanguageSwitcher />
       </div>
       {children}
-    </TranslationsProvider>
+    </Translations>
   );
-}
-
-export function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'de' },
-    { locale: 'ru' },
-  ];
 }
