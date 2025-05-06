@@ -1,19 +1,19 @@
 {
   "hero": {
-    "button": "Read our approach",
+    "button": "Learn about our approach",
     "title": "Austrian AI Agency:",
-    "subtitle": "Innovative solutions powered by AI",
-    "titles": ["innovative", "advanced", "intelligent", "creative", "Austrian"],
-    "description": "We help companies implement modern AI-based solutions for automation, optimization and business scaling. Our experts create individual solutions taking into account the specifics of your business."
+    "subtitle": "Innovative AI solutions",
+    "titles": ["innovative", "cutting-edge", "intelligent", "creative", "Austrian"],
+    "description": "We help companies implement modern artificial intelligence solutions for business automation, optimization, and scaling. Our experts create customized solutions tailored to your specific business needs."
   },
   "services": {
     "strategy": {
-      "title": "AI strategy",
-      "description": "We develop an individual strategy for implementing AI solutions for your business, taking into account industry characteristics and company needs."
+      "title": "AI Strategy",
+      "description": "We develop customized AI implementation strategies for your business, taking into account industry specifics and company needs."
     },
     "development": {
-      "title": "Solutions Development",
-      "description": "We create custom AI applications, integrate existing models and adapt them to your business processes."
+      "title": "Solution Development",
+      "description": "We create custom AI applications, integrate existing models, and adapt them to your business processes."
     },
     "training": {
       "title": "Team Training",
@@ -29,5 +29,35 @@
     "address": "Address",
     "vienna": "Vienna, Austria",
     "rights": "All rights reserved."
+  },
+  "contactForm": {
+    "title": "Get in touch",
+    "description": "Leave your contact information and message, and we will get back to you soon.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "companyLabel": "Company (optional)",
+    "companyPlaceholder": "Your company name",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Describe how we can help you...",
+    "submit": "Send message",
+    "submitting": "Sending...",
+    "validationError": "Please fill in all required fields",
+    "emailError": "Please enter a valid email address",
+    "submitError": "An error occurred. Please try again.",
+    "successTitle": "Thank you for your message!",
+    "successMessage": "We have received your inquiry and will respond shortly."
+  },
+  "navigation": {
+    "backToHome": "Back to Home"
+  },
+  "chatBot": {
+    "title": "Chat with Austrian AI Agency ✨",
+    "subtitle": "Our virtual assistant will answer your questions",
+    "greeting": "Hello! How can I help you today? Feel free to ask about our AI services.",
+    "response": "Thank you for your message! Our AI specialists will review your inquiry and get back to you soon. If you have any other questions, please don't hesitate to ask.",
+    "inputPlaceholder": "Type your message...",
+    "sendButton": "Send message"
   }
 }

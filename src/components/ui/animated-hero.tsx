@@ -2,12 +2,13 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { MoveRight, PhoneCall } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "@/context/language-context";
+import Link from "next/link";
 
 function Hero() {
-  const { t } = useTranslations();
+  const { t, locale } = useTranslations();
   const [titleNumber, setTitleNumber] = useState(0);
   
   const titles = useMemo(
@@ -63,14 +64,11 @@ function Hero() {
               {t("hero.description")}
             </p>
           </div>
-          <div className="flex flex-row gap-3">
-            <Button size="lg" className="gap-4" variant="outline">
-              {t("cta.contact")} <PhoneCall className="w-4 h-4" />
+          <Link href={`/${locale}/contact`} passHref>
+            <Button size="lg" className="gap-4 px-8">
+              {t("cta.contact")} <Mail className="w-5 h-5" />
             </Button>
-            <Button size="lg" className="gap-4">
-              {t("cta.startProject")} <MoveRight className="w-4 h-4" />
-            </Button>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -5,10 +5,16 @@ import { SiteFooter } from "@/components/ui/site-footer";
 
 export default function Home() {
   return (
-    <AuroraBackground className="min-h-screen">
-      <Hero />
-      <ServicesSection />
-      <SiteFooter />
+    <AuroraBackground className="min-h-screen flex flex-col">
+      <div className="flex-grow">
+        <Hero />
+        <div className="py-8">
+          <ServicesSection />
+        </div>
+      </div>
+      <div className="mt-auto">
+        <SiteFooter />
+      </div>
     </AuroraBackground>
   );
 }

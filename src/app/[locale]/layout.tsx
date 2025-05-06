@@ -9,16 +9,7 @@ export const metadata: Metadata = {
   description: 'Innovative AI solutions for business automation and optimization',
 };
 
-// Генерируем статические параметры для локализации
-export function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'de' },
-    { locale: 'ru' },
-  ];
-}
-
-// Функция для получения переводов
+// Импортируем переводы для каждой локали
 async function getTranslations(locale: string) {
   try {
     return (await import(`../../locales/${locale}/common.json`)).default;
@@ -29,37 +20,31 @@ async function getTranslations(locale: string) {
   }
 }
 
-// Компонент загрузчик для переводов
-async function Translations({
-  locale,
-  children,
-}: {
-  locale: string;
-  children: React.ReactNode;
-}) {
-  const translations = await getTranslations(locale);
-  
-  return (
-    <TranslationsProvider locale={locale as 'en' | 'de' | 'ru'} translations={translations}>
-      {children}
-    </TranslationsProvider>
-  );
-}
-
-// Основной компонент макета
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  // Использование await для получения параметров в соответствии с требованиями Next.js 15
+  const locale = params.locale;
+  const translations = await getTranslations(locale);
+
   return (
-    <Translations locale={params.locale}>
+    <TranslationsProvider locale={locale as 'en' | 'de' | 'ru'} translations={translations}>
       <div className="fixed top-4 right-4 z-50">
         <LanguageSwitcher />
       </div>
       {children}
-    </Translations>
+    </TranslationsProvider>
   );
+}
+
+export function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'de' },
+    { locale: 'ru' },
+  ];
 }

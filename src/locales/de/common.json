@@ -2,22 +2,22 @@
   "hero": {
     "button": "Erfahren Sie mehr über unseren Ansatz",
     "title": "Austrian AI Agency:",
-    "subtitle": "Innovative Lösungen mit KI",
-    "titles": ["innovativ", "fortschrittlich", "intelligent", "kreativ", "österreichisch"],
-    "description": "Wir unterstützen Unternehmen bei der Implementierung moderner KI-Lösungen zur Automatisierung, Optimierung und Skalierung. Unsere Experten erstellen individuelle Lösungen unter Berücksichtigung der Besonderheiten Ihres Unternehmens."
+    "subtitle": "Innovative KI-Lösungen",
+    "titles": ["innovativ", "hochmodern", "intelligent", "kreativ", "österreichisch"],
+    "description": "Wir helfen Unternehmen, moderne künstliche Intelligenzlösungen für Geschäftsautomatisierung, Optimierung und Skalierung zu implementieren. Unsere Experten erstellen maßgeschneiderte Lösungen, die auf Ihre spezifischen Geschäftsanforderungen zugeschnitten sind."
   },
   "services": {
     "strategy": {
       "title": "KI-Strategie",
-      "description": "Wir entwickeln eine individuelle Strategie zur Implementierung von KI-Lösungen für Ihr Unternehmen unter Berücksichtigung der Branchenmerkmale und Unternehmensbedürfnisse."
+      "description": "Wir entwickeln maßgeschneiderte KI-Implementierungsstrategien für Ihr Unternehmen unter Berücksichtigung von Branchenspezifika und Unternehmensanforderungen."
     },
     "development": {
       "title": "Lösungsentwicklung",
-      "description": "Wir erstellen maßgeschneiderte KI-Anwendungen, integrieren bestehende Modelle und passen sie an Ihre Geschäftsprozesse an."
+      "description": "Wir erstellen benutzerdefinierte KI-Anwendungen, integrieren bestehende Modelle und passen sie an Ihre Geschäftsprozesse an."
     },
     "training": {
-      "title": "Teamschulung",
-      "description": "Wir schulen Ihre Mitarbeiter im effektiven Umgang mit neuen KI-Tools und in der Entwicklung von Fähigkeiten im Bereich künstlicher Intelligenz."
+      "title": "Team-Training",
+      "description": "Wir schulen Ihre Mitarbeiter im effektiven Umgang mit neuen KI-Tools und entwickeln Fähigkeiten im Bereich der künstlichen Intelligenz."
     }
   },
   "cta": {
@@ -29,5 +29,35 @@
     "address": "Adresse",
     "vienna": "Wien, Österreich",
     "rights": "Alle Rechte vorbehalten."
+  },
+  "contactForm": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Hinterlassen Sie Ihre Kontaktdaten und Nachricht, und wir melden uns in Kürze bei Ihnen.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Ihr Name",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "you@example.com",
+    "companyLabel": "Unternehmen (optional)",
+    "companyPlaceholder": "Name Ihres Unternehmens",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Beschreiben Sie, wie wir Ihnen helfen können...",
+    "submit": "Nachricht senden",
+    "submitting": "Wird gesendet...",
+    "validationError": "Bitte füllen Sie alle Pflichtfelder aus",
+    "emailError": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "submitError": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "successTitle": "Vielen Dank für Ihre Nachricht!",
+    "successMessage": "Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden."
+  },
+  "navigation": {
+    "backToHome": "Zurück zur Startseite"
+  },
+  "chatBot": {
+    "title": "Chat mit Austrian AI Agency ✨",
+    "subtitle": "Unser virtueller Assistent beantwortet Ihre Fragen",
+    "greeting": "Hallo! Wie kann ich Ihnen heute helfen? Fragen Sie gerne zu unseren KI-Dienstleistungen.",
+    "response": "Vielen Dank für Ihre Nachricht! Unsere KI-Spezialisten werden Ihre Anfrage prüfen und sich in Kürze bei Ihnen melden. Wenn Sie weitere Fragen haben, zögern Sie bitte nicht zu fragen.",
+    "inputPlaceholder": "Nachricht eingeben...",
+    "sendButton": "Nachricht senden"
   }
 }
