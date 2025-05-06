@@ -35,6 +35,8 @@ const config: Config = {
       },
       animation: {
         "aurora": "aurora 60s linear infinite",
+        "fade-in": "fadeIn 0.3s ease-in-out forwards",
+        "slide-up": "slideUp 0.3s ease-in-out forwards"
       },
       keyframes: {
         aurora: {
@@ -45,6 +47,14 @@ const config: Config = {
             backgroundPosition: "350% 50%, 350% 50%",
           },
         },
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" }
+        },
+        slideUp: {
+          from: { transform: "translateY(20px)" },
+          to: { transform: "translateY(0)" }
+        }
       },
     },
   },

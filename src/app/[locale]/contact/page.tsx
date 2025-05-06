@@ -12,6 +12,13 @@ import {
   ChatBubbleMessage,
 } from "@/components/ui/chat-bubble";
 import { ChatMessageList } from "@/components/ui/chat-message-list";
+import { useAutoScroll } from "@/components/hooks/use-auto-scroll";
+
+// Добавляем стили для анимации сообщений
+const messageAnimation = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } }
+};
 
 export default function ContactPage() {
   const { t, locale } = useTranslations();
@@ -21,27 +28,32 @@ export default function ContactPage() {
       id: 1,
       content: t("chatBot.greeting"),
       sender: "ai",
+      animated: false,
     },
   ]);
 
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  
+  // Используем хук для автоматической прокрутки
+  const chatContainerRef = useAutoScroll<HTMLDivElement>([messages, isLoading]);
 
   const handleSubmit = (message: string) => {
     if (!message.trim()) return;
 
-    // Добавляем сообщение пользователя
+    // Добавляем сообщение пользователя с флагом анимации
     setMessages((prev) => [
       ...prev,
       {
         id: prev.length + 1,
         content: message,
         sender: "user",
+        animated: true,
       },
     ]);
     setIsLoading(true);
 
-    // Имитируем ответ от ИИ
+    // Увеличиваем задержку перед ответом до 3 секунд
     setTimeout(() => {
       setMessages((prev) => [
         ...prev,
@@ -49,10 +61,11 @@ export default function ContactPage() {
           id: prev.length + 1,
           content: t("chatBot.response"),
           sender: "ai",
+          animated: true,
         },
       ]);
       setIsLoading(false);
-    }, 1000);
+    }, 3000); // 3 секунды вместо 1
   };
 
   return (
@@ -78,39 +91,49 @@ export default function ContactPage() {
                   </p>
                 </div>
 
-                <div className="flex-grow overflow-y-auto">
+                <div ref={chatContainerRef} className="flex-grow overflow-y-auto">
                   <ChatMessageList>
                     {messages.map((message) => (
-                      <ChatBubble
+                      <div 
                         key={message.id}
-                        variant={message.sender === "user" ? "sent" : "received"}
+                        className={`transition-all duration-300 ease-in-out ${message.animated ? "animate-fade-in animate-slide-up" : ""}`}
+                        style={{
+                          opacity: 1,
+                          transform: "translateY(0)"
+                        }}
                       >
-                        <ChatBubbleAvatar
-                          className="h-8 w-8 shrink-0"
-                          src={
-                            message.sender === "user"
-                              ? "/user-avatar.png"
-                              : "/company-logo.png"
-                          }
-                          fallback={message.sender === "user" ? "YOU" : "AI"}
-                        />
-                        <ChatBubbleMessage
+                        <ChatBubble
                           variant={message.sender === "user" ? "sent" : "received"}
                         >
-                          {message.content}
-                        </ChatBubbleMessage>
-                      </ChatBubble>
+                          <ChatBubbleAvatar
+                            className="h-8 w-8 shrink-0"
+                            src={
+                              message.sender === "user"
+                                ? "/user-avatar.png"
+                                : "/company-logo.png"
+                            }
+                            fallback={message.sender === "user" ? "YOU" : "AI"}
+                          />
+                          <ChatBubbleMessage
+                            variant={message.sender === "user" ? "sent" : "received"}
+                          >
+                            {message.content}
+                          </ChatBubbleMessage>
+                        </ChatBubble>
+                      </div>
                     ))}
 
                     {isLoading && (
-                      <ChatBubble variant="received">
-                        <ChatBubbleAvatar
-                          className="h-8 w-8 shrink-0"
-                          src="/company-logo.png"
-                          fallback="AI"
-                        />
-                        <ChatBubbleMessage isLoading />
-                      </ChatBubble>
+                      <div className="animate-fade-in animate-slide-up">
+                        <ChatBubble variant="received">
+                          <ChatBubbleAvatar
+                            className="h-8 w-8 shrink-0"
+                            src="/company-logo.png"
+                            fallback="AI"
+                          />
+                          <ChatBubbleMessage isLoading />
+                        </ChatBubble>
+                      </div>
                     )}
                   </ChatMessageList>
                 </div>
@@ -125,6 +148,13 @@ export default function ContactPage() {
                         onChange={(e) => setInput(e.target.value)}
                         placeholder={typeof t("chatBot.inputPlaceholder") === 'string' ? t("chatBot.inputPlaceholder") as string : "Type your message..."}
                         className="flex-1 bg-transparent border-0 focus:outline-none focus:ring-0 px-3 py-2"
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" && !e.shiftKey && input.trim()) {
+                            e.preventDefault();
+                            handleSubmit(input);
+                            setInput("");
+                          }
+                        }}
                       />
                       <div className="flex items-center gap-1">
                         <Button
