@@ -32,6 +32,16 @@ const config: Config = {
           '900': '#1d3f52',
           '950': '#0d2736',
         },
+        'n8n': {
+          'dark-bg': '#0E0918',
+          'dark-card': '#1F192A',
+          'dark-deeper': '#140A1E',
+          'text-lavender': '#C4BBD3',
+          'text-slate': '#6F87A0',
+          'orange-primary': '#EE4F27',
+          'orange-secondary': '#FF9B26',
+          'purple-accent': '#6B21EF',
+        },
       },
       animation: {
         "aurora": "aurora 60s linear infinite",

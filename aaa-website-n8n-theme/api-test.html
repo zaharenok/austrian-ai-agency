@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тест API Чата</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .test-section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #0070f3;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 8px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background: #0051a2;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тестирование API для чата</h1>
+    
+    <div class="test-section">
+        <h2>1. API Прокси (основной)</h2>
+        <button onclick="testProxy()">Тест API Прокси</button>
+        <p id="proxy-status">Статус: Ожидание</p>
+        <textarea id="proxy-result" placeholder="Результат появится здесь..."></textarea>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. API Чата (запасной)</h2>
+        <button onclick="testChat()">Тест API Чата</button>
+        <p id="chat-status">Статус: Ожидание</p>
+        <textarea id="chat-result" placeholder="Результат появится здесь..."></textarea>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. Прямой тест Make.com Webhook</h2>
+        <button onclick="testMakeWebhook()">Тест Make.com Webhook</button>
+        <p id="webhook-status">Статус: Ожидание</p>
+        <textarea id="webhook-result" placeholder="Результат появится здесь..."></textarea>
+    </div>
+
+    <script>
+        // Тест API Прокси
+        async function testProxy() {
+            const statusEl = document.getElementById('proxy-status');
+            const resultEl = document.getElementById('proxy-result');
+            
+            statusEl.textContent = 'Статус: Отправка запроса...';
+            statusEl.className = '';
+            
+            try {
+                const response = await fetch('/api/proxy', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: 'Тестовое сообщение через API прокси',
+                        language: 'ru',
+                        timestamp: new Date().toISOString()
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    statusEl.textContent = 'Статус: Успешно!';
+                    statusEl.className = 'success';
+                } else {
+                    statusEl.textContent = `Статус: Ошибка ${response.status}`;
+                    statusEl.className = 'error';
+                }
+                
+                resultEl.value = JSON.stringify(data, null, 2);
+            } catch (error) {
+                statusEl.textContent = `Статус: Ошибка запроса - ${error.message}`;
+                statusEl.className = 'error';
+                resultEl.value = error.toString();
+            }
+        }
+        
+        // Тест API Чата
+        async function testChat() {
+            const statusEl = document.getElementById('chat-status');
+            const resultEl = document.getElementById('chat-result');
+            
+            statusEl.textContent = 'Статус: Отправка запроса...';
+            statusEl.className = '';
+            
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: 'Тестовое сообщение через API чата',
+                        language: 'ru',
+                        timestamp: new Date().toISOString()
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    statusEl.textContent = 'Статус: Успешно!';
+                    statusEl.className = 'success';
+                } else {
+                    statusEl.textContent = `Статус: Ошибка ${response.status}`;
+                    statusEl.className = 'error';
+                }
+                
+                resultEl.value = JSON.stringify(data, null, 2);
+            } catch (error) {
+                statusEl.textContent = `Статус: Ошибка запроса - ${error.message}`;
+                statusEl.className = 'error';
+                resultEl.value = error.toString();
+            }
+        }
+        
+        // Тест Make.com Webhook
+        async function testMakeWebhook() {
+            const statusEl = document.getElementById('webhook-status');
+            const resultEl = document.getElementById('webhook-result');
+            
+            statusEl.textContent = 'Статус: Отправка запроса...';
+            statusEl.className = '';
+            
+            // URL вебхука Make.com
+            const webhookUrl = "https://hook.eu1.make.com/811vpqf4zkmrs54hol6h6rtor5p9b5jg";
+            
+            try {
+                const response = await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: 'Тестовое сообщение напрямую в Make.com вебхук',
+                        language: 'ru',
+                        timestamp: new Date().toISOString()
+                    })
+                });
+                
+                let data;
+                try {
+                    data = await response.json();
+                } catch (e) {
+                    data = await response.text();
+                }
+                
+                if (response.ok) {
+                    statusEl.textContent = 'Статус: Успешно!';
+                    statusEl.className = 'success';
+                } else {
+                    statusEl.textContent = `Статус: Ошибка ${response.status}`;
+                    statusEl.className = 'error';
+                }
+                
+                resultEl.value = typeof data === 'string' ? data : JSON.stringify(data, null, 2);
+            } catch (error) {
+                statusEl.textContent = `Статус: Ошибка запроса - ${error.message}`;
+                statusEl.className = 'error';
+                resultEl.value = error.toString();
+            }
+        }
+    </script>
+</body>
+</html>

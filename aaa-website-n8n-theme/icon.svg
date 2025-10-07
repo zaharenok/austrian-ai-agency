@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .bg { fill: #dc2626; }
+      .ai { fill: white; }
+      .node { fill: white; }
+      .line { stroke: white; stroke-width: 0.5; fill: none; }
+    </style>
+  </defs>
+  
+  <!-- Red background representing Austrian flag -->
+  <rect class="bg" width="32" height="32" rx="6"/>
+  
+  <!-- AI text -->
+  <text class="ai" x="16" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold">AI</text>
+  
+  <!-- Neural network pattern -->
+  <!-- Layer 1 nodes -->
+  <circle class="node" cx="6" cy="20" r="1"/>
+  <circle class="node" cx="6" cy="26" r="1"/>
+  
+  <!-- Layer 2 nodes -->
+  <circle class="node" cx="16" cy="18" r="1"/>
+  <circle class="node" cx="16" cy="24" r="1"/>
+  <circle class="node" cx="16" cy="28" r="1"/>
+  
+  <!-- Layer 3 nodes -->
+  <circle class="node" cx="26" cy="20" r="1"/>
+  <circle class="node" cx="26" cy="26" r="1"/>
+  
+  <!-- Connections -->
+  <line class="line" x1="6" y1="20" x2="16" y2="18"/>
+  <line class="line" x1="6" y1="20" x2="16" y2="24"/>
+  <line class="line" x1="6" y1="26" x2="16" y2="24"/>
+  <line class="line" x1="6" y1="26" x2="16" y2="28"/>
+  <line class="line" x1="16" y1="18" x2="26" y2="20"/>
+  <line class="line" x1="16" y1="24" x2="26" y2="20"/>
+  <line class="line" x1="16" y1="24" x2="26" y2="26"/>
+  <line class="line" x1="16" y1="28" x2="26" y2="26"/>
+</svg>

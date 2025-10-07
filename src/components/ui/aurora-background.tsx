@@ -22,41 +22,41 @@ export const AuroraBackground = ({
   return (
     <div
       className={cn(
-        "relative w-full bg-zinc-50 dark:bg-zinc-900 text-foreground transition-bg",
+        "relative w-full bg-zinc-50 dark:bg-[#0E0918] text-foreground transition-bg",
         className
       )}
       {...props}
     >
-        {/* Эффект Авроры с более выраженными градиентами */}
-        <div 
+        {/* n8n.io inspired gradient - warm orange/red tones on deep purple */}
+        <div
           className="absolute inset-0 z-0"
           style={{
-            background: "linear-gradient(35deg, rgba(59,130,246,0.45) 0%, rgba(147,51,234,0.35) 40%, rgba(236,72,153,0.25) 70%, rgba(59,130,246,0.55) 100%)",
-            filter: "blur(110px)",
-            opacity: mounted ? 0.4 : 0,
+            background: "linear-gradient(35deg, rgba(238,79,39,0.15) 0%, rgba(255,155,38,0.12) 40%, rgba(107,33,239,0.1) 70%, rgba(238,79,39,0.18) 100%)",
+            filter: "blur(120px)",
+            opacity: mounted ? 0.3 : 0,
             transition: "opacity 1s ease-in-out",
             animation: "auroraMove 15s ease-in-out infinite alternate"
           }}
         />
 
-        {/* Дополнительный слой эффекта */}
-        <div 
+        {/* Secondary accent layer with purple tones */}
+        <div
           className="absolute inset-0 z-0"
           style={{
-            background: "radial-gradient(circle at 70% 30%, rgba(59,130,246,0.6) 0%, rgba(59,130,246,0) 30%), radial-gradient(circle at 30% 70%, rgba(147,51,234,0.6) 0%, rgba(147,51,234,0) 30%)",
-            filter: "blur(80px)",
-            opacity: mounted ? 0.55 : 0,
+            background: "radial-gradient(circle at 70% 30%, rgba(255,155,38,0.2) 0%, rgba(255,155,38,0) 30%), radial-gradient(circle at 30% 70%, rgba(107,33,239,0.15) 0%, rgba(107,33,239,0) 30%)",
+            filter: "blur(90px)",
+            opacity: mounted ? 0.35 : 0,
             transition: "opacity 1s ease-in-out",
             animation: "auroraRotate 20s ease-in-out infinite"
           }}
         />
 
-        {/* Блики и сияние */}
-        <div 
+        {/* Subtle glow effect */}
+        <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "radial-gradient(circle at 50% 10%, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 20%)",
-            opacity: mounted ? 0.45 : 0,
+            backgroundImage: "radial-gradient(circle at 50% 10%, rgba(196,187,211,0.08) 0%, rgba(196,187,211,0) 25%)",
+            opacity: mounted ? 0.4 : 0,
             transition: "opacity 1s ease-in-out",
             animation: "auroraBlink 8s ease-in-out infinite"
           }}
