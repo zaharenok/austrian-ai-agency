@@ -33,18 +33,20 @@ export default async function LocaleLayout({
 
   return (
     <TranslationsProvider locale={locale as 'en' | 'de' | 'ru'} translations={translations}>
-      <div className="flex min-h-screen flex-col">
+      <div className="flex flex-col min-h-[100dvh]">
         <MainHeader />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 flex flex-col">
+          {children}
+        </main>
       </div>
     </TranslationsProvider>
   );
 }
 
-// export function generateStaticParams() {
-//   return [
-//     { locale: 'en' },
-//     { locale: 'de' },
-//     { locale: 'ru' },
-//   ];
-// }
+export function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'de' },
+    { locale: 'ru' },
+  ];
+}

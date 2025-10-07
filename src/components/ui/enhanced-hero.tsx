@@ -154,7 +154,7 @@ export function EnhancedHero() {
         >
           {[
             { number: "50+", label: t("hero.stats.projects") || "Projects" },
-            { number: "15+", label: t("hero.stats.clients") || "Clients" },
+            { number: "23+", label: t("hero.stats.clients") || "Clients" },
             { number: "5+", label: t("hero.stats.years") || "Years" },
           ].map((stat, index) => (
             <div key={index} className="text-center">

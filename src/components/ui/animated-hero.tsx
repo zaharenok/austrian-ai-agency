@@ -20,6 +20,7 @@ function Hero() {
     projects: t("hero.stats.projects"),
     clients: t("hero.stats.clients"),
     years: t("hero.stats.years"),
+    clientsCount: "23+" // Hardcoded client count
   }), [t]);
 
   useEffect(() => {
@@ -98,7 +99,7 @@ function Hero() {
                 className="rounded-2xl border border-primary/10 bg-white/80 p-6 text-left shadow-sm backdrop-blur-sm dark:bg-white/10"
               >
                 <p className="text-4xl font-semibold text-primary">{
-                  key === 'projects' ? '58' : key === 'clients' ? '15+' : '5+'
+                  key === 'projects' ? '58' : key === 'clients' ? '23+' : '5+'
                 }</p>
                 <p className="text-sm uppercase tracking-wider text-muted-foreground">{label}</p>
               </div>

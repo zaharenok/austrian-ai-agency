@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className="scroll-smooth h-full">
-      <body className={`${inter.className} h-full`} suppressHydrationWarning>
+      <body className={`${inter.className} flex flex-col min-h-full`} suppressHydrationWarning>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8R5FZBELK9"
           strategy="afterInteractive"
