@@ -19,8 +19,7 @@ function Hero() {
   const stats = useMemo(() => ({
     projects: t("hero.stats.projects"),
     clients: t("hero.stats.clients"),
-    years: t("hero.stats.years"),
-    clientsCount: "23+" // Hardcoded client count
+    years: t("hero.stats.years")
   }), [t]);
 
   useEffect(() => {

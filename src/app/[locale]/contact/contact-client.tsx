@@ -2,7 +2,7 @@
 
 import { useCallback, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, CornerDownLeft, Mic, Paperclip } from "lucide-react";
+import { ArrowLeft, CornerDownLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   ChatBubble,
@@ -330,22 +330,14 @@ export function ContactClient() {
                 }}
                 disabled={isLoading}
               />
-              <div className="flex items-center gap-1">
-                <Button variant="ghost" size="icon" type="button" className="text-muted-foreground">
-                  <Paperclip className="h-4 w-4" />
-                </Button>
-                <Button variant="ghost" size="icon" type="button" className="text-muted-foreground">
-                  <Mic className="h-4 w-4" />
-                </Button>
-                <Button
-                  onClick={sendMessage}
-                  className="flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-primary-foreground hover:bg-primary/90"
-                  disabled={isLoading}
-                >
-                  {typeof t("chatBot.sendButton") === "string" ? t("chatBot.sendButton") : "Send"}
-                  <CornerDownLeft className="h-4 w-4" />
-                </Button>
-              </div>
+              <Button
+                onClick={sendMessage}
+                className="flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-primary-foreground hover:bg-primary/90"
+                disabled={isLoading}
+              >
+                {typeof t("chatBot.sendButton") === "string" ? t("chatBot.sendButton") : "Send"}
+                <CornerDownLeft className="h-4 w-4" />
+              </Button>
             </div>
           </div>
           <input
