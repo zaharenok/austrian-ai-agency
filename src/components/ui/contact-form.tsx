@@ -65,7 +65,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         spread: 70,
         origin: { y: 0.6 },
       });
-    } catch (err) {
+    } catch (_) {
       setError(t("contactForm.submitError"));
     } finally {
       setIsSubmitting(false);

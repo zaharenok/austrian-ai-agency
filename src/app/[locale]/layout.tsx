@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import '../globals.css';
 import { TranslationsProvider } from '@/context/language-context';
-import { LanguageSwitcher } from '@/components/ui/language-switcher';
+import { MainHeader } from '@/components/ui/main-header';
 
 export const metadata: Metadata = {
   title: 'Austrian AI Agency',
@@ -25,26 +25,26 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   // Использование await для получения параметров в соответствии с требованиями Next.js 15
-  const locale = params.locale;
+  const { locale } = await params;
   const translations = await getTranslations(locale);
 
   return (
     <TranslationsProvider locale={locale as 'en' | 'de' | 'ru'} translations={translations}>
-      <div className="fixed top-4 right-4 z-50">
-        <LanguageSwitcher />
+      <div className="flex min-h-screen flex-col">
+        <MainHeader />
+        <main className="flex-1">{children}</main>
       </div>
-      {children}
     </TranslationsProvider>
   );
 }
 
-export function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'de' },
-    { locale: 'ru' },
-  ];
-}
+// export function generateStaticParams() {
+//   return [
+//     { locale: 'en' },
+//     { locale: 'de' },
+//     { locale: 'ru' },
+//   ];
+// }

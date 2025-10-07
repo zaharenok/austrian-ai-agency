@@ -3,26 +3,58 @@
     "button": "Learn about our approach",
     "title": "Austrian AI Agency:",
     "subtitle": "Innovative AI solutions",
-    "titles": ["innovative", "cutting-edge", "intelligent", "creative", "Austrian"],
-    "description": "We help companies implement modern artificial intelligence solutions for business automation, optimization, and scaling. Our experts create customized solutions tailored to your specific business needs."
+    "titles": [
+      "innovative",
+      "cutting-edge",
+      "intelligent",
+      "creative",
+      "Austrian"
+    ],
+    "description": "We help companies implement modern artificial intelligence solutions for business automation, optimization, and scaling. Our experts create customized solutions tailored to your specific business needs.",
+    "badge": "Trusted AI partner",
+    "stats": {
+      "projects": "Projects delivered",
+      "clients": "Clients served",
+      "years": "Years in AI"
+    },
+    "trustedBy": "Trusted by teams across Europe"
   },
   "services": {
+    "title": "Our Services",
     "strategy": {
       "title": "AI Strategy",
-      "description": "We develop customized AI implementation strategies for your business, taking into account industry specifics and company needs."
+      "description": "We develop customized AI implementation strategies for your business, taking into account industry specifics and company needs.",
+      "features": [
+        "AI readiness diagnostics",
+        "Executive workshops",
+        "Roadmaps with ROI milestones"
+      ]
     },
     "development": {
       "title": "Solution Development",
-      "description": "We create custom AI applications, integrate existing models, and adapt them to your business processes."
+      "description": "We create custom AI applications, integrate existing models, and adapt them to your business processes.",
+      "features": [
+        "MVP in 6-8 weeks",
+        "Model fine-tuning & evaluation",
+        "Secure integrations"
+      ]
     },
     "training": {
       "title": "Team Training",
-      "description": "We train your employees to effectively use new AI tools and develop artificial intelligence skills."
-    }
+      "description": "We train your employees to effectively use new AI tools and develop artificial intelligence skills.",
+      "features": [
+        "On-site enablement",
+        "Playbooks & templates",
+        "Ongoing advisory"
+      ]
+    },
+    "subtitle": "Tailored AI programs that move the metrics you care about"
   },
   "cta": {
     "contact": "Contact us",
-    "startProject": "Start a project"
+    "startProject": "Start a project",
+    "learnMore": "Learn more",
+    "bookIntro": "Book intro call"
   },
   "footer": {
     "contacts": "Contacts",
@@ -50,14 +82,37 @@
     "successMessage": "We have received your inquiry and will respond shortly."
   },
   "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "whyUs": "Why us",
+    "contact": "Contact",
     "backToHome": "Back to Home"
+  },
+  "whyChoose": {
+    "title": "Why Choose Austrian AI Agency?",
+    "innovation": {
+      "title": "Innovation Excellence",
+      "description": "We leverage cutting-edge AI technologies to create future-ready solutions that drive real business transformation"
+    },
+    "expertise": {
+      "title": "Deep Technical Expertise",
+      "description": "Our team comprises leading AI specialists with extensive experience in machine learning, deep learning, and enterprise AI deployment"
+    },
+    "support": {
+      "title": "Long-term Partnership",
+      "description": "We stay with you throughout the entire journey — from initial concept to full implementation and ongoing optimization"
+    }
   },
   "chatBot": {
     "title": "Chat with Austrian AI Agency ✨",
     "subtitle": "Our virtual assistant will answer your questions",
     "greeting": "Hello! How can I help you today? Feel free to ask about our AI services.",
     "response": "Thank you for your message! Our AI specialists will review your inquiry and get back to you soon. If you have any other questions, please don't hesitate to ask.",
+    "errorResponse": "Sorry, an error occurred while processing your request. Please try again later.",
+    "searchingInfo": "Searching for information in our knowledge base...",
+    "fallbackResponse": "I couldn't find an exact answer to your question. Please clarify or ask a different question.",
     "inputPlaceholder": "Type your message...",
-    "sendButton": "Send message"
+    "sendButton": "Send",
+    "rateLimit": "Please wait a few seconds before sending another message."
   }
 }

@@ -3,26 +3,58 @@
     "button": "Erfahren Sie mehr über unseren Ansatz",
     "title": "Austrian AI Agency:",
     "subtitle": "Innovative KI-Lösungen",
-    "titles": ["innovativ", "hochmodern", "intelligent", "kreativ", "österreichisch"],
-    "description": "Wir helfen Unternehmen, moderne künstliche Intelligenzlösungen für Geschäftsautomatisierung, Optimierung und Skalierung zu implementieren. Unsere Experten erstellen maßgeschneiderte Lösungen, die auf Ihre spezifischen Geschäftsanforderungen zugeschnitten sind."
+    "titles": [
+      "innovativ",
+      "hochmodern",
+      "intelligent",
+      "kreativ",
+      "österreichisch"
+    ],
+    "description": "Wir helfen Unternehmen, moderne künstliche Intelligenzlösungen für Geschäftsautomatisierung, Optimierung und Skalierung zu implementieren. Unsere Experten erstellen maßgeschneiderte Lösungen, die auf Ihre spezifischen Geschäftsanforderungen zugeschnitten sind.",
+    "badge": "Vertrauenswürdiger KI-Partner",
+    "trustedBy": "Vertrauenswürdig für Teams in ganz Europa",
+    "stats": {
+      "projects": "Umgesetzte Projekte",
+      "clients": "Betreute Kunden",
+      "years": "Jahre in der KI"
+    }
   },
   "services": {
+    "title": "Unsere Dienstleistungen",
     "strategy": {
       "title": "KI-Strategie",
-      "description": "Wir entwickeln maßgeschneiderte KI-Implementierungsstrategien für Ihr Unternehmen unter Berücksichtigung von Branchenspezifika und Unternehmensanforderungen."
+      "description": "Wir entwickeln maßgeschneiderte KI-Implementierungsstrategien für Ihr Unternehmen unter Berücksichtigung von Branchenspezifika und Unternehmensanforderungen.",
+      "features": [
+        "KI-Reifegrad-Analyse",
+        "Workshops für Führungskräfte",
+        "Roadmaps mit ROI-Meilensteinen"
+      ]
     },
     "development": {
       "title": "Lösungsentwicklung",
-      "description": "Wir erstellen benutzerdefinierte KI-Anwendungen, integrieren bestehende Modelle und passen sie an Ihre Geschäftsprozesse an."
+      "description": "Wir erstellen benutzerdefinierte KI-Anwendungen, integrieren bestehende Modelle und passen sie an Ihre Geschäftsprozesse an.",
+      "features": [
+        "MVP in 6–8 Wochen",
+        "Modell-Finetuning & Evaluation",
+        "Sichere Integrationen"
+      ]
     },
     "training": {
       "title": "Team-Training",
-      "description": "Wir schulen Ihre Mitarbeiter im effektiven Umgang mit neuen KI-Tools und entwickeln Fähigkeiten im Bereich der künstlichen Intelligenz."
-    }
+      "description": "Wir schulen Ihre Mitarbeiter im effektiven Umgang mit neuen KI-Tools und entwickeln Fähigkeiten im Bereich der künstlichen Intelligenz.",
+      "features": [
+        "Enablement vor Ort",
+        "Playbooks & Templates",
+        "Laufende Beratung"
+      ]
+    },
+    "subtitle": "Individuelle KI-Programme, die Ihre wichtigsten Kennzahlen verbessern"
   },
   "cta": {
     "contact": "Kontaktieren Sie uns",
-    "startProject": "Projekt starten"
+    "startProject": "Projekt starten",
+    "learnMore": "Mehr erfahren",
+    "bookIntro": "Kennenlerntermin buchen"
   },
   "footer": {
     "contacts": "Kontakte",
@@ -50,14 +82,37 @@
     "successMessage": "Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden."
   },
   "navigation": {
+    "home": "Start",
+    "services": "Leistungen",
+    "whyUs": "Warum wir",
+    "contact": "Kontakt",
     "backToHome": "Zurück zur Startseite"
+  },
+  "whyChoose": {
+    "title": "Warum Austrian AI Agency wählen?",
+    "innovation": {
+      "title": "Innovative Spitzenleistung",
+      "description": "Wir nutzen modernste KI-Technologien, um zukunftssichere Lösungen zu schaffen, die echte Geschäftstransformation bewirken"
+    },
+    "expertise": {
+      "title": "Tiefe technische Expertise",
+      "description": "Unser Team besteht aus führenden KI-Spezialisten mit umfangreicher Erfahrung in maschinellem Lernen, Deep Learning und Enterprise-KI-Implementierung"
+    },
+    "support": {
+      "title": "Langfristige Partnerschaft",
+      "description": "Wir begleiten Sie auf der gesamten Reise — von der ersten Idee bis zur vollständigen Umsetzung und kontinuierlichen Optimierung"
+    }
   },
   "chatBot": {
     "title": "Chat mit Austrian AI Agency ✨",
     "subtitle": "Unser virtueller Assistent beantwortet Ihre Fragen",
     "greeting": "Hallo! Wie kann ich Ihnen heute helfen? Fragen Sie gerne zu unseren KI-Dienstleistungen.",
     "response": "Vielen Dank für Ihre Nachricht! Unsere KI-Spezialisten werden Ihre Anfrage prüfen und sich in Kürze bei Ihnen melden. Wenn Sie weitere Fragen haben, zögern Sie bitte nicht zu fragen.",
+    "errorResponse": "Entschuldigung, bei der Bearbeitung Ihrer Anfrage ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.",
+    "searchingInfo": "Suche nach Informationen in unserer Wissensdatenbank...",
+    "fallbackResponse": "Ich konnte keine genaue Antwort auf Ihre Frage finden. Bitte präzisieren Sie oder stellen Sie eine andere Frage.",
     "inputPlaceholder": "Nachricht eingeben...",
-    "sendButton": "Nachricht senden"
+    "sendButton": "Senden",
+    "rateLimit": "Bitte warten Sie einige Sekunden, bevor Sie eine weitere Nachricht senden."
   }
 }

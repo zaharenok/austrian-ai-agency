@@ -116,7 +116,74 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-behavior: smooth;
+    overscroll-behavior-x: none;
+    overscroll-behavior-y: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
   body {
     @apply bg-background text-foreground;
+    overscroll-behavior-x: none;
+    overscroll-behavior-y: none;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Ensure proper scroll boundaries for page containers */
+  .page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior-y: contain;
+  }
+
+  /* Footer scroll boundary enforcement */
+  .footer-boundary {
+    overscroll-behavior-y: auto;
+    scroll-snap-align: end;
+    scroll-margin-bottom: 0;
+  }
+  
+  /* Улучшения для чата - изоляция скролла */
+  .chat-container {
+    overscroll-behavior: contain;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(128, 128, 128, 0.3) transparent;
+  }
+
+  /* Scroll boundary detection helper */
+  .scroll-boundary-detector {
+    height: 1px;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .chat-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .chat-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .chat-container::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 3px;
+  }
+  
+  .chat-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(128, 128, 128, 0.5);
   }
 }
