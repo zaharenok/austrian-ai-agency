@@ -32,7 +32,7 @@ export function ServicesSection() {
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-spektr-cyan-300">
           {t("navigation.services")}
         </p>
-        <h2 className="text-3xl font-bold md:text-4xl">{t("services.title") || "AI Services"}</h2>
+        <h2 className="text-3xl font-bold text-foreground md:text-4xl">{t("services.title") || "AI Services"}</h2>
         <p className="mx-auto max-w-2xl text-base text-muted-foreground">
           {t("services.subtitle")}
         </p>
@@ -59,7 +59,7 @@ export function ServicesSection() {
               </div>
 
               <div className="mt-6 space-y-3">
-                <h3 className="text-2xl font-semibold">{title}</h3>
+                <h3 className="text-2xl font-semibold text-foreground">{title}</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
               </div>
 

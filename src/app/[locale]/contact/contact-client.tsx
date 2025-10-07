@@ -321,7 +321,7 @@ export function ContactClient() {
                     ? (t("chatBot.inputPlaceholder") as string)
                     : "Type your message..."
                 }
-                className="flex-1 border-0 bg-transparent px-3 py-2 focus:outline-none focus:ring-0"
+                className="flex-1 border-0 bg-transparent px-3 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-0"
                 onKeyDown={async (event) => {
                   if (event.key === "Enter" && !event.shiftKey) {
                     event.preventDefault();
@@ -339,7 +339,7 @@ export function ContactClient() {
                 </Button>
                 <Button
                   onClick={sendMessage}
-                  className="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-white hover:bg-gray-800"
+                  className="flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-primary-foreground hover:bg-primary/90"
                   disabled={isLoading}
                 >
                   {typeof t("chatBot.sendButton") === "string" ? t("chatBot.sendButton") : "Send"}

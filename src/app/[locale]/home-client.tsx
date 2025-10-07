@@ -14,7 +14,7 @@ export function HomeClient() {
 
   return (
     <div className="page-container">
-      <AuroraBackground className="min-h-screen">
+      <AuroraBackground>
         <div className="flex min-h-screen flex-col">
           <div className="flex-1 space-y-24 pb-24">
             <Hero />
@@ -29,7 +29,7 @@ export function HomeClient() {
                   <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-spektr-cyan-300">
                     {t("navigation.whyUs")}
                   </p>
-                  <h2 className="text-3xl font-bold md:text-4xl">{t("whyChoose.title")}</h2>
+                  <h2 className="text-3xl font-bold text-foreground md:text-4xl">{t("whyChoose.title")}</h2>
                   <p className="text-lg text-muted-foreground">
                     {t("hero.description")}
                   </p>
@@ -54,7 +54,7 @@ export function HomeClient() {
                         <Icon className="h-6 w-6" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold">{title}</h3>
+                        <h3 className="text-xl font-semibold text-foreground">{title}</h3>
                         <p className="mt-2 text-sm text-muted-foreground">{description}</p>
                       </div>
                     </div>
