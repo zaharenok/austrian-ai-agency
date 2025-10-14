@@ -5,37 +5,141 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # testing
 /coverage
+*.test.js
+*.test.ts
+*.test.tsx
+*.spec.js
+*.spec.ts
+*.spec.tsx
 
 # next.js
 /.next/
 /out/
+.next
+next-env.d.ts
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
 *.pem
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# local env files
-.env*.local
+# Environment variables (CRITICAL - never commit these!)
 .env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.production
+*.env
+
+# Sensitive files
+*.key
+*.cert
+*.p12
+*.pfx
+secrets/
+credentials/
+config/local.json
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+next.config.backup.ts
+
+# Deployment artifacts
+/deployment
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Logs
+logs
+*.log
+*.log.*
+pids
+*.pid
+*.seed
+*.pid.lock
 
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
 
-# IDE files
-.idea
-.vscode
+# IDE and Editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.iml
+.metadata
+.recommenders
+.history/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# PM2 (process manager)
+.pm2
+ecosystem.config.js
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Turbo
+.turbo
+
+# Sentry
+.sentryclirc
+
+# Temporary files
+temp/
+tmp/
+cache/
