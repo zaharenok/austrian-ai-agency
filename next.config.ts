@@ -1,11 +1,10 @@
-// Конфигурация для статического экспорта
+// Конфигурация для серверного деплоя (с API-маршрутами)
 import type { NextConfig } from "next";
 
-const nextConfigStatic: NextConfig = {
-  /* config options for static export */
-  output: 'export',
+const nextConfigServer: NextConfig = {
+  /* config options for server deployment */
   images: {
-    unoptimized: true  // Необходимо для статического экспорта
+    unoptimized: true
   },
   trailingSlash: true,  // Помогает с путями к ресурсам
   eslint: {
@@ -18,4 +17,4 @@ const nextConfigStatic: NextConfig = {
   },
 };
 
-export default nextConfigStatic;
+export default nextConfigServer;

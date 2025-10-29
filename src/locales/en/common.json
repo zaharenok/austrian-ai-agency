@@ -114,5 +114,86 @@
     "inputPlaceholder": "Type your message...",
     "sendButton": "Send",
     "rateLimit": "Please wait a few seconds before sending another message."
+  },
+  "energyCommunity": {
+    "hero": {
+      "badge": "Save on your energy bills",
+      "title": "Tired of high electricity costs?",
+      "subtitle": "Join Austria's energy community and start saving today",
+      "description": "Every month, you overpay for electricity. Average Austrian households spend €150-250/month on energy. But there's a better way.",
+      "cta": "Join the community"
+    },
+    "problem": {
+      "title": "The hidden costs in your electricity bill",
+      "subtitle": "Why traditional energy providers cost you more",
+      "point1": {
+        "title": "Constantly rising prices",
+        "description": "Energy prices have increased by 40% in the last two years, and traditional providers pass all costs to consumers"
+      },
+      "point2": {
+        "title": "Hidden fees",
+        "description": "Network fees, taxes, and additional charges make up to 60% of your bill"
+      },
+      "point3": {
+        "title": "No control",
+        "description": "You're locked into long-term contracts with no say in pricing or energy sources"
+      }
+    },
+    "solution": {
+      "title": "How energy communities change the game",
+      "subtitle": "A smarter way to consume electricity",
+      "intro": "Energy communities (Energiegemeinschaften) are a revolutionary concept where neighbors share locally produced renewable energy, cutting out middlemen and reducing costs.",
+      "benefit1": {
+        "title": "Direct savings",
+        "description": "Pay only 8¢/kWh for consumed electricity — significantly below market rates"
+      },
+      "benefit2": {
+        "title": "Full transparency",
+        "description": "See exactly where your energy comes from and how costs are calculated"
+      },
+      "benefit3": {
+        "title": "Sustainable future",
+        "description": "Support local renewable energy and reduce your carbon footprint"
+      },
+      "benefit4": {
+        "title": "Minimal commitment",
+        "description": "Join with just €10 deposit and €10 one-time membership fee"
+      }
+    },
+    "pricing": {
+      "title": "Simple, transparent pricing",
+      "subtitle": "No hidden fees, no surprises",
+      "consumption": {
+        "title": "Consumption price",
+        "price": "8¢",
+        "unit": "per kWh",
+        "description": "Pay only for what you use"
+      },
+      "monthly": {
+        "title": "Monthly base fee",
+        "price": "€10",
+        "unit": "per month",
+        "description": "Covers community management"
+      },
+      "deposit": {
+        "title": "Security deposit",
+        "price": "€10",
+        "unit": "one-time",
+        "description": "Refundable when you leave"
+      },
+      "membership": {
+        "title": "Membership fee",
+        "price": "€10",
+        "unit": "one-time",
+        "description": "Join the cooperative"
+      },
+      "comparison": "Compare this to average market rates of 25-35¢/kWh"
+    },
+    "cta": {
+      "title": "Ready to start saving?",
+      "subtitle": "Join hundreds of Austrian households already benefiting from energy communities",
+      "button": "Join now",
+      "guarantee": "Cancel anytime • No long-term contracts • 100% renewable energy"
+    }
   }
 }

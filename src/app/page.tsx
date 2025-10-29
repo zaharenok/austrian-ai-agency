@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 
 const supportedLocales = ['en', 'de', 'ru'] as const;
 const defaultLocale = 'en';
@@ -33,20 +32,23 @@ function getBrowserLocale(): string {
 }
 
 export default function RootPage() {
-  const router = useRouter();
-
   useEffect(() => {
     const cookieLocale = getCookieLocale();
     const browserLocale = getBrowserLocale();
     const locale = cookieLocale ?? browserLocale;
 
     document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000`;
-    router.replace(`/${locale}`);
-  }, [router]);
+
+    // Используем window.location для надежности в статическом билде
+    window.location.href = `/${locale}/`;
+  }, []);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background text-foreground">
-      <span className="text-sm text-muted-foreground">Loading…</span>
+      <div className="text-center">
+        <div className="mb-4 inline-block h-12 w-12 animate-spin rounded-full border-4 border-primary border-t-transparent"></div>
+        <p className="text-sm text-muted-foreground">Loading…</p>
+      </div>
     </div>
   );
 }

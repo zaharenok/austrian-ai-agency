@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "build:static": "ts-node scripts/generate-blog-pages.ts && cp next.config.ts next.config.backup.ts && cp next.config.static.ts next.config.ts && next build && cp next.config.backup.ts next.config.ts",
+    "build:static": "ts-node scripts/generate-blog-pages.ts && cp next.config.ts next.config.backup.ts && cp next.config.static.ts next.config.ts && mv src/middleware.ts src/middleware.ts.disabled 2>/dev/null || true && next build && bash scripts/copy-static-pages.sh && mv src/middleware.ts.disabled src/middleware.ts 2>/dev/null || true && cp next.config.backup.ts next.config.ts",
     "build:server": "cp next.config.ts next.config.backup.ts && cp next.config.server.ts next.config.ts && next build && cp next.config.backup.ts next.config.ts",
     "start": "next start",
     "lint": "next lint",

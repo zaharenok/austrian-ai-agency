@@ -114,5 +114,86 @@
     "inputPlaceholder": "Nachricht eingeben...",
     "sendButton": "Senden",
     "rateLimit": "Bitte warten Sie einige Sekunden, bevor Sie eine weitere Nachricht senden."
+  },
+  "energyCommunity": {
+    "hero": {
+      "badge": "Stromkosten senken",
+      "title": "Genug von hohen Stromkosten?",
+      "subtitle": "Treten Sie Österreichs Energiegemeinschaft bei und sparen Sie ab heute",
+      "description": "Jeden Monat zahlen Sie zu viel für Strom. Österreichische Haushalte geben durchschnittlich €150-250/Monat für Energie aus. Aber es gibt einen besseren Weg.",
+      "cta": "Jetzt beitreten"
+    },
+    "problem": {
+      "title": "Die versteckten Kosten in Ihrer Stromrechnung",
+      "subtitle": "Warum traditionelle Energieversorger mehr kosten",
+      "point1": {
+        "title": "Ständig steigende Preise",
+        "description": "Die Energiepreise sind in den letzten zwei Jahren um 40% gestiegen, und traditionelle Anbieter geben alle Kosten an Verbraucher weiter"
+      },
+      "point2": {
+        "title": "Versteckte Gebühren",
+        "description": "Netzgebühren, Steuern und Zusatzkosten machen bis zu 60% Ihrer Rechnung aus"
+      },
+      "point3": {
+        "title": "Keine Kontrolle",
+        "description": "Sie sind in langfristige Verträge eingebunden ohne Mitspracherecht bei Preisen oder Energiequellen"
+      }
+    },
+    "solution": {
+      "title": "Wie Energiegemeinschaften alles verändern",
+      "subtitle": "Eine intelligentere Art, Strom zu konsumieren",
+      "intro": "Energiegemeinschaften sind ein revolutionäres Konzept, bei dem Nachbarn lokal produzierte erneuerbare Energie teilen, Zwischenhändler ausschalten und Kosten senken.",
+      "benefit1": {
+        "title": "Direkte Ersparnisse",
+        "description": "Zahlen Sie nur 8 Cent/kWh für verbrauchten Strom — deutlich unter den Marktpreisen"
+      },
+      "benefit2": {
+        "title": "Volle Transparenz",
+        "description": "Sehen Sie genau, woher Ihre Energie kommt und wie Kosten berechnet werden"
+      },
+      "benefit3": {
+        "title": "Nachhaltige Zukunft",
+        "description": "Unterstützen Sie lokale erneuerbare Energien und reduzieren Sie Ihren CO2-Fußabdruck"
+      },
+      "benefit4": {
+        "title": "Minimale Verpflichtung",
+        "description": "Treten Sie mit nur €10 Kaution und €10 einmaliger Mitgliedsgebühr bei"
+      }
+    },
+    "pricing": {
+      "title": "Einfache, transparente Preisgestaltung",
+      "subtitle": "Keine versteckten Gebühren, keine Überraschungen",
+      "consumption": {
+        "title": "Bezugspreis",
+        "price": "8 Cent",
+        "unit": "pro kWh",
+        "description": "Zahlen Sie nur, was Sie verbrauchen"
+      },
+      "monthly": {
+        "title": "Monatlicher Grundpreis",
+        "price": "€10",
+        "unit": "pro Monat",
+        "description": "Deckt die Gemeinschaftsverwaltung"
+      },
+      "deposit": {
+        "title": "Kaution",
+        "price": "€10",
+        "unit": "einmalig",
+        "description": "Wird bei Austritt zurückerstattet"
+      },
+      "membership": {
+        "title": "Genossenschaftsanteil",
+        "price": "€10",
+        "unit": "einmalig",
+        "description": "Mitgliedschaft in der Genossenschaft"
+      },
+      "comparison": "Vergleichen Sie dies mit durchschnittlichen Marktpreisen von 25-35 Cent/kWh"
+    },
+    "cta": {
+      "title": "Bereit zum Sparen?",
+      "subtitle": "Schließen Sie sich Hunderten österreichischen Haushalten an, die bereits von Energiegemeinschaften profitieren",
+      "button": "Jetzt beitreten",
+      "guarantee": "Jederzeit kündbar • Keine langfristigen Verträge • 100% erneuerbare Energie"
+    }
   }
 }

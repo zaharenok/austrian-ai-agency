@@ -1,0 +1,30 @@
+RewriteEngine On
+
+# Handle client-side routing
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L]
+
+# Handle locale-based routing
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(en|de|ru)/?$ /$1/index.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(en|de|ru)/(.*)$ /$1/$2.html [L]
+
+# Set proper MIME types
+<FilesMatch "\.(js|css)$">
+    Header set Cache-Control "max-age=31536000"
+</FilesMatch>
+
+# Enable compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Set security headers
+Header always set X-Content-Type-Options nosniff
+Header always set X-Frame-Options DENY
+Header always set X-XSS-Protection "1; mode=block"
