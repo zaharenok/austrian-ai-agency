@@ -5,7 +5,7 @@ import { VetCallHeader } from '@/components/vetcall/vet-header';
 import { VetCallFooter } from '@/components/vetcall/vet-footer';
 
 export function VetImpressumClient() {
-  const { t, currentLocale } = useTranslations();
+  const { t, locale } = useTranslations();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-vet-emerald-50 via-white to-vet-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
@@ -34,7 +34,7 @@ export function VetImpressumClient() {
                 <p>
                   E-Mail: contact@vetcall.ai<br />
                   Telefon: +43 XXX XXX XXX<br />
-                  Website: https://aaagency.at/{currentLocale}/vet
+                  Website: https://aaagency.at/{locale}/vet
                 </p>
               </section>
 
