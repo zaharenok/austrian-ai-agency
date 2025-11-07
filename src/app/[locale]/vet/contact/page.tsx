@@ -10,13 +10,6 @@ export function generateStaticParams() {
   ];
 }
 
-interface PageProps {
-  params: Promise<{
-    locale: 'en' | 'de' | 'ru';
-  }>;
-}
-
-export default async function VetContactPage({ params }: PageProps) {
-  const { locale } = await params;
-  return <VetContactClient locale={locale} />;
+export default function VetContactPage() {
+  return <VetContactClient />;
 }

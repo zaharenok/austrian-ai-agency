@@ -1,43 +1,15 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import { TranslationsProvider } from '@/context/language-context';
+import { useTranslations } from '@/context/language-context';
 import { VetCallHeader } from '@/components/vetcall/vet-header';
 import { VetCallFooter } from '@/components/vetcall/vet-footer';
 
-type Locale = 'en' | 'de' | 'ru';
-
-export function VetPrivacyClient({ locale }: { locale: Locale }) {
-  const [translations, setTranslations] = useState<any>(null);
-
-  useEffect(() => {
-    const loadTranslations = async () => {
-      let t;
-      if (locale === 'de') {
-        t = await import('@/locales/de/common.json');
-      } else if (locale === 'en') {
-        t = await import('@/locales/en/common.json');
-      } else {
-        t = await import('@/locales/ru/common.json');
-      }
-      setTranslations(t.default);
-    };
-
-    loadTranslations();
-  }, [locale]);
-
-  if (!translations) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-vet-emerald-600"></div>
-      </div>
-    );
-  }
+export function VetPrivacyClient() {
+  const { t } = useTranslations();
 
   return (
-    <TranslationsProvider locale={locale} translations={translations}>
-      <div className="min-h-screen bg-gradient-to-br from-vet-emerald-50 via-white to-vet-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <VetCallHeader />
+    <div className="min-h-screen bg-gradient-to-br from-vet-emerald-50 via-white to-vet-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      <VetCallHeader />
 
         <main className="container py-20">
           <div className="max-w-4xl mx-auto prose dark:prose-invert">
@@ -134,8 +106,7 @@ export function VetPrivacyClient({ locale }: { locale: Locale }) {
           </div>
         </main>
 
-        <VetCallFooter />
-      </div>
-    </TranslationsProvider>
+      <VetCallFooter />
+    </div>
   );
 }
