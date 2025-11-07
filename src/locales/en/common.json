@@ -115,6 +115,204 @@
     "sendButton": "Send",
     "rateLimit": "Please wait a few seconds before sending another message."
   },
+  "vetcall": {
+    "meta": {
+      "title": "VetCall AI – 24/7 Phone Assistant for Veterinary Clinics in Austria",
+      "description": "Less phone stress, more patient time. VetCall AI answers calls, handles FAQs, and books appointments – even on weekends. GDPR-compliant, 14-day free trial."
+    },
+    "hero": {
+      "title": "24/7 phone assistant for your vet practice",
+      "subtitle": "Less phone stress, more patient time: VetCall AI answers calls, handles common questions, and books appointments – even on weekends.",
+      "ctaPrimary": "Start free trial",
+      "ctaSecondary": "Book demo",
+      "trustBadge1": "No number change",
+      "trustBadge2": "GDPR-compliant, EU hosting",
+      "trustBadge3": "Ready in 1 day"
+    },
+    "pain": {
+      "title": "Too many calls. Too little time.",
+      "point1": {
+        "title": "Peak times & weekends",
+        "description": "Assistant filters emergencies & FAQs."
+      },
+      "point2": {
+        "title": "Repetitive questions",
+        "description": "Opening hours, prices, vaccinations: answered automatically."
+      },
+      "point3": {
+        "title": "Appointment chaos",
+        "description": "Booking/rescheduling directly in your calendar."
+      }
+    },
+    "howItWorks": {
+      "title": "How VetCall AI works",
+      "subtitle": "In 4 simple steps",
+      "step1": {
+        "title": "Call arrives",
+        "description": "VetCall AI picks up (even outside business hours)."
+      },
+      "step2": {
+        "title": "Understands request",
+        "description": "Emergency, appointment, FAQ."
+      },
+      "step3": {
+        "title": "Takes action",
+        "description": "Suggest/book appointment, send emergency service, message via WhatsApp/SMS."
+      },
+      "step4": {
+        "title": "Documents",
+        "description": "Summary & statistics in dashboard."
+      }
+    },
+    "benefits": {
+      "title": "Why VetCall AI?",
+      "subtitle": "More time for what really matters",
+      "benefit1": "−40–60% phone load at reception",
+      "benefit2": "More booked appointments, fewer missed calls",
+      "benefit3": "Emergency service routing on weekends",
+      "benefit4": "No number change (call forwarding)",
+      "benefit5": "GDPR-compliant, data in EU",
+      "benefit6": "Risk-free 14-day trial"
+    },
+    "integrations": {
+      "title": "Seamless integration",
+      "subtitle": "Works with your existing tools",
+      "whatsapp": "WhatsApp Business",
+      "calendar": "Google & Outlook Calendar",
+      "automation": "n8n & Make automation",
+      "voice": "11Labs voice quality",
+      "notifications": "Email & webhooks"
+    },
+    "testimonials": {
+      "title": "What veterinarians say",
+      "testimonial1": {
+        "text": "VetCall AI reduced our phone load by 50%. Our team can finally focus on patients.",
+        "author": "Dr. Maria Schmidt",
+        "clinic": "Tierklinik Wien-Mitte"
+      },
+      "testimonial2": {
+        "text": "The weekend emergency forwarding is worth gold. No more missed emergencies.",
+        "author": "Dr. Thomas Müller",
+        "clinic": "Tierarzt Salzburg"
+      },
+      "testimonial3": {
+        "text": "Easy setup, immediate results. The best investment for our practice.",
+        "author": "Dr. Anna Weber",
+        "clinic": "VetCare Graz"
+      }
+    },
+    "pricing": {
+      "title": "Transparent pricing",
+      "subtitle": "Choose the plan that fits your practice",
+      "basic": {
+        "name": "Basic",
+        "description": "for small practices",
+        "price": "€149",
+        "period": "/month",
+        "feature1": "200 min/month",
+        "feature2": "1 number",
+        "feature3": "WhatsApp/SMS confirmation",
+        "feature4": "Calendar integration",
+        "feature5": "Email support"
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "most popular",
+        "badge": "Popular",
+        "price": "€349",
+        "period": "/month",
+        "feature1": "600 min/month",
+        "feature2": "3 numbers",
+        "feature3": "Emergency routing",
+        "feature4": "Advanced reports",
+        "feature5": "Priority support"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "multiple locations",
+        "price": "Custom",
+        "period": "",
+        "feature1": "Unlimited minutes",
+        "feature2": "Unlimited numbers",
+        "feature3": "SSO & SLA",
+        "feature4": "Custom integrations",
+        "feature5": "Dedicated account manager"
+      },
+      "guarantee": "14-day free trial – cancel anytime"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subtitle": "Everything you need to know",
+      "q1": {
+        "question": "Do we need to change our phone number?",
+        "answer": "No. We start with call forwarding. Your existing number stays the same."
+      },
+      "q2": {
+        "question": "Does VetCall AI really book appointments?",
+        "answer": "Yes, via your Google/Outlook calendar. VetCall AI checks available times and books directly."
+      },
+      "q3": {
+        "question": "How does emergency service work?",
+        "answer": "Callers receive the nearest veterinary emergency service via SMS/WhatsApp, we can connect directly if desired."
+      },
+      "q4": {
+        "question": "Is this GDPR-compliant?",
+        "answer": "Yes. EU hosting, 60-90 day retention, data processing agreement (DPA)."
+      },
+      "q5": {
+        "question": "Does VetCall AI give medical advice?",
+        "answer": "No. Only organization & information. Medical advice is provided by veterinarians."
+      },
+      "q6": {
+        "question": "How quickly can I start?",
+        "answer": "Within 24 hours of signup. We set everything up for you."
+      }
+    },
+    "compliance": {
+      "title": "Privacy & compliance",
+      "description": "VetCall AI is fully GDPR-compliant. All data is hosted in the EU and automatically deleted after 60-90 days.",
+      "disclaimer": "This is not an emergency channel (112/144).",
+      "linkText": "Full privacy policy"
+    },
+    "finalCta": {
+      "title": "Start today, less phone stress tomorrow.",
+      "subtitle": "Join dozens of veterinary practices across Austria",
+      "ctaPrimary": "Start free trial",
+      "ctaSecondary": "Book demo"
+    },
+    "whatsappButton": "Questions? Message us.",
+    "form": {
+      "title": "Start your free trial",
+      "subtitle": "Fill out the form and we'll set everything up for you.",
+      "clinicName": "Clinic name",
+      "clinicNamePlaceholder": "Your veterinary practice",
+      "contactPerson": "Contact person",
+      "contactPersonPlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.at",
+      "phone": "Phone",
+      "phonePlaceholder": "+43 xxx xxx xxx",
+      "city": "City/ZIP",
+      "cityPlaceholder": "Vienna / 1010",
+      "preferredTime": "Preferred demo time (optional)",
+      "preferredTimePlaceholder": "e.g. Monday, 2:00 PM",
+      "message": "Message (optional)",
+      "messagePlaceholder": "Your questions or specific requirements...",
+      "submit": "Start free trial",
+      "submitting": "Sending...",
+      "successTitle": "Thank you!",
+      "successMessage": "We've received your request and will contact you within 24 hours.",
+      "errorMessage": "An error occurred. Please try again or contact us directly."
+    },
+    "navigation": {
+      "home": "Home",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "privacy": "Privacy",
+      "impressum": "Imprint"
+    }
+  },
   "energyCommunity": {
     "hero": {
       "badge": "Save on your energy bills",
