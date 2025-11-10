@@ -195,5 +195,203 @@
       "button": "Jetzt beitreten",
       "guarantee": "Jederzeit kündbar • Keine langfristigen Verträge • 100% erneuerbare Energie"
     }
+  },
+  "vetcall": {
+    "meta": {
+      "title": "VetCall AI – 24/7 Telefonassistent für Tierarztpraxen in Österreich",
+      "description": "Weniger Telefonstress, mehr Zeit für Patienten. VetCall AI nimmt Anrufe entgegen, beantwortet FAQs und bucht Termine – auch am Wochenende. GDPR-konform, 14 Tage kostenlos testen."
+    },
+    "hero": {
+      "title": "24/7 Telefonassistent für Ihre Tierarztpraxis",
+      "subtitle": "Weniger Telefonstress, mehr Zeit für Patienten: VetCall AI nimmt Anrufe entgegen, beantwortet häufige Fragen und bucht Termine – auch am Wochenende.",
+      "ctaPrimary": "14 Tage kostenlos testen",
+      "ctaSecondary": "Demo buchen",
+      "trustBadge1": "Keine Nummernänderung",
+      "trustBadge2": "GDPR-konform, Hosting in der EU",
+      "trustBadge3": "Sofort startklar – in 1 Tag"
+    },
+    "pain": {
+      "title": "Zu viele Anrufe. Zu wenig Zeit.",
+      "point1": {
+        "title": "Spitzenzeiten & Wochenenden",
+        "description": "Assistent filtert Notfälle & FAQs."
+      },
+      "point2": {
+        "title": "Dauerfragen",
+        "description": "Öffnungszeiten, Preise, Impfungen: beantwortet automatisch."
+      },
+      "point3": {
+        "title": "Terminchaos",
+        "description": "Buchung/Verlegung direkt in Ihren Kalender."
+      }
+    },
+    "howItWorks": {
+      "title": "So funktioniert VetCall AI",
+      "subtitle": "In 4 einfachen Schritten",
+      "step1": {
+        "title": "Anruf eingeht",
+        "description": "VetCall AI hebt ab (auch außerhalb der Öffnungszeiten)."
+      },
+      "step2": {
+        "title": "Versteht Anliegen",
+        "description": "Notfall, Termin, FAQ."
+      },
+      "step3": {
+        "title": "Handelt",
+        "description": "Termin vorschlagen/buchen, Notdienst senden, Nachricht per WhatsApp/SMS."
+      },
+      "step4": {
+        "title": "Dokumentiert",
+        "description": "Zusammenfassung & Statistik im Dashboard."
+      }
+    },
+    "benefits": {
+      "title": "Warum VetCall AI?",
+      "subtitle": "Mehr Zeit für das, was wirklich zählt",
+      "benefit1": "−40–60 % Telefonlast an der Rezeption",
+      "benefit2": "Mehr gebuchte Termine, weniger verpasste Anrufe",
+      "benefit3": "Notdienst-Routing am Wochenende",
+      "benefit4": "Keine Nummernänderung (Call-Forwarding)",
+      "benefit5": "GDPR-konform, Daten in der EU",
+      "benefit6": "In 14 Tagen risikofrei testen"
+    },
+    "integrations": {
+      "title": "Nahtlose Integration",
+      "subtitle": "Funktioniert mit Ihren bestehenden Tools",
+      "whatsapp": "WhatsApp Business",
+      "calendar": "Google & Outlook Kalender",
+      "automation": "n8n & Make Automatisierung",
+      "voice": "11Labs Sprachqualität",
+      "notifications": "E-Mail & Webhooks"
+    },
+    "testimonials": {
+      "title": "Was Tierärzte sagen",
+      "testimonial1": {
+        "text": "VetCall AI hat unsere Telefonlast um 50% reduziert. Unser Team kann sich endlich auf die Patienten konzentrieren.",
+        "author": "Dr. Maria Schmidt",
+        "clinic": "Tierklinik Wien-Mitte"
+      },
+      "testimonial2": {
+        "text": "Die Wochenend-Notdienst-Weiterleitung ist Gold wert. Kein verpasster Notfall mehr.",
+        "author": "Dr. Thomas Müller",
+        "clinic": "Tierarzt Salzburg"
+      },
+      "testimonial3": {
+        "text": "Einfache Einrichtung, sofortige Ergebnisse. Die beste Investition für unsere Praxis.",
+        "author": "Dr. Anna Weber",
+        "clinic": "VetCare Graz"
+      }
+    },
+    "pricing": {
+      "title": "Transparente Preisgestaltung",
+      "subtitle": "Wählen Sie den Plan, der zu Ihrer Praxis passt",
+      "basic": {
+        "name": "Basic",
+        "description": "für kleine Praxen",
+        "price": "€149",
+        "period": "/Monat",
+        "feature1": "200 Min./Monat",
+        "feature2": "1 Nummer",
+        "feature3": "WhatsApp/SMS-Bestätigung",
+        "feature4": "Kalender-Integration",
+        "feature5": "E-Mail Support"
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "meist gewählt",
+        "badge": "Beliebt",
+        "price": "€349",
+        "period": "/Monat",
+        "feature1": "600 Min./Monat",
+        "feature2": "3 Nummern",
+        "feature3": "Notdienst-Routing",
+        "feature4": "Erweiterte Berichte",
+        "feature5": "Prioritäts-Support"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "mehrere Standorte",
+        "price": "Individuell",
+        "period": "",
+        "feature1": "Unbegrenzte Minuten",
+        "feature2": "Unbegrenzte Nummern",
+        "feature3": "SSO & SLA",
+        "feature4": "Custom-Integrationen",
+        "feature5": "Dedizierter Account Manager"
+      },
+      "guarantee": "14 Tage kostenlos – jederzeit kündbar"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Alles, was Sie wissen müssen",
+      "q1": {
+        "question": "Müssen wir unsere Telefonnummer ändern?",
+        "answer": "Nein. Wir starten mit Call-Forwarding. Ihre bestehende Nummer bleibt unverändert."
+      },
+      "q2": {
+        "question": "Bucht VetCall AI wirklich Termine?",
+        "answer": "Ja, über Ihren Google/Outlook-Kalender. VetCall AI prüft verfügbare Zeiten und bucht direkt."
+      },
+      "q3": {
+        "question": "Wie funktioniert Notdienst?",
+        "answer": "Anrufer erhalten den nächstgelegenen tierärztlichen Notdienst per SMS/WhatsApp, auf Wunsch verbinden wir direkt."
+      },
+      "q4": {
+        "question": "Ist das GDPR-konform?",
+        "answer": "Ja. EU-Hosting, Aufbewahrung 60–90 Tage, Auftragsverarbeitung (DPA)."
+      },
+      "q5": {
+        "question": "Gibt VetCall AI medizinische Ratschläge?",
+        "answer": "Nein. Nur Organisation & Informationen. Medizinische Beratung erfolgt durch Tierärzte."
+      },
+      "q6": {
+        "question": "Wie schnell kann ich starten?",
+        "answer": "Innerhalb von 24 Stunden nach Anmeldung. Wir richten alles für Sie ein."
+      }
+    },
+    "compliance": {
+      "title": "Datenschutz & Compliance",
+      "description": "VetCall AI ist vollständig GDPR-konform. Alle Daten werden in der EU gehostet und nach 60-90 Tagen automatisch gelöscht.",
+      "disclaimer": "Dies ist kein Notfallkanal (112/144).",
+      "linkText": "Vollständige Datenschutzerklärung"
+    },
+    "finalCta": {
+      "title": "Heute starten, morgen weniger Telefonstress.",
+      "subtitle": "Schließen Sie sich Dutzenden Tierarztpraxen in Österreich an",
+      "ctaPrimary": "14 Tage kostenlos testen",
+      "ctaSecondary": "Demo buchen"
+    },
+    "whatsappButton": "Fragen? Schreiben Sie uns.",
+    "form": {
+      "title": "Starten Sie Ihre kostenlose Testphase",
+      "subtitle": "Füllen Sie das Formular aus, und wir richten alles für Sie ein.",
+      "clinicName": "Name der Klinik",
+      "clinicNamePlaceholder": "Ihre Tierarztpraxis",
+      "contactPerson": "Kontaktperson",
+      "contactPersonPlaceholder": "Ihr Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre.email@beispiel.at",
+      "phone": "Telefon",
+      "phonePlaceholder": "+43 xxx xxx xxx",
+      "city": "Stadt/PLZ",
+      "cityPlaceholder": "Wien / 1010",
+      "preferredTime": "Bevorzugter Demo-Termin (optional)",
+      "preferredTimePlaceholder": "z.B. Montag, 14:00",
+      "message": "Nachricht (optional)",
+      "messagePlaceholder": "Ihre Fragen oder spezifische Anforderungen...",
+      "submit": "Kostenlose Testphase starten",
+      "submitting": "Wird gesendet...",
+      "successTitle": "Vielen Dank!",
+      "successMessage": "Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
+    },
+    "navigation": {
+      "home": "Start",
+      "pricing": "Preise",
+      "faq": "FAQ",
+      "contact": "Kontakt",
+      "privacy": "Datenschutz",
+      "impressum": "Impressum"
+    }
   }
 }
