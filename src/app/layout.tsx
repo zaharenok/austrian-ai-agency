@@ -1,14 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin", "cyrillic"],
-  display: 'swap',
-  fallback: ['system-ui', 'arial'],
-  adjustFontFallback: true,
-});
 
 export const metadata: Metadata = {
   title: "Austrian AI Agency",
@@ -38,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className="scroll-smooth h-full">
-      <body className={`${inter.className} flex flex-col min-h-full`} suppressHydrationWarning>
+      <body className="flex flex-col min-h-full font-sans" suppressHydrationWarning>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8R5FZBELK9"
           strategy="afterInteractive"
