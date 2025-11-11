@@ -63,12 +63,13 @@ export function VetFAQ() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-4" suppressHydrationWarning>
             {faqs.map((faq, index) => (
               <AccordionItem
-                key={index}
-                value={`item-${index}`}
+                key={`faq-q${index + 1}`}
+                value={`faq-q${index + 1}`}
                 className="border-2 border-gray-200 dark:border-gray-700 rounded-lg px-6 hover:border-vet-emerald-500 transition-colors"
+                suppressHydrationWarning
               >
                 <AccordionTrigger className="text-left font-semibold text-gray-900 dark:text-white hover:no-underline">
                   {faq.question}
