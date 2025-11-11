@@ -228,7 +228,7 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-vet-emerald-600 to-vet-teal-600 hover:from-vet-emerald-700 hover:to-vet-teal-700"
+            className="w-full bg-vet-emerald-500 hover:bg-vet-emerald-600 text-white font-semibold text-lg py-6 shadow-lg hover:shadow-xl transition-all"
           >
             {isSubmitting ? t('vetcall.form.submitting') : t('vetcall.form.submit')}
           </Button>
