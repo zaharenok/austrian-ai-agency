@@ -52,9 +52,8 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
         });
       }
 
-      // Send to webhook (replace with actual webhook URL)
-      const webhookUrl = process.env.NEXT_PUBLIC_VETCALL_WEBHOOK_URL ||
-        'https://n8n.aaagency.at/webhook/vetcall-leads';
+      // Send to webhook
+      const webhookUrl = 'https://n8n.aaagency.at/webhook/9744657d-962b-4eb9-848e-695ac662cebf';
 
       const response = await fetch(webhookUrl, {
         method: 'POST',
@@ -120,12 +119,12 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-900">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">
+          <DialogTitle className="text-2xl font-bold text-gray-900 dark:text-white">
             {t('vetcall.form.title')}
           </DialogTitle>
-          <DialogDescription>
+          <DialogDescription className="text-gray-600 dark:text-gray-300">
             {t('vetcall.form.subtitle')}
           </DialogDescription>
         </DialogHeader>
@@ -133,7 +132,7 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="clinicName">{t('vetcall.form.clinicName')} *</Label>
+              <Label htmlFor="clinicName" className="text-gray-900 dark:text-gray-100">{t('vetcall.form.clinicName')} *</Label>
               <Input
                 id="clinicName"
                 name="clinicName"
@@ -145,7 +144,7 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="contactPerson">{t('vetcall.form.contactPerson')} *</Label>
+              <Label htmlFor="contactPerson" className="text-gray-900 dark:text-gray-100">{t('vetcall.form.contactPerson')} *</Label>
               <Input
                 id="contactPerson"
                 name="contactPerson"
@@ -159,7 +158,7 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="email">{t('vetcall.form.email')} *</Label>
+              <Label htmlFor="email" className="text-gray-900 dark:text-gray-100">{t('vetcall.form.email')} *</Label>
               <Input
                 id="email"
                 name="email"
@@ -172,7 +171,7 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="phone">{t('vetcall.form.phone')} *</Label>
+              <Label htmlFor="phone" className="text-gray-900 dark:text-gray-100">{t('vetcall.form.phone')} *</Label>
               <Input
                 id="phone"
                 name="phone"
@@ -187,7 +186,7 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="city">{t('vetcall.form.city')} *</Label>
+              <Label htmlFor="city" className="text-gray-900 dark:text-gray-100">{t('vetcall.form.city')} *</Label>
               <Input
                 id="city"
                 name="city"
@@ -199,7 +198,7 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="preferredTime">{t('vetcall.form.preferredTime')}</Label>
+              <Label htmlFor="preferredTime" className="text-gray-900 dark:text-gray-100">{t('vetcall.form.preferredTime')}</Label>
               <Input
                 id="preferredTime"
                 name="preferredTime"
@@ -211,7 +210,7 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="message">{t('vetcall.form.message')}</Label>
+            <Label htmlFor="message" className="text-gray-900 dark:text-gray-100">{t('vetcall.form.message')}</Label>
             <Textarea
               id="message"
               name="message"
