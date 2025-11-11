@@ -56,7 +56,7 @@ export function VetHeroSection() {
             </motion.p>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+              className="flex justify-center mb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -64,18 +64,10 @@ export function VetHeroSection() {
               <Button
                 size="lg"
                 onClick={() => handleCTAClick('trial')}
-                className="bg-gradient-to-r from-vet-emerald-600 to-vet-teal-600 hover:from-vet-emerald-700 hover:to-vet-teal-700 text-white text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                className="bg-vet-emerald-500 hover:bg-vet-emerald-600 text-white text-lg px-10 py-7 rounded-xl shadow-2xl hover:shadow-vet-emerald-500/50 transition-all transform hover:scale-105 ring-2 ring-vet-emerald-400 ring-offset-2"
               >
-                <Phone className="mr-2 h-5 w-5" />
+                <Phone className="mr-2 h-6 w-6" />
                 {t('vetcall.hero.ctaPrimary')}
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={() => handleCTAClick('demo')}
-                className="border-2 border-vet-emerald-600 text-vet-emerald-600 hover:bg-vet-emerald-50 dark:border-vet-emerald-400 dark:text-vet-emerald-400 text-lg px-8 py-6 rounded-xl transition-all"
-              >
-                {t('vetcall.hero.ctaSecondary')}
               </Button>
             </motion.div>
 

@@ -10,7 +10,6 @@ import { VetPricing } from '@/components/vetcall/vet-pricing';
 import { VetFAQ } from '@/components/vetcall/vet-faq';
 import { VetCompliance } from '@/components/vetcall/vet-compliance';
 import { VetFinalCTA } from '@/components/vetcall/vet-final-cta';
-import { VetWhatsAppButton } from '@/components/vetcall/vet-whatsapp-button';
 import { VetCallHeader } from '@/components/vetcall/vet-header';
 import { VetCallFooter } from '@/components/vetcall/vet-footer';
 import { VetCallJsonLd } from '@/components/vetcall/vet-json-ld';
@@ -36,7 +35,6 @@ export function VetCallClient() {
         </main>
 
         <VetCallFooter />
-        <VetWhatsAppButton />
       </div>
     </>
   );

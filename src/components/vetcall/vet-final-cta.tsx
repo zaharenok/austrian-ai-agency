@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useTranslations } from '@/context/language-context';
 import { Button } from '@/components/ui/button';
 import { VetCTAModal } from './vet-cta-modal';
-import { Phone, Calendar } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export function VetFinalCTA() {
@@ -42,23 +42,14 @@ export function VetFinalCTA() {
               {t('vetcall.finalCta.subtitle')}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button
                 size="lg"
                 onClick={() => handleCTAClick('trial')}
-                className="bg-white text-vet-emerald-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                className="bg-white text-vet-emerald-600 hover:bg-gray-50 text-lg px-10 py-7 rounded-xl shadow-2xl hover:shadow-white/50 transition-all transform hover:scale-105 ring-2 ring-white/50 ring-offset-2 ring-offset-vet-emerald-600"
               >
-                <Phone className="mr-2 h-5 w-5" />
+                <Phone className="mr-2 h-6 w-6" />
                 {t('vetcall.finalCta.ctaPrimary')}
-              </Button>
-              <Button
-                size="lg"
-                onClick={() => handleCTAClick('demo')}
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6 rounded-xl transition-all"
-              >
-                <Calendar className="mr-2 h-5 w-5" />
-                {t('vetcall.finalCta.ctaSecondary')}
               </Button>
             </div>
           </motion.div>
