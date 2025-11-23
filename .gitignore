@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -110,6 +111,9 @@ pids
 .history/
 
 # OS files
+=======
+# OS generated files
+>>>>>>> 286f77f (Initial commit: Austrian AI Agency Website)
 .DS_Store
 .DS_Store?
 ._*
@@ -117,6 +121,7 @@ pids
 .Trashes
 ehthumbs.db
 Thumbs.db
+<<<<<<< HEAD
 [Dd]esktop.ini
 $RECYCLE.BIN/
 
@@ -143,3 +148,28 @@ ecosystem.config.js
 temp/
 tmp/
 cache/
+=======
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache directories
+.cache/
+node_modules/
+dist/
+build/
+>>>>>>> 286f77f (Initial commit: Austrian AI Agency Website)

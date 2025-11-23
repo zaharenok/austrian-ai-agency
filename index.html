@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austrian AI Agency - KI-Lösungen für DACH-Unternehmen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <button class="language-toggle" id="languageToggle">
+                <span id="currentLang">DE</span>
+                <span class="material-icons arrow">expand_more</span>
+            </button>
+            <div class="language-options" id="languageOptions">
+                <button class="lang-option active" data-lang="de">DE</button>
+                <button class="lang-option" data-lang="ru">RU</button>
+                <button class="lang-option" data-lang="en">EN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>Austrian AI Agency</h3>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#start" class="nav-link" data-i18n="nav.start">Start</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-i18n="nav.about">Über mich</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#results" class="nav-link" data-i18n="nav.results">Ergebnisse</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link" data-i18n="nav.services">Leistungen</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#process" class="nav-link" data-i18n="nav.process">Ablauf</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Kontakt</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="start" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">
+                    Ihr KI-Partner für messbares Wachstum im DACH-Raum
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Wir helfen Unternehmen in Deutschland, Österreich und der Schweiz, durch gezielten KI-Einsatz 40% Kosten zu senken, 25% Umsatz zu steigern und Entscheidungen 10x schneller zu treffen.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')" data-i18n="hero.cta1">
+                        Kostenloses Erstgespräch buchen
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')" data-i18n="hero.cta2">
+                        Projektanfrage senden
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="ai-illustration">
+                    <div class="ai-circle"></div>
+                    <div class="ai-circle"></div>
+                    <div class="ai-circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">Wer wir sind</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro" data-i18n="about.intro">
+                        Wir sind die Austrian AI Agency – Ihr KI-Partner für messbares Wachstum im DACH-Mittelstand.
+                    </p>
+                    <p data-i18n="about.description1">
+                        Mit offizieller Unternehmensberater-Lizenz in Österreich und nachgewiesenen Ergebnissen verstehen wir sowohl die technischen Möglichkeiten als auch die geschäftlichen Anforderungen von Unternehmen im DACH-Raum.
+                    </p>
+                    <p data-i18n="about.description2">
+                        Unsere Mission: Komplexe KI-Lösungen in messbare Geschäftserfolge umwandeln – 40% Kostensenkung, 25% Umsatzsteigerung und 10x schnellere Entscheidungen.
+                    </p>
+                </div>
+                <div class="about-credentials">
+                    <div class="credential-item">
+                        <span class="material-icons">verified</span>
+                        <div>
+                            <strong data-i18n="about.license_title">Offiziell lizenzierter Unternehmensberater</strong>
+                            <span data-i18n="about.license_desc">Gewerbeberechtigung in Österreich</span>
+                        </div>
+                    </div>
+                    <div class="credential-item">
+                        <span class="material-icons">public</span>
+                        <div>
+                            <strong data-i18n="about.focus_title">Fokus auf DACH-Markt</strong>
+                            <span data-i18n="about.focus_desc">Lokale Expertise & kulturelles Verständnis</span>
+                        </div>
+                    </div>
+                    <div class="credential-item">
+                        <span class="material-icons">psychology</span>
+                        <div>
+                            <strong data-i18n="about.expertise_title">Tiefe Praxis-Erfahrung</strong>
+                            <span data-i18n="about.expertise_desc">OpenAI, Claude, Gemini & mehr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section section-bg">
+        <div class="container">
+            <h2 class="section-title" data-i18n="results.title">Welche Ergebnisse Sie von der KI-Implementierung erwarten können</h2>
+            <div class="results-grid">
+                <div class="result-card card">
+                    <div class="card-icon">
+                        <span class="material-icons">savings</span>
+                    </div>
+                    <h3 class="card-title" data-i18n="results.costs.title">Bis zu 40% Kostensenkung durch Automatisierung</h3>
+                    <p class="card-description" data-i18n="results.costs.description">
+                        Eliminieren Sie manuelle Routine: Antragsbearbeitung, Dateneingabe, Antworten auf Standardfragen, Dokumentenerstellung. Mitarbeiter gewinnen 20–40% Zeit zurück und konzentrieren sich auf profitable Aufgaben.
+                    </p>
+                </div>
+                <div class="result-card card">
+                    <div class="card-icon">
+                        <span class="material-icons">trending_up</span>
+                    </div>
+                    <h3 class="card-title" data-i18n="results.revenue.title">Bis zu 25% Umsatzwachstum durch KI-Marketing</h3>
+                    <p class="card-description" data-i18n="results.revenue.description">
+                        Personalisierte Kundenansprache, prädiktive Lead-Qualifizierung und automatisierte Vertriebsprozesse. Konvertierungssteigerung von 3% auf 12% innerhalb von 90 Tagen.
+                    </p>
+                </div>
+                <div class="service-card card">
+                    <div class="card-icon">
+                        <span class="material-icons">speed</span>
+                    </div>
+                    <h3 class="card-title" data-i18n="services.decisions.title">10x schnellere Entscheidungsfindung</h3>
+                    <p class="card-description" data-i18n="services.decisions.description">
+                        Realtime-Dashboards, automatisierte Marktanalyse und prädiktive Business-Intelligence. Keine monatelangen Reports mehr – Entscheidungen auf Knopfdruck in Minuten statt Wochen.
+                    </p>
+                </div>
+                <div class="service-card card">
+                    <div class="card-icon">
+                        <span class="material-icons">lightbulb</span>
+                    </div>
+                    <h3 class="card-title" data-i18n="services.innovation.title">3x schnellere Produktentwicklung</h3>
+                    <p class="card-description" data-i18n="services.innovation.description">
+                        KI-gestützte Ideenfindung, automatisierte Prototypen-Erstellung und Marktanalyse. Launch neuer Produkte in 3 Monaten statt 9 bei doppelter Erfolgsquote.
+                    </p>
+                </div>
+                <div class="service-card card">
+                    <div class="card-icon">
+                        <span class="material-icons">support_agent</span>
+                    </div>
+                    <h3 class="card-title" data-i18n="services.service.title">24/7 Premium-Kundenservice</h3>
+                    <p class="card-description" data-i18n="services.service.description">
+                        Intelligente Chatbots, automatisierte Ticketverteilung und proaktives Kundenmanagement. 80% der Anfragen automatisch lösen, Kunden satisfaction um 45% steigern.
+                    </p>
+                </div>
+                <div class="service-card card">
+                    <div class="card-icon">
+                        <span class="material-icons">gpp_good</span>
+                    </div>
+                    <h3 class="card-title" data-i18n="services.compliance.title">100% DSGVO-Konformität & Risikominimierung</h3>
+                    <p class="card-description" data-i18n="services.compliance.description">
+                        Automatisierte Compliance-Prüfungen, Dokumentation und Risiko-Monitoring. Vermeiden Sie 250.000 € Bußgelder und schützen Sie Ihre Reputation proaktiv.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Me Section -->
+    <section id="why" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="why.title">Warum mit mir</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">
+                        <span class="material-icons">verified_user</span>
+                    </div>
+                    <h3 data-i18n="why.license.title">Offiziell lizenzierter Unternehmensberater</h3>
+                    <p data-i18n="why.license.description">Kein „IT-Träumer" – sondern zertifizierter Berater mit rechtlicher Grundlage für professionelle Beratungstätigkeit in Österreich.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <span class="material-icons">location_city</span>
+                    </div>
+                    <h3 data-i18n="why.local.title">Fokus auf DACH-Markt und lokale Besonderheiten</h3>
+                    <p data-i18n="why.local.description">Ich verstehe die mentalen Modelle, Geschäftspraktiken und regulatorischen Anforderungen im deutschsprachigen Raum.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <span class="material-icons">code</span>
+                    </div>
+                    <h3 data-i18n="why.tech.title">Tiefe Praxis mit OpenAI, Anthropic Claude, Google Gemini</h3>
+                    <p data-i18n="why.tech.description">Hands-on Erfahrung mit allen führenden KI-Plattformen – von der API-Integration bis zur Fine-Tuning von Modellen.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <span class="material-icons">business_center</span>
+                    </div>
+                    <h3 data-i18n="why.business.title">Kombination aus Technik- und Business-Know-how</h3>
+                    <p data-i18n="why.business.description">Ich spreche sowohl die Sprache der Entwickler als auch die der Geschäftsführung – übersetze technisches Potenzial in business value.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <span class="material-icons">stars</span>
+                    </div>
+                    <h3 data-i18n="why.premium.title">Premium-Ansatz: wenige Kunden, hoher Impact</h3>
+                    <p data-i18n="why.premium.description">Ich arbeite gezielt mit einer ausgewählten Anzahl an Kunden, um maximale Wirkung und nachhaltige Ergebnisse zu erzielen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section section-bg">
+        <div class="container">
+            <h2 class="section-title" data-i18n="process.title">So läuft unsere Zusammenarbeit ab</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-i18n="process.step1.title">Analyse & Zielbild</h3>
+                        <p data-i18n="process.step1.description">
+                            60–90-minütiges Erstgespräch, Prozess-Audit, Definition konkreter Ziele und Erwartungen. Gemeinsam erarbeiten wir ein klares Bild vom Ist-Zustand und den gewünschten Zielen.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-i18n="process.step2.title">Prototyp & Tests</h3>
+                        <p data-i18n="process.step2.description">
+                            Schnelle Entwicklung von KI-Prototypen und gezielte Experimente innerhalb von 2–4 Wochen. Wir testen Hypothesen mit minimalem Risiko und maximalem Lerneffekt.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-i18n="process.step3.title">Rollout & Begleitung</h3>
+                        <p data-i18n="process.step3.description">
+                            Skalierung erfolgreicher Lösungen, Implementierung in den produktiven Betrieb, Schulung Ihres Teams und kontinuierliche Optimierung der KI-Systeme.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section id="proof" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="proof.title">Ausgewählte Kunden & Projekte</h2>
+            <div class="proof-content">
+                <p class="proof-text" data-i18n="proof.description">
+                    Ich arbeite mit einer ausgewählten Kundengruppe aus verschiedenen Branchen im DACH-Raum zusammen. Hier eine kleine Auswahl erfolgreicher Kooperationen (Detailed Case Studies folgen in Kürze):
+                </p>
+                <div class="case-placeholders">
+                    <div class="case-placeholder">
+                        <div class="placeholder-icon">
+                            <span class="material-icons">business</span>
+                        </div>
+                        <h4 data-i18n="proof.case1.title">Mittelständisches Produktionsunternehmen</h4>
+                        <p data-i18n="proof.case1.description">KI-gestützte Qualitätskontrolle und vorausschauende Wartung</p>
+                    </div>
+                    <div class="case-placeholder">
+                        <div class="placeholder-icon">
+                            <span class="material-icons">account_balance</span>
+                        </div>
+                        <h4 data-i18n="proof.case2.title">Finanzdienstleister</h4>
+                        <p data-i18n="proof.case2.description">Automatisierung von Dokumenten-Verarbeitung und Risiko-Analyse</p>
+                    </div>
+                    <div class="case-placeholder">
+                        <div class="placeholder-icon">
+                            <span class="material-icons">shopping_cart</span>
+                        </div>
+                        <h4 data-i18n="proof.case3.title">E-Commerce Unternehmen</h4>
+                        <p data-i18n="proof.case3.description">KI-optimierter Kundenservice und personalisierte Produkt-Empfehlungen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Bereit, KI in Ihrem Unternehmen wirklich zu nutzen?</h2>
+            <p class="contact-subtitle" data-i18n="contact.subtitle">
+                Lernen Sie sich in einem kostenlosen 30-minütigen Strategie-Call kennen und entdecken Sie das KI-Potenzial für Ihr Unternehmen.
+            </p>
+
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.name_label">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" data-i18n="contact.company_label">Unternehmen *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.email_label">E-Mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="challenge" data-i18n="contact.challenge_label">Ihre Herausforderung (kurz beschrieben)</label>
+                            <textarea id="challenge" name="challenge" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.submit">
+                            Strategie-Call anfragen
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="material-icons">email</span>
+                        <div>
+                            <strong data-i18n="contact.email_title">E-Mail</strong>
+                            <a href="mailto:oleg@zakharchenko.at">oleg@zakharchenko.at</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="material-icons">phone</span>
+                        <div>
+                            <strong data-i18n="contact.phone_title">Telefon</strong>
+                            <a href="tel:+4367761234567">+43 677 61234567</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="material-icons">location_on</span>
+                        <div>
+                            <strong data-i18n="contact.location_title">Standort</strong>
+                            <span data-i18n="contact.location_value">Wien, Österreich</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="material-icons">language</span>
+                        <div>
+                            <strong data-i18n="contact.languages_title">Sprachen</strong>
+                            <span data-i18n="contact.languages_value">Deutsch, Englisch, Russisch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Oleg Zakharchenko. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/zakharchenko" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <span class="material-icons">business</span>
+                    </a>
+                    <a href="https://github.com/zaharenok" target="_blank" rel="noopener" aria-label="GitHub">
+                        <span class="material-icons">code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
