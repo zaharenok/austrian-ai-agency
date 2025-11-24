@@ -169,7 +169,8 @@ const translations = {
         // Navigation
         nav: {
             start: "Главная",
-            about: "Обо мне",
+            about: "О нас",
+            results: "Результаты",
             services: "Услуги",
             process: "Процесс",
             contact: "Контакты"
@@ -193,6 +194,34 @@ const translations = {
             focus_desc: "Локальная экспертиза и культурное понимание",
             expertise_title: "Глубокий практический опыт",
             expertise_desc: "OpenAI, Claude, Gemini и многое другое"
+        },
+        // Results Section
+        results: {
+            title: "Какие результаты вы можете ожидать от внедрения ИИ",
+            costs: {
+                title: "До 40% снижения затрат за счет автоматизации",
+                description: "Устраните ручную рутину: обработку заявок, ввод данных, ответы на стандартные вопросы, создание документов. Сотрудники возвращают 20–40% времени и концентрируются на прибыльных задачах."
+            },
+            revenue: {
+                title: "До 25% роста выручки за счет ИИ-маркетинга",
+                description: "Персонализированные письма и сообщения, приоритизация лидов с ИИ, автоматизированные процессы продаж. Цель: рост конверсии с 3% до 8–12% в ключевых областях воронки."
+            },
+            decisions: {
+                title: "10x быстрее управленческие решения",
+                description: "Дашборды в реальном времени, автоматизированный анализ рынка и данных клиентов, предиктивный анализ выручки и рисков. Ответы за минуты вместо недель, более быстрая реакция на изменения рынка."
+            },
+            products: {
+                title: "2–3x быстрее запуск продуктов",
+                description: "Поддерживаемая ИИ генерация идей, анализ спроса, презентации и лендинги, быстрое прототипирование. Наша цель: тестировать новые продукты за 2–3 месяца вместо 6–9."
+            },
+            service: {
+                title: "24/7 клиентский сервис без роста штата",
+                description: "Интеллектуальные чат-боты и ассистенты автоматически решают 70–80% стандартных запросов, снижают нагрузку на команду и заметно повышают удовлетворенность клиентов."
+            },
+            compliance: {
+                title: "100% фокус на GDPR и минимизация рисков",
+                description: "Разработка решений с учетом GDPR: минимизация данных, контроль доступа, ведение журналов. Минимизация юридических рисков и защита репутации вашей компании."
+            }
         },
         // Services Section
         services: {
@@ -304,7 +333,8 @@ const translations = {
         // Navigation
         nav: {
             start: "Home",
-            about: "About Me",
+            about: "About Us",
+            results: "Results",
             services: "Services",
             process: "Process",
             contact: "Contact"
@@ -328,6 +358,34 @@ const translations = {
             focus_desc: "Local expertise & cultural understanding",
             expertise_title: "Deep Practical Experience",
             expertise_desc: "OpenAI, Claude, Gemini & more"
+        },
+        // Results Section
+        results: {
+            title: "What Results You Can Expect from AI Implementation",
+            costs: {
+                title: "Up to 40% Cost Reduction through Automation",
+                description: "Eliminate manual routine: application processing, data entry, standard question responses, document creation. Employees regain 20–40% of time and focus on profitable tasks."
+            },
+            revenue: {
+                title: "Up to 25% Revenue Growth through AI Marketing",
+                description: "Personalized emails and messages, AI-powered lead prioritization, automated sales processes. Goal: increase conversion from 3% to 8–12% in key pipeline areas."
+            },
+            decisions: {
+                title: "10x Faster Management Decisions",
+                description: "Real-time dashboards, automated market and customer data analysis, predictive revenue and risk analysis. Answers in minutes instead of weeks, faster reaction to market changes."
+            },
+            products: {
+                title: "2–3x Faster Product Launches",
+                description: "AI-powered idea generation, demand analysis, presentations and landing pages, rapid prototyping. Our goal: test new products in 2–3 months instead of 6–9."
+            },
+            service: {
+                title: "24/7 Customer Service without Staff Growth",
+                description: "Intelligent chatbots and assistants automatically resolve 70–80% of standard requests, reducing team workload and significantly increasing customer satisfaction."
+            },
+            compliance: {
+                title: "100% GDPR Focus and Risk Minimization",
+                description: "GDPR-compliant solution development: data minimization, access control, logging. Minimize legal risks and protect your company's reputation."
+            }
         },
         // Services Section
         services: {
