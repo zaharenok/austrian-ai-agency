@@ -12,6 +12,7 @@ import {
 import { ChatMessageList } from "@/components/ui/chat-message-list";
 import { useAutoScroll } from "@/components/hooks/use-auto-scroll";
 import { useTranslations } from "@/context/language-context";
+import { trackLead, trackContact } from "@/hooks/use-meta-pixel";
 
 const N8N_WEBHOOK_URL = "https://n8n.aaagency.at/webhook/1eac4cc6-3cc6-4455-b740-73cd625f87e0";
 const PROXY_API_URL = "/api/chat";
@@ -44,6 +45,15 @@ function sanitizeMessage(value: string): string {
   }
 
   return sanitized;
+}
+
+// Detect if message contains lead information (email, phone)
+function detectLead(message: string): boolean {
+  const emailPattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
+  const phonePattern = /(\+?\d{1,3}[-.\s]?)?\(?\d{2,4}\)?[-.\s]?\d{2,4}[-.\s]?\d{2,9}/;
+  const whatsappPattern = /whatsapp|telegram|viber/i;
+
+  return emailPattern.test(message) || phonePattern.test(message) || whatsappPattern.test(message);
 }
 
 export function ContactClient() {
@@ -112,6 +122,13 @@ export function ContactClient() {
           animated: true,
         },
       ]);
+
+      // Track Meta Pixel events
+      const isLead = detectLead(sanitizedMessage);
+      if (isLead) {
+        trackLead('Chat Contact');
+      }
+      trackContact('Chat Message');
 
       setIsLoading(true);
       setIsWaiting(true);

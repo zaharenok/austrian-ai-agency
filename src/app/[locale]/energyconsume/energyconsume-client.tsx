@@ -4,15 +4,27 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import { SiteFooter } from "@/components/ui/site-footer";
 import { useTranslations } from "@/context/language-context";
 import { useScrollBoundary } from "@/hooks/use-scroll-boundary";
+import { trackLead, trackContact } from "@/hooks/use-meta-pixel";
 import { Zap, TrendingDown, Eye, Leaf, DollarSign, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export function EnergyConsumeClient() {
-  const { t } = useTranslations();
+  const { t, locale } = useTranslations();
   const scrollBoundaryRef = useScrollBoundary();
 
   const handleJoinClick = () => {
+    // Track lead generation when user clicks to join
+    trackLead("Energy Community - Join Button");
+
+    // Also track as custom event for specific campaign tracking
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("trackCustom", "EnergyCommunityClick", {
+        locale,
+        timestamp: new Date().toISOString()
+      });
+    }
+
     window.open("https://bit.ly/48RaD2q", "_blank");
   };
 

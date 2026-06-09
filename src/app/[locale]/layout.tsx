@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import '../globals.css';
 import { TranslationsProvider } from '@/context/language-context';
 import { MainHeader } from '@/components/ui/main-header';
+import { MetaPixelTracker } from '@/components/ui/meta-pixel-tracker';
 
 export const metadata: Metadata = {
   title: 'Austrian AI Agency',
@@ -33,6 +34,7 @@ export default async function LocaleLayout({
 
   return (
     <TranslationsProvider locale={locale as 'en' | 'de' | 'ru'} translations={translations}>
+      <MetaPixelTracker />
       <div className="flex flex-col min-h-[100dvh]">
         <MainHeader />
         <main className="flex-1 flex flex-col">
