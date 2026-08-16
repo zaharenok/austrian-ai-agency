@@ -33,6 +33,12 @@ export function SiteFooter() {
             <Link href={`/${locale}/contact`} className="hover:text-primary">
               {t("navigation.contact")}
             </Link>
+            <Link href={`/${locale}/impressum`} className="hover:text-primary">
+              Impressum
+            </Link>
+            <Link href={`/${locale}/datenschutz`} className="hover:text-primary">
+              Datenschutzerklärung
+            </Link>
           </div>
         </div>
       </div>

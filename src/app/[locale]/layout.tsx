@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import '../globals.css';
 import { TranslationsProvider } from '@/context/language-context';
 import { MainHeader } from '@/components/ui/main-header';
+import { ConsentBanner } from '@/components/ui/consent-banner';
 
 export const metadata: Metadata = {
   title: 'Austrian AI Agency',
@@ -39,6 +40,7 @@ export default async function LocaleLayout({
           {children}
         </main>
       </div>
+      <ConsentBanner />
     </TranslationsProvider>
   );
 }

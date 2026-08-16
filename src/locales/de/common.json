@@ -479,5 +479,11 @@
       "submit": "Anfrage senden",
       "toast": "Danke! Wir melden uns innerhalb von 24 Stunden."
     }
+  },
+  "cookieBanner": {
+    "text": "Wir verwenden Cookies zur Analyse der Website-Nutzung (Google Analytics). Ihre Zustimmung ist jederzeit widerrufbar. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen",
+    "privacy": "Datenschutzerklärung"
   }
 }

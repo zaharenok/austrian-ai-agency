@@ -479,5 +479,11 @@
       "submit": "Send request",
       "toast": "Thank you! We will get back to you within 24 hours."
     }
+  },
+  "cookieBanner": {
+    "text": "We use cookies to analyze website usage (Google Analytics). Your consent can be withdrawn at any time. For more information, see our Privacy Policy.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "privacy": "Privacy Policy"
   }
 }
