@@ -496,37 +496,69 @@
     "hero": {
       "badge": "Leistungen & Preise",
       "title": "Wählen Sie Ihr Paket",
-      "subtitle": "Transparente Preise — keine versteckten Kosten. Jedes Paket startet mit einer kostenlosen Ersteinschätzung.",
+      "subtitle": "Transparente Preise — keine versteckten Kosten. Kostenloser Website-Scan und Ersteinschätzung sind bereits inklusive.",
       "multiHint": "Sie können mehrere Pakete kombinieren — z. B. Audit + Monitoring"
+    },
+    "banner": {
+      "text": "Ihr kostenloser Website-Scan für {domain} ist bereits erledigt. Der Scan ist Teil unserer kostenlosen Ersteinschätzung — Ihr nächster Schritt: die KI-Inventur oder der vollständige Audit."
+    },
+    "recommendedLabel": "Empfohlen",
+    "trust": {
+      "clock": "Art. 4 (KI-Kompetenz) gilt bereits seit Feb. 2025, Annex-III-Hochrisiko-Pflichten ab Dez. 2027 — wir klären, was JETZT für Sie gilt",
+      "chart": "Berichte für 40+ Recruiting-Websites erstellt",
+      "check": "Erstgespräch kostenlos — Sie zahlen erst nach Ihrem Go"
     },
     "packages": [
       {
-        "name": "Compliance-Check",
+        "name": "KI-Inventur & Risiko-Einstufung",
         "price": "€699",
         "period": "einmalig",
-        "desc": "Website-Scan, Bericht, Priorisierung",
-        "features": []
+        "desc": "Alle KI-Systeme erfassen (ATS, Sourcing, ChatGPT-Nutzung) und nach EU AI Act einstufen",
+        "features": [
+          "Inventar aller KI-Tools & Prozesse",
+          "Einstufung: verboten / Hochrisiko / begrenzt / minimal",
+          "Kurzbericht mit Sofortmaßnahmen",
+          "60-Minuten-Besprechung"
+        ]
       },
       {
-        "name": "Vollständiger Audit",
+        "name": "AI Act Readiness Audit",
         "price": "€1.900",
         "period": "einmalig",
-        "desc": "Alle Prozesse (ATS, KI-Screening), Maßnahmenkatalog",
-        "features": []
-      },
-      {
-        "name": "Compliance-Monitoring",
-        "price": "€290",
-        "period": "/Monat",
-        "desc": "Laufende Prüfung, Updates bei Gesetzesänderungen",
-        "features": []
+        "desc": "Tiefenprüfung aller Prozesse (ATS, KI-Screening) mit Maßnahmenkatalog",
+        "recommended": true,
+        "features": [
+          "Alles aus der KI-Inventur",
+          "Gap-Analyse nach Art. 9–14, 49, 50",
+          "Maßnahmenkatalog mit Prioritäten",
+          "KI-Inventur (€699) wird vollständig angerechnet"
+        ]
       },
       {
         "name": "Umsetzung + Schulung",
         "price": "€3.500",
         "period": "einmalig",
-        "desc": "Änderungen umsetzen, Team schulen, DPO-Übergabe",
-        "features": []
+        "desc": "Maßnahmen umsetzen, Team schulen, Übergabe an DPO",
+        "features": [
+          "Technische Dokumentation (Art. 11)",
+          "Transparenz & menschliche Aufsicht (Art. 13/14)",
+          "Schulung zur KI-Kompetenz (Art. 4)",
+          "Übergabe an DPO / Rechtsberatung"
+        ]
+      },
+      {
+        "name": "AI-Register + Monitoring",
+        "price": "€290",
+        "period": "/Monat",
+        "monthly": true,
+        "desc": "AI-Register führen, jährlich neu bewerten, bei Gesetzesänderungen informieren",
+        "features": [
+          "Führung des AI-Registers (Art. 49)",
+          "Jährliche Neu-Bewertung der KI-Systeme",
+          "Updates bei Gesetzesänderungen",
+          "Hotline bei Vorfällen",
+          "Jahresabo: 12 Monate zum Preis von 10"
+        ]
       }
     ],
     "form": {
@@ -536,8 +568,10 @@
       "email": "E-Mail",
       "packageLabel": "Paket",
       "submit": "Bestellung abschicken",
+      "submitting": "Wird gesendet…",
       "agb": "Ich akzeptiere die AGB",
-      "success": "Vielen Dank! Ihre Anfrage wurde gesendet.",
+      "successWebhook": "Vielen Dank! Ihre Bestellung ist eingegangen — Sie erhalten die Rechnung innerhalb von 24 Stunden.",
+      "successMailto": "Vielen Dank! Ihr E-Mail-Programm wurde mit der vorbereiteten Bestellung geöffnet — bitte senden Sie die E-Mail ab.",
       "agbLink": "Allgemeine Geschäftsbedingungen ansehen",
       "ref": "Ihre Referenz"
     }

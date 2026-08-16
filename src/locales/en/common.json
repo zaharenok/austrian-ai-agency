@@ -491,42 +491,74 @@
   "kiPakete": {
     "meta": {
       "title": "Our Packages",
-      "description": "AI Act compliance for recruiting & HR Tech — packages and pricing"
+      "description": "EU AI Act compliance for recruiting & HR Tech — packages and pricing"
     },
     "hero": {
       "badge": "Services & Pricing",
       "title": "Choose your package",
-      "subtitle": "Transparent pricing — no hidden costs. Every package starts with a free assessment.",
+      "subtitle": "Transparent pricing — no hidden costs. Your free website scan and initial assessment are already included.",
       "multiHint": "You can combine several packages — e.g. Audit + Monitoring"
+    },
+    "banner": {
+      "text": "Your free website scan for {domain} is already done. The scan is part of our free initial assessment — your next step: the AI Inventory or the full Audit."
+    },
+    "recommendedLabel": "Recommended",
+    "trust": {
+      "clock": "Art. 4 (AI literacy) already applies since Feb 2025, Annex III high-risk duties from Dec 2027 — we clarify what applies to you NOW",
+      "chart": "Reports created for 40+ recruiting websites",
+      "check": "Free initial call — you only pay after your go"
     },
     "packages": [
       {
-        "name": "Compliance-Check",
+        "name": "AI Inventory & Risk Classification",
         "price": "€699",
         "period": "one-time",
-        "desc": "Website-Scan, Bericht, Priorisierung",
-        "features": []
+        "desc": "Map every AI system (ATS, sourcing, ChatGPT use) and classify it under the EU AI Act",
+        "features": [
+          "Inventory of all AI tools & processes",
+          "Classification: prohibited / high-risk / limited / minimal",
+          "Summary report with immediate actions",
+          "60-minute review call"
+        ]
       },
       {
-        "name": "Vollständiger Audit",
+        "name": "AI Act Readiness Audit",
         "price": "€1.900",
         "period": "one-time",
-        "desc": "Alle Prozesse (ATS, KI-Screening), Maßnahmenkatalog",
-        "features": []
+        "desc": "Deep audit of all processes (ATS, AI screening) with an action plan",
+        "recommended": true,
+        "features": [
+          "Everything from the AI Inventory",
+          "Gap analysis vs Art. 9–14, 49, 50",
+          "Prioritised action plan",
+          "AI Inventory (€699) fully credited"
+        ]
       },
       {
-        "name": "Compliance-Monitoring",
-        "price": "€290",
-        "period": "/month",
-        "desc": "Laufende Prüfung, Updates bei Gesetzesänderungen",
-        "features": []
-      },
-      {
-        "name": "Umsetzung + Schulung",
+        "name": "Implementation + Training",
         "price": "€3.500",
         "period": "one-time",
-        "desc": "Änderungen umsetzen, Team schulen, DPO-Übergabe",
-        "features": []
+        "desc": "Implement measures, train your team, handover to DPO",
+        "features": [
+          "Technical documentation (Art. 11)",
+          "Transparency & human oversight (Art. 13/14)",
+          "AI literacy training (Art. 4)",
+          "Handover to your DPO / legal counsel"
+        ]
+      },
+      {
+        "name": "AI Register + Monitoring",
+        "price": "€290",
+        "period": "/month",
+        "monthly": true,
+        "desc": "Maintain your AI register, annual re-assessment, regulatory updates",
+        "features": [
+          "AI register management (Art. 49)",
+          "Annual re-assessment of your AI systems",
+          "Updates on regulatory changes",
+          "Incident hotline",
+          "Annual plan: 12 months for the price of 10"
+        ]
       }
     ],
     "form": {
@@ -536,8 +568,10 @@
       "email": "Email",
       "packageLabel": "Package",
       "submit": "Send order",
+      "submitting": "Sending…",
       "agb": "I accept the terms",
-      "success": "Thank you! Your request has been sent.",
+      "successWebhook": "Thank you! Your order has been received — you will get the invoice within 24 hours.",
+      "successMailto": "Thank you! Your email program has opened with a ready-made order — please hit send.",
       "agbLink": "View Terms and Conditions",
       "ref": "Your reference"
     }
