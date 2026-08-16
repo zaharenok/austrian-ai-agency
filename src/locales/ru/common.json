@@ -487,5 +487,56 @@
     "accept": "Принять",
     "decline": "Отклонить",
     "privacy": "Политика конфиденциальности"
+  },
+  "pakete": {
+    "meta": {
+      "title": "Наши пакеты",
+      "description": "AI Act комплаенс для рекрутинга и HR-Tech — пакеты и цены"
+    },
+    "hero": {
+      "badge": "Услуги и цены",
+      "title": "Выберите пакет",
+      "subtitle": "Прозрачные цены — без скрытых расходов. Каждый пакет начинается с бесплатной оценки."
+    },
+    "packages": [
+      {
+        "name": "Compliance-Check",
+        "price": "€699",
+        "period": "разово",
+        "desc": "Website-Scan, Bericht, Priorisierung",
+        "features": []
+      },
+      {
+        "name": "Vollständiger Audit",
+        "price": "€1.900",
+        "period": "разово",
+        "desc": "Alle Prozesse (ATS, KI-Screening), Maßnahmenkatalog",
+        "features": []
+      },
+      {
+        "name": "Compliance-Monitoring",
+        "price": "€290",
+        "period": "/мес",
+        "desc": "Laufende Prüfung, Updates bei Gesetzesänderungen",
+        "features": []
+      },
+      {
+        "name": "Umsetzung + Schulung",
+        "price": "€3.500",
+        "period": "разово",
+        "desc": "Änderungen umsetzen, Team schulen, DPO-Übergabe",
+        "features": []
+      }
+    ],
+    "form": {
+      "title": "Заказать пакет",
+      "name": "Ваше имя",
+      "company": "Компания",
+      "email": "E-mail",
+      "packageLabel": "Пакет",
+      "submit": "Отправить заказ",
+      "agb": "Принимаю условия",
+      "success": "Спасибо! Ваш запрос отправлен."
+    }
   }
 }
