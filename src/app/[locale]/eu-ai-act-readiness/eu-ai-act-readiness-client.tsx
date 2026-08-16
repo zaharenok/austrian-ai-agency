@@ -26,12 +26,32 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function EuAiActReadinessClient() {
   const { t } = useTranslations();
   const scrollBoundaryRef = useScrollBoundary();
   const [formSent, setFormSent] = useState(false);
+
+  // Страница рассчитана на тёмную тему (aurora-фон + светлые карточки).
+  // Принудительно включаем dark на время просмотра, чтобы дизайн не разваливался
+  // на устройствах со светлой темой. MutationObserver перехватывает попытки
+  // ThemeToggle убрать класс (layout монтируется раньше и применяет тему после).
+  useEffect(() => {
+    const root = document.documentElement;
+    const hadDark = root.classList.contains("dark");
+    root.classList.add("dark");
+
+    const observer = new MutationObserver(() => {
+      if (!root.classList.contains("dark")) root.classList.add("dark");
+    });
+    observer.observe(root, { attributes: true, attributeFilter: ["class"] });
+
+    return () => {
+      observer.disconnect();
+      if (!hadDark) root.classList.remove("dark");
+    };
+  }, []);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
