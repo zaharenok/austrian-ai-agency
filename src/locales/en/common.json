@@ -60,7 +60,9 @@
     "contacts": "Contacts",
     "address": "Address",
     "vienna": "Vienna, Austria",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "impressum": "Imprint",
+    "datenschutz": "Privacy Policy"
   },
   "contactForm": {
     "title": "Get in touch",

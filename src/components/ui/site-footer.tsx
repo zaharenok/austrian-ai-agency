@@ -34,10 +34,10 @@ export function SiteFooter() {
               {t("navigation.contact")}
             </Link>
             <Link href={`/${locale}/impressum`} className="hover:text-primary">
-              Impressum
+              {t("footer.impressum")}
             </Link>
             <Link href={`/${locale}/datenschutz`} className="hover:text-primary">
-              Datenschutzerklärung
+              {t("footer.datenschutz")}
             </Link>
           </div>
         </div>
