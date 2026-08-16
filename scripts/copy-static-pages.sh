@@ -22,6 +22,12 @@ cp .next/server/app/en/energyconsume.html out/en/energyconsume/index.html
 cp .next/server/app/de/energyconsume.html out/de/energyconsume/index.html
 cp .next/server/app/ru/energyconsume.html out/ru/energyconsume/index.html
 
+# Copy eu-ai-act-readiness pages
+mkdir -p out/en/eu-ai-act-readiness out/de/eu-ai-act-readiness out/ru/eu-ai-act-readiness
+cp .next/server/app/en/eu-ai-act-readiness.html out/en/eu-ai-act-readiness/index.html
+cp .next/server/app/de/eu-ai-act-readiness.html out/de/eu-ai-act-readiness/index.html
+cp .next/server/app/ru/eu-ai-act-readiness.html out/ru/eu-ai-act-readiness/index.html
+
 # Copy vet pages (main landing)
 mkdir -p out/en/vet out/de/vet out/ru/vet
 cp .next/server/app/en/vet.html out/en/vet/index.html

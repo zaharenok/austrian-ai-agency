@@ -393,5 +393,90 @@
       "privacy": "Datenschutz",
       "impressum": "Impressum"
     }
+  },
+  "euAiActReadiness": {
+    "meta": {
+      "title": "EU AI Act Readiness Check für Recruiting & HR-Tech",
+      "description": "Schützen Sie Ihr Business vor regulatorischen Risiken und bleiben Sie wettbewerbsfähig im DACH-Markt."
+    },
+    "hero": {
+      "badge": "EU AI Act Compliance",
+      "title": "EU AI Act Readiness Check für Recruiting & HR-Tech",
+      "subtitle": "Schützen Sie Ihr Business vor regulatorischen Risiken und bleiben Sie wettbewerbsfähig im DACH-Markt.",
+      "deadline": "⚠️ Deadline: 02.08.2026 · High-Risk AI: CV-Screening, Kandidaten-Ranking",
+      "fines": "Bußgelder bis zu 15 Mio. € oder 3% vom Umsatz",
+      "cta": "Kostenlosen Erst-Check anfordern",
+      "lawLink": "Offizieller Gesetzestext: EU AI Act (Verordnung (EU) 2024/1689) auf EUR-Lex"
+    },
+    "why": {
+      "title": "Warum jetzt handeln?",
+      "subtitle": "Die Zeit läuft – bereiten Sie sich rechtzeitig auf den EU AI Act vor",
+      "card1title": "KI-Vorauswahl = High-Risk",
+      "card1text": "Ab dem 02.08.2026 gilt KI-gestützte Bewerberauswahl offiziell als \"Hochrisiko-KI\" gemäß Annex III des EU AI Act.",
+      "card2title": "Bußgelder bis 15 Mio €",
+      "card2text": "Bei Nichteinhaltung drohen empfindliche Strafen: bis zu 15 Millionen Euro oder 3% des weltweiten Jahresumsatzes.",
+      "card3title": "Kundenvertrauen sichern",
+      "card3text": "Compliance wird zum Wettbewerbsvorteil bei Ausschreibungen und Kundengesprächen. Zeigen Sie Verantwortung."
+    },
+    "steps": {
+      "title": "So funktioniert's",
+      "subtitle": "In drei einfachen Schritten zur EU AI Act Compliance",
+      "step1title": "Erstgespräch",
+      "step1text": "30-minütiges Erstgespräch zur Einschätzung Ihres aktuellen Reifegrads und Ihrer spezifischen Anforderungen.",
+      "step2title": "Analyse",
+      "step2text": "Wir prüfen Ihre eingesetzten KI-Tools im Recruiting-Prozess auf EU AI Act Konformität.",
+      "step3title": "Ergebnis-Report",
+      "step3text": "Detaillierter Bericht mit Handlungsempfehlungen und konkreten Maßnahmen zur Compliance."
+    },
+    "check": {
+      "title": "Was wir prüfen",
+      "subtitle": "Umfassende Analyse aller relevanten EU AI Act Anforderungen",
+      "item1title": "Risikoklassifikation Annex III",
+      "item1text": "Einordnung Ihrer KI-Systeme in die Risikokategorien des EU AI Act",
+      "item2title": "Transparenz Art. 50",
+      "item2text": "Pflicht zur Kennzeichnung von KI-Systemen gegenüber Bewerbern und Nutzern",
+      "item3title": "KI-Kompetenz Art. 4",
+      "item3text": "Schulung und Kompetenzentwicklung für Personal und Führungskräfte",
+      "item4title": "Dokumentation Art. 11",
+      "item4text": "Technische Dokumentation und Nachweispflichten für Hochrisiko-KI",
+      "item5title": "Logging Art. 12",
+      "item5text": "Aufzeichnungspflichten und Protokollierung von KI-Entscheidungen",
+      "item6title": "Human Oversight Art. 14",
+      "item6text": "Menschliche Überwachung und Eingriffsmöglichkeiten bei KI-Entscheidungen"
+    },
+    "forWhom": {
+      "title": "Für wen ist der Check?",
+      "subtitle": "Unser Angebot richtet sich an alle Akteure im Recruiting-Ökosystem",
+      "group1": "🏢 Personalberatungen",
+      "group2": "💼 HR-Tech-Anbieter",
+      "group3": "🤖 Unternehmen mit KI-gestütztem Recruiting"
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "subtitle": "Antworten auf die wichtigsten Fragen zum EU AI Act Readiness Check",
+      "q1": "Was kostet der Check?",
+      "a1": "Das Erstgespräch ist kostenlos. Im Anschluss erhalten Sie ein maßgeschneidertes Angebot basierend auf der Komplexität Ihrer KI-Landschaft und dem Umfang der Analyse.",
+      "q2": "Ist KI-Recruiting verboten?",
+      "a2": "Nein, KI-Recruiting ist nicht verboten. Es unterliegt jedoch strengen Regulierungen als Hochrisiko-Anwendung. Mit der richtigen Compliance können Sie KI-Tools weiterhin sicher einsetzen.",
+      "q3": "Wer haftet – Anbieter oder Arbeitgeber?",
+      "a3": "Die Haftung kann beide treffen. Als Arbeitgeber tragen Sie Verantwortung für die Art und Weise, wie Sie KI-Tools einsetzen. Wir helfen Ihnen, Ihre Haftung zu minimieren.",
+      "q4": "Was ist der EU AI Act?",
+      "a4": "Der EU AI Act ist die weltweit erste umfassende KI-Regulierung. Er klassifiziert KI-Systeme nach Risikokategorien und legt Anforderungen für Hochrisiko-Anwendungen fest – dazu zählt auch KI im Recruiting.",
+      "lawLink": "Offiziellen Verordnungstext lesen"
+    },
+    "form": {
+      "title": "Kostenlosen Erst-Check anfordern",
+      "subtitle": "Vereinbaren Sie noch heute Ihr kostenloses Erstgespräch",
+      "nameLabel": "Name *",
+      "namePh": "Ihr vollständiger Name",
+      "companyLabel": "Firma *",
+      "companyPh": "Name Ihres Unternehmens",
+      "emailLabel": "E-Mail *",
+      "emailPh": "ihre.email@firma.de",
+      "messageLabel": "Nachricht",
+      "messagePh": "Erzählen Sie uns kurz über Ihre Situation und Anliegen...",
+      "submit": "Anfrage senden",
+      "toast": "Danke! Wir melden uns innerhalb von 24 Stunden."
+    }
   }
 }

@@ -393,5 +393,90 @@
       "privacy": "Privacy",
       "impressum": "Imprint"
     }
+  },
+  "euAiActReadiness": {
+    "meta": {
+      "title": "EU AI Act Readiness Check for Recruiting & HR-Tech",
+      "description": "Protect your business from regulatory risk and stay competitive across the DACH market."
+    },
+    "hero": {
+      "badge": "EU AI Act Compliance",
+      "title": "EU AI Act Readiness Check for Recruiting & HR-Tech",
+      "subtitle": "Protect your business from regulatory risk and stay competitive across the DACH market.",
+      "deadline": "⚠️ Deadline: 02.08.2026 · High-Risk AI: CV screening, candidate ranking",
+      "fines": "Fines of up to €15 million or 3% of global annual turnover",
+      "cta": "Request a free initial assessment",
+      "lawLink": "Official text: EU AI Act (Regulation (EU) 2024/1689) on EUR-Lex"
+    },
+    "why": {
+      "title": "Why act now?",
+      "subtitle": "Time is running out – prepare for the EU AI Act in good time",
+      "card1title": "AI pre-selection = High-Risk",
+      "card1text": "From 02.08.2026, AI-based candidate selection is officially classified as \"high-risk AI\" under Annex III of the EU AI Act.",
+      "card2title": "Fines up to €15 million",
+      "card2text": "Non-compliance carries serious penalties: up to €15 million or 3% of worldwide annual turnover.",
+      "card3title": "Build customer trust",
+      "card3text": "Compliance becomes a competitive advantage in tenders and client conversations. Show responsibility."
+    },
+    "steps": {
+      "title": "How it works",
+      "subtitle": "EU AI Act compliance in three simple steps",
+      "step1title": "Intro call",
+      "step1text": "A 30-minute intro call to assess your current maturity level and specific requirements.",
+      "step2title": "Analysis",
+      "step2text": "We review the AI tools you use across your recruiting process for EU AI Act compliance.",
+      "step3title": "Outcome report",
+      "step3text": "A detailed report with recommendations and concrete measures to achieve compliance."
+    },
+    "check": {
+      "title": "What we assess",
+      "subtitle": "A comprehensive analysis of all relevant EU AI Act requirements",
+      "item1title": "Risk classification, Annex III",
+      "item1text": "Classification of your AI systems into the EU AI Act risk categories",
+      "item2title": "Transparency, Art. 50",
+      "item2text": "Obligation to label AI systems for candidates and users",
+      "item3title": "AI literacy, Art. 4",
+      "item3text": "Training and skills development for staff and leadership",
+      "item4title": "Documentation, Art. 11",
+      "item4text": "Technical documentation and record-keeping duties for high-risk AI",
+      "item5title": "Logging, Art. 12",
+      "item5text": "Record-keeping and logging of AI decisions",
+      "item6title": "Human oversight, Art. 14",
+      "item6text": "Human oversight and the ability to intervene in AI decisions"
+    },
+    "forWhom": {
+      "title": "Who is the check for?",
+      "subtitle": "Our offering is aimed at every player in the recruiting ecosystem",
+      "group1": "🏢 Recruitment agencies",
+      "group2": "💼 HR-Tech providers",
+      "group3": "🤖 Companies using AI-based recruiting"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subtitle": "Answers to the most important questions about the EU AI Act Readiness Check",
+      "q1": "What does the check cost?",
+      "a1": "The intro call is free of charge. Afterwards, you will receive a tailored proposal based on the complexity of your AI landscape and the scope of the analysis.",
+      "q2": "Is AI recruiting banned?",
+      "a2": "No, AI recruiting is not banned. However, as a high-risk application it is subject to strict regulation. With the right compliance setup, you can continue to use AI tools safely.",
+      "q3": "Who is liable – the provider or the employer?",
+      "a3": "Both can be held liable. As an employer, you are responsible for how you use AI tools. We help you minimise your liability.",
+      "q4": "What is the EU AI Act?",
+      "a4": "The EU AI Act is the world's first comprehensive AI regulation. It classifies AI systems by risk category and sets requirements for high-risk applications – and AI in recruiting is among them.",
+      "lawLink": "Read the official regulation text"
+    },
+    "form": {
+      "title": "Request a free initial assessment",
+      "subtitle": "Book your free intro call today",
+      "nameLabel": "Name *",
+      "namePh": "Your full name",
+      "companyLabel": "Company *",
+      "companyPh": "Your company name",
+      "emailLabel": "E-mail *",
+      "emailPh": "your.email@company.com",
+      "messageLabel": "Message",
+      "messagePh": "Tell us briefly about your situation and requirements...",
+      "submit": "Send request",
+      "toast": "Thank you! We will get back to you within 24 hours."
+    }
   }
 }
