@@ -537,7 +537,9 @@
       "packageLabel": "Package",
       "submit": "Send order",
       "agb": "I accept the terms",
-      "success": "Thank you! Your request has been sent."
+      "success": "Thank you! Your request has been sent.",
+      "agbLink": "View Terms and Conditions",
+      "ref": "Your reference"
     }
   }
 }

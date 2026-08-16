@@ -38,14 +38,28 @@ export function PaketeClient() {
 
   const ft = (key: string): string => String(t(key));
 
-  // Пакеты захардкожены (переводы в common.json — только метки), чтобы не зависеть
-  // от типизации t(): возвращает string | string[], а не объекты
-  const realPkgs: any[] = [
-    { name: "Compliance-Check", price: "€699", period: "einmalig", desc: "Website-Scan, Bericht, Priorisierung" },
-    { name: "Vollständiger Audit", price: "€1.900", period: "einmalig", desc: "Alle Prozesse (ATS, KI-Screening), Maßnahmenkatalog" },
-    { name: "Compliance-Monitoring", price: "€290", period: "/Monat", desc: "Laufende Prüfung, Updates bei Gesetzesänderungen" },
-    { name: "Umsetzung + Schulung", price: "€3.500", period: "einmalig", desc: "Änderungen umsetzen, Team schulen, DPO-Übergabe" },
-  ];
+  // Пакеты: переводы по локали (не зависят от типизации t())
+  const PKGS_BY_LOCALE: Record<string, any[]> = {
+    de: [
+      { name: "Compliance-Check", price: "€699", period: "einmalig", desc: "Website-Scan, Bericht, Priorisierung" },
+      { name: "Vollständiger Audit", price: "€1.900", period: "einmalig", desc: "Alle Prozesse (ATS, KI-Screening), Maßnahmenkatalog" },
+      { name: "Compliance-Monitoring", price: "€290", period: "/Monat", desc: "Laufende Prüfung, Updates bei Gesetzesänderungen" },
+      { name: "Umsetzung + Schulung", price: "€3.500", period: "einmalig", desc: "Änderungen umsetzen, Team schulen, DPO-Übergabe" },
+    ],
+    en: [
+      { name: "Compliance Check", price: "€699", period: "one-time", desc: "Website scan, report, prioritization" },
+      { name: "Full Audit", price: "€1.900", period: "one-time", desc: "All processes (ATS, AI screening), action plan" },
+      { name: "Compliance Monitoring", price: "€290", period: "/month", desc: "Ongoing checks, updates on regulatory changes" },
+      { name: "Implementation + Training", price: "€3.500", period: "one-time", desc: "Implement changes, train your team, DPO handover" },
+    ],
+    ru: [
+      { name: "Проверка соответствия", price: "€699", period: "разово", desc: "Скан сайта, отчёт, приоритизация" },
+      { name: "Полный аудит", price: "€1.900", period: "разово", desc: "Все процессы (ATS, ИИ-скрининг), каталог мер" },
+      { name: "Мониторинг соответствия", price: "€290", period: "/мес", desc: "Регулярные проверки, обновления при изменении законов" },
+      { name: "Внедрение + обучение", price: "€3.500", period: "разово", desc: "Внедряем изменения, обучаем команду, передача DPO" },
+    ],
+  };
+  const realPkgs: any[] = PKGS_BY_LOCALE[locale] || PKGS_BY_LOCALE.de;
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -172,6 +186,16 @@ export function PaketeClient() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                {ref && (
+                  <div className="flex items-center justify-between rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-4 py-3">
+                    <span className="text-sm text-slate-500 dark:text-slate-400">
+                      {ft("kiPakete.form.ref")}
+                    </span>
+                    <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+                      {ref}
+                    </span>
+                  </div>
+                )}
                 <div className="text-sm text-slate-500 dark:text-slate-400 mb-2">
                   {ft("kiPakete.form.packageLabel")}:
                   <span className="font-semibold text-spektr-cyan block mt-1">
@@ -207,9 +231,19 @@ export function PaketeClient() {
                   placeholder={ft("kiPakete.form.email")}
                   className="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-spektr-cyan"
                 />
-                <label className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300 cursor-pointer">
-                  <input type="checkbox" required className="rounded border-slate-300 text-spektr-cyan focus:ring-spektr-cyan" />
-                  {ft("kiPakete.form.agb")}
+                <label className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-300 cursor-pointer">
+                  <input type="checkbox" required className="mt-1 rounded border-slate-300 text-spektr-cyan focus:ring-spektr-cyan" />
+                  <span>
+                    {ft("kiPakete.form.agb")}{" "}
+                    <a
+                      href={`/${locale}/agb/`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-spektr-cyan underline hover:text-spektr-cyan/80"
+                    >
+                      {ft("kiPakete.form.agbLink")}
+                    </a>
+                  </span>
                 </label>
                 <button
                   type="submit"

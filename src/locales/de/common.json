@@ -537,7 +537,9 @@
       "packageLabel": "Paket",
       "submit": "Bestellung abschicken",
       "agb": "Ich akzeptiere die AGB",
-      "success": "Vielen Dank! Ihre Anfrage wurde gesendet."
+      "success": "Vielen Dank! Ihre Anfrage wurde gesendet.",
+      "agbLink": "Allgemeine Geschäftsbedingungen ansehen",
+      "ref": "Ihre Referenz"
     }
   }
 }
