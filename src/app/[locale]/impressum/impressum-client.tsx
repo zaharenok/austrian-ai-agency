@@ -16,7 +16,7 @@ const CONTENT: Record<string, { sections: { title: string; body: React.ReactNode
             <p><strong>GeloKS GesmbH</strong></p>
             <p>Witzelsbergergasse 26-28/402<br />1150 Wien<br />Österreich</p>
             <p>FN 371573g<br />Firmenbuchgericht: Handelsgericht Wien</p>
-            <p>Geschäftsführer: Oleg Zaharenok</p>
+            <p>Geschäftsführer: Oleg Zakharchenko</p>
           </>
         ),
       },
@@ -70,7 +70,7 @@ const CONTENT: Record<string, { sections: { title: string; body: React.ReactNode
             <p><strong>GeloKS GesmbH</strong></p>
             <p>Witzelsbergergasse 26-28/402<br />1150 Vienna<br />Austria</p>
             <p>FN 371573g<br />Commercial Court: Handelsgericht Wien</p>
-            <p>Managing Director: Oleg Zaharenok</p>
+            <p>Managing Director: Oleg Zakharchenko</p>
           </>
         ),
       },
@@ -124,7 +124,7 @@ const CONTENT: Record<string, { sections: { title: string; body: React.ReactNode
             <p><strong>GeloKS GesmbH</strong></p>
             <p>Witzelsbergergasse 26-28/402<br />1150 Вена<br />Австрия</p>
             <p>FN 371573g<br />Торговый суд: Handelsgericht Wien</p>
-            <p>Управляющий директор: Олег Захаренок</p>
+            <p>Управляющий директор: Олег Захарченко</p>
           </>
         ),
       },
