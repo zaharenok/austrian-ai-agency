@@ -33,22 +33,13 @@ export function EuAiActReadinessClient() {
   const scrollBoundaryRef = useScrollBoundary();
   const [formSent, setFormSent] = useState(false);
 
-  // Страница рассчитана на тёмную тему (aurora-фон + светлые карточки).
-  // Принудительно включаем dark на время просмотра, чтобы дизайн не разваливался
-  // на устройствах со светлой темой. MutationObserver перехватывает попытки
-  // ThemeToggle убрать класс (layout монтируется раньше и применяет тему после).
+  // Тема определяется автоматически (системная настройка / theme toggle),
+  // dark-стили заданы через dark: варианты в классах.
   useEffect(() => {
     const root = document.documentElement;
     const hadDark = root.classList.contains("dark");
-    root.classList.add("dark");
-
-    const observer = new MutationObserver(() => {
-      if (!root.classList.contains("dark")) root.classList.add("dark");
-    });
-    observer.observe(root, { attributes: true, attributeFilter: ["class"] });
 
     return () => {
-      observer.disconnect();
       if (!hadDark) root.classList.remove("dark");
     };
   }, []);

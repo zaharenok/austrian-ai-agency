@@ -3,8 +3,8 @@ import { EuAiActReadinessClient } from "../eu-ai-act-readiness/eu-ai-act-readine
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  // Немецкий слаг существует только для de — en/ru остаются на eu-ai-act-readiness
-  return [{ locale: "de" }];
+  // Слаг ki-verordnung доступен во всех локалях (de/en/ru)
+  return [{ locale: "de" }, { locale: "en" }, { locale: "ru" }];
 }
 
 export default function KiVerordnungReadinessCheckPage() {

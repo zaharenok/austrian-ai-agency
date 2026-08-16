@@ -19,7 +19,6 @@ export function ThemeToggle() {
     if (typeof window === "undefined") return "light";
     const stored = window.localStorage.getItem(STORAGE_KEY) as Theme | null;
     if (stored === "dark" || stored === "light") return stored;
-    if (document.documentElement.classList.contains("dark")) return "dark";
     return getSystemPreference();
   });
 
@@ -29,18 +28,22 @@ export function ThemeToggle() {
 
   useEffect(() => {
     if (!mounted) return;
+    // Тема применяется всегда, но НЕ перезаписывает localStorage при авто-режиме:
+    // localStorage сохраняем только после явного клика пользователя.
     const root = document.documentElement;
     if (theme === "dark") {
       root.classList.add("dark");
     } else {
       root.classList.remove("dark");
     }
-    window.localStorage.setItem(STORAGE_KEY, theme);
   }, [theme, mounted]);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const listener = (event: MediaQueryListEvent) => {
+      // Уважаем явный выбор пользователя (сохранён в localStorage)
+      const stored = window.localStorage.getItem(STORAGE_KEY);
+      if (stored === "dark" || stored === "light") return;
       setTheme(event.matches ? "dark" : "light");
     };
 
@@ -58,12 +61,18 @@ export function ThemeToggle() {
     );
   }
 
+  const toggle = () => {
+    const next = theme === "dark" ? "light" : "dark";
+    setTheme(next);
+    window.localStorage.setItem(STORAGE_KEY, next);
+  };
+
   return (
     <Button
       variant="ghost"
       size="icon"
       className="h-9 w-9"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={toggle}
       aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
     >
       <Icon className="h-4 w-4" />
