@@ -124,7 +124,7 @@ const CONTENT: Record<string, { sections: { title: string; body: React.ReactNode
             <p><strong>GeloKS GesmbH</strong></p>
             <p>Witzelsbergergasse 26-28/402<br />1150 Вена<br />Австрия</p>
             <p>FN 371573g<br />Торговый суд: Handelsgericht Wien</p>
-            <p>Управляющий директор: дипл. инж. д-р Олег Захарченко</p>
+            <p>Управляющий директор: Dr. Oleg Zakharchenko</p>
           </>
         ),
       },
