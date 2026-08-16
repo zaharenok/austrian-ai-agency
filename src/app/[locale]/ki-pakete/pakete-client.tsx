@@ -84,13 +84,13 @@ export function PaketeClient() {
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 px-4 py-1.5 text-sm text-slate-600 dark:text-slate-300 mb-5">
               <Shield className="w-4 h-4 text-spektr-cyan" />
-              {ft("pakete.hero.badge")}
+              {ft("kiPakete.hero.badge")}
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
-              {ft("pakete.hero.title")}
+              {ft("kiPakete.hero.title")}
             </h1>
             <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-              {ft("pakete.hero.subtitle")}
+              {ft("kiPakete.hero.subtitle")}
             </p>
           </div>
 
@@ -139,7 +139,7 @@ export function PaketeClient() {
           {/* Order form */}
           <div className="max-w-xl mx-auto bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
-              {ft("pakete.form.title")}
+              {ft("kiPakete.form.title")}
             </h2>
 
             {formSent ? (
@@ -148,7 +148,7 @@ export function PaketeClient() {
                   <Check className="w-8 h-8 text-green-600 dark:text-green-400" />
                 </div>
                 <p className="text-lg font-semibold text-slate-900 dark:text-white">
-                  {ft("pakete.form.success")}
+                  {ft("kiPakete.form.success")}
                 </p>
                 <p className="text-sm text-slate-500 dark:text-slate-400 mt-2">
                   {ref ? `Referenz: ${ref}` : ""}
@@ -157,7 +157,7 @@ export function PaketeClient() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="text-sm text-slate-500 dark:text-slate-400 mb-2">
-                  {ft("pakete.form.packageLabel")}:{" "}
+                  {ft("kiPakete.form.packageLabel")}:{" "}
                   <span className="font-semibold text-spektr-cyan">
                     {realPkgs[selected]?.name} — {realPkgs[selected]?.price} {realPkgs[selected]?.period}
                   </span>
@@ -165,30 +165,30 @@ export function PaketeClient() {
                 <input
                   name="name"
                   required
-                  placeholder={ft("pakete.form.name")}
+                  placeholder={ft("kiPakete.form.name")}
                   className="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-spektr-cyan"
                 />
                 <input
                   name="company"
-                  placeholder={ft("pakete.form.company")}
+                  placeholder={ft("kiPakete.form.company")}
                   className="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-spektr-cyan"
                 />
                 <input
                   name="email"
                   type="email"
                   required
-                  placeholder={ft("pakete.form.email")}
+                  placeholder={ft("kiPakete.form.email")}
                   className="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-spektr-cyan"
                 />
                 <label className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300 cursor-pointer">
                   <input type="checkbox" required className="rounded border-slate-300 text-spektr-cyan focus:ring-spektr-cyan" />
-                  {ft("pakete.form.agb")}
+                  {ft("kiPakete.form.agb")}
                 </label>
                 <button
                   type="submit"
                   className="w-full rounded-xl bg-spektr-cyan hover:bg-spektr-cyan/90 text-white font-semibold py-3.5 px-6 flex items-center justify-center gap-2 transition-colors"
                 >
-                  {ft("pakete.form.submit")}
+                  {ft("kiPakete.form.submit")}
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </form>

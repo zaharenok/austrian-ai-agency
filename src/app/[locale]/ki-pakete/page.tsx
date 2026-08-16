@@ -1,4 +1,4 @@
-import PaketeRedirect from "./pakete-redirect";
+import { PaketeClient } from "./pakete-client";
 
 export const dynamicParams = false;
 
@@ -7,5 +7,5 @@ export function generateStaticParams() {
 }
 
 export default function PaketePage() {
-  return <PaketeRedirect />;
+  return <PaketeClient />;
 }
