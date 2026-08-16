@@ -496,7 +496,8 @@
     "hero": {
       "badge": "Services & Pricing",
       "title": "Choose your package",
-      "subtitle": "Transparent pricing — no hidden costs. Every package starts with a free assessment."
+      "subtitle": "Transparent pricing — no hidden costs. Every package starts with a free assessment.",
+      "multiHint": "You can combine several packages — e.g. Audit + Monitoring"
     },
     "packages": [
       {

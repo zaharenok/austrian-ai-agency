@@ -496,7 +496,8 @@
     "hero": {
       "badge": "Leistungen & Preise",
       "title": "Wählen Sie Ihr Paket",
-      "subtitle": "Transparente Preise — keine versteckten Kosten. Jedes Paket startet mit einer kostenlosen Ersteinschätzung."
+      "subtitle": "Transparente Preise — keine versteckten Kosten. Jedes Paket startet mit einer kostenlosen Ersteinschätzung.",
+      "multiHint": "Sie können mehrere Pakete kombinieren — z. B. Audit + Monitoring"
     },
     "packages": [
       {

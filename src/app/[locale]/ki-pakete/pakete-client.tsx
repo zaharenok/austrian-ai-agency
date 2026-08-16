@@ -19,7 +19,7 @@ import { useEffect, useState } from "react";
 export function PaketeClient() {
   const { t, locale } = useTranslations();
   const scrollBoundaryRef = useScrollBoundary();
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState<number[]>([0]);
   const [formSent, setFormSent] = useState(false);
   const [ref, setRef] = useState("");
 
@@ -51,15 +51,22 @@ export function PaketeClient() {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    const pkg = realPkgs[selected] || realPkgs[0];
+    const selPkgs = selected.map((i: number) => realPkgs[i]).filter(Boolean);
     const name = String(data.get("name") || "");
     const company = String(data.get("company") || "");
     const email = String(data.get("email") || "");
 
-    const subject = `Bestellung: ${pkg?.name || "Paket"}` + (ref ? ` (REF: ${ref})` : "");
+    const total = selPkgs.reduce(
+      (sum: number, p: any) => sum + parseInt(p.price.replace(/[^\d]/g, "") || "0", 10),
+      0
+    );
+
+    const subject = `Bestellung: ${selPkgs.map((p: any) => p.name).join(" + ") || "Paket"}` + (ref ? ` (REF: ${ref})` : "");
     const body = [
-      `Paket: ${pkg?.name || ""}`,
-      `Preis: ${pkg?.price || ""} ${pkg?.period || ""}`,
+      ...selPkgs.map(
+        (p: any) => `Paket: ${p.name} — ${p.price} ${p.period}`
+      ),
+      `Gesamt: €${total.toLocaleString("de-DE")}`,
       "",
       `Name: ${name}`,
       `Unternehmen: ${company}`,
@@ -98,12 +105,16 @@ export function PaketeClient() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
             {realPkgs.map((pkg: any, i: number) => {
               const Icon = icons[i % icons.length];
-              const active = selected === i;
+              const active = selected.includes(i);
               return (
                 <motion.button
                   key={i}
                   type="button"
-                  onClick={() => setSelected(i)}
+                  onClick={() =>
+                    setSelected((prev: number[]) =>
+                      prev.includes(i) ? prev.filter((x: number) => x !== i) : [...prev, i]
+                    )
+                  }
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -136,6 +147,11 @@ export function PaketeClient() {
             })}
           </div>
 
+          {/* Hint: multiple packages allowed */}
+          <p className="text-center text-sm text-slate-500 dark:text-slate-400 -mt-8 mb-14">
+            {ft("kiPakete.hero.multiHint")}
+          </p>
+
           {/* Order form */}
           <div className="max-w-xl mx-auto bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
@@ -157,9 +173,20 @@ export function PaketeClient() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="text-sm text-slate-500 dark:text-slate-400 mb-2">
-                  {ft("kiPakete.form.packageLabel")}:{" "}
-                  <span className="font-semibold text-spektr-cyan">
-                    {realPkgs[selected]?.name} — {realPkgs[selected]?.price} {realPkgs[selected]?.period}
+                  {ft("kiPakete.form.packageLabel")}:
+                  <span className="font-semibold text-spektr-cyan block mt-1">
+                    {selected.map((i: number) => realPkgs[i]?.name).join(" + ")}
+                    {" — "}
+                    <span className="text-slate-700 dark:text-slate-200">
+                      €
+                      {selected
+                        .reduce(
+                          (sum: number, i: number) =>
+                            sum + parseInt((realPkgs[i]?.price || "0").replace(/[^\d]/g, ""), 10),
+                          0
+                        )
+                        .toLocaleString("de-DE")}
+                    </span>
                   </span>
                 </div>
                 <input
