@@ -15,7 +15,7 @@ const CONTENT: Record<string, { title: string; sections: { title: string; body: 
         body: (
           <>
             <p><strong>GeloKS GesmbH</strong></p>
-            <p>Michelbeuerngasse 2/22<br />1090 Wien<br />Österreich</p>
+            <p>Witzelsbergergasse 26-28/402<br />1150 Wien<br />Österreich</p>
             <p>FN 371573g</p>
             <p>E-Mail: office@aaagency.at</p>
           </>
@@ -90,7 +90,7 @@ const CONTENT: Record<string, { title: string; sections: { title: string; body: 
         body: (
           <>
             <p><strong>GeloKS GesmbH</strong></p>
-            <p>Michelbeuerngasse 2/22<br />1090 Vienna<br />Austria</p>
+            <p>Witzelsbergergasse 26-28/402<br />1150 Vienna<br />Austria</p>
             <p>FN 371573g</p>
             <p>E-mail: office@aaagency.at</p>
           </>
@@ -165,7 +165,7 @@ const CONTENT: Record<string, { title: string; sections: { title: string; body: 
         body: (
           <>
             <p><strong>GeloKS GesmbH</strong></p>
-            <p>Michelbeuerngasse 2/22<br />1090 Вена<br />Австрия</p>
+            <p>Witzelsbergergasse 26-28/402<br />1150 Вена<br />Австрия</p>
             <p>FN 371573g</p>
             <p>E-mail: office@aaagency.at</p>
           </>
