@@ -13,7 +13,7 @@ import { ChatMessageList } from "@/components/ui/chat-message-list";
 import { useAutoScroll } from "@/components/hooks/use-auto-scroll";
 import { useTranslations } from "@/context/language-context";
 
-const N8N_WEBHOOK_URL = "https://n8n.aaagency.at/webhook/1eac4cc6-3cc6-4455-b740-73cd625f87e0";
+const N8N_WEBHOOK_URL = (process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL || "").trim();
 const PROXY_API_URL = "/api/chat";
 
 const MAX_MESSAGE_LENGTH = 500;

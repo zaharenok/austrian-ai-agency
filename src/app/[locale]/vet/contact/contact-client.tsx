@@ -29,8 +29,9 @@ export function VetContactClient() {
     };
 
     try {
+      const webhookUrl = (process.env.NEXT_PUBLIC_VETCALL_CONTACT_WEBHOOK_URL || "").trim();
       const response = await fetch(
-        process.env.NEXT_PUBLIC_VETCALL_WEBHOOK_URL || 'https://n8n.aaagency.at/webhook/vetcall-contact',
+        webhookUrl,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

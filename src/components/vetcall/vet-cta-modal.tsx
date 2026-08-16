@@ -52,9 +52,8 @@ export function VetCTAModal({ isOpen, onClose, type }: VetCTAModalProps) {
         });
       }
 
-      // Send to webhook (replace with actual webhook URL)
-      const webhookUrl = process.env.NEXT_PUBLIC_VETCALL_WEBHOOK_URL ||
-        'https://n8n.aaagency.at/webhook/vetcall-leads';
+      // Send to webhook (from env, set in CI/GitHub Secrets)
+      const webhookUrl = (process.env.NEXT_PUBLIC_VETCALL_WEBHOOK_URL || "").trim();
 
       const response = await fetch(webhookUrl, {
         method: 'POST',
