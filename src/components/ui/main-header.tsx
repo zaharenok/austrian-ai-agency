@@ -17,6 +17,7 @@ export function MainHeader() {
     () => [
       { key: "home", href: `/${locale}`, label: t("navigation.home") },
       { key: "services", href: `/${locale}#services`, label: t("navigation.services") },
+      { key: "aiAct", href: `/${locale}/eu-ai-act-readiness`, label: t("navigation.aiAct") },
       { key: "why", href: `/${locale}#why`, label: t("navigation.whyUs") },
     ],
     [locale, t]
