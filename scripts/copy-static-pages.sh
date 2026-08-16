@@ -28,9 +28,9 @@ cp .next/server/app/en/eu-ai-act-readiness.html out/en/eu-ai-act-readiness/index
 cp .next/server/app/de/eu-ai-act-readiness.html out/de/eu-ai-act-readiness/index.html
 cp .next/server/app/ru/eu-ai-act-readiness.html out/ru/eu-ai-act-readiness/index.html
 
-# Copy ki-verordnung-readiness-check pages (German slug)
-mkdir -p out/de/ki-verordnung-readiness-check
-cp .next/server/app/de/ki-verordnung-readiness-check.html out/de/ki-verordnung-readiness-check/index.html
+# Copy ki-verordnung pages (German slug)
+mkdir -p out/de/ki-verordnung
+cp .next/server/app/de/ki-verordnung.html out/de/ki-verordnung/index.html
 
 # Copy vet pages (main landing)
 mkdir -p out/en/vet out/de/vet out/ru/vet

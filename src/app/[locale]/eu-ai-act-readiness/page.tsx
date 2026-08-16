@@ -18,7 +18,7 @@ export default async function EuAiActReadinessPage({
 }) {
   const { locale } = await params;
 
-  // Немецкая версия переехала на немецкий слаг /de/ki-verordnung-readiness-check
+  // Немецкая версия переехала на немецкий слаг /de/ki-verordnung
   if (locale === "de") {
     return <DeRedirectPage />;
   }

@@ -4,12 +4,12 @@ import { useEffect } from "react";
 
 /**
  * Клиентский редирект для статического экспорта (GitHub Pages).
- * Старый немецкий слаг /de/eu-ai-act-readiness переехал на /de/ki-verordnung-readiness-check.
+ * Старый немецкий слаг /de/eu-ai-act-readiness переехал на /de/ki-verordnung.
  * JS-пользователи получают мгновенный replace; без JS — обычная ссылка.
  */
 export default function DeRedirectPage() {
   useEffect(() => {
-    window.location.replace("/de/ki-verordnung-readiness-check/");
+    window.location.replace("/de/ki-verordnung/");
   }, []);
 
   return (
@@ -25,7 +25,7 @@ export default function DeRedirectPage() {
     >
       <p style={{ fontFamily: "system-ui, sans-serif", fontSize: "1.1rem" }}>
         Diese Seite ist umgezogen:{" "}
-        <a href="/de/ki-verordnung-readiness-check/">
+        <a href="/de/ki-verordnung/">
           EU AI Act Readiness Check für Recruiting &amp; HR-Tech
         </a>
       </p>
