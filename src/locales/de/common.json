@@ -504,9 +504,18 @@
     },
     "recommendedLabel": "Empfohlen",
     "trust": {
-      "clock": "Art. 4 (KI-Kompetenz) gilt bereits seit Feb. 2025, Annex-III-Hochrisiko-Pflichten ab Dez. 2027 — wir klären, was JETZT für Sie gilt",
-      "chart": "Berichte für 40+ Recruiting-Websites erstellt",
-      "check": "Erstgespräch kostenlos — Sie zahlen erst nach Ihrem Go"
+      "clock": {
+        "title": "Frist im Blick",
+        "text": "Art. 4 (KI-Kompetenz) gilt bereits seit Feb. 2025 — Annex-III-Hochrisiko-Pflichten ab Dez. 2027. Wir klären, was JETZT für Sie gilt."
+      },
+      "chart": {
+        "title": "Recruiting-Fokus",
+        "text": "Berichte für 8+ Recruiting-Websites erstellt — wir kennen Ihre Branche."
+      },
+      "check": {
+        "title": "Risikofrei starten",
+        "text": "Erstgespräch kostenlos — Sie zahlen erst nach Ihrem Go."
+      }
     },
     "packages": [
       {

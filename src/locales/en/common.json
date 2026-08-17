@@ -504,9 +504,18 @@
     },
     "recommendedLabel": "Recommended",
     "trust": {
-      "clock": "Art. 4 (AI literacy) already applies since Feb 2025, Annex III high-risk duties from Dec 2027 — we clarify what applies to you NOW",
-      "chart": "Reports created for 40+ recruiting websites",
-      "check": "Free initial call — you only pay after your go"
+      "clock": {
+        "title": "Deadline in sight",
+        "text": "Art. 4 (AI literacy) already applies since Feb 2025 — Annex III high-risk duties from Dec 2027. We clarify what applies to you NOW."
+      },
+      "chart": {
+        "title": "Recruiting focus",
+        "text": "Reports created for 8+ recruiting websites — we know your industry."
+      },
+      "check": {
+        "title": "Risk-free start",
+        "text": "Free initial call — you only pay after your go."
+      }
     },
     "packages": [
       {

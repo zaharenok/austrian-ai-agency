@@ -190,16 +190,22 @@ export function PaketeClient() {
 
           {/* Trust-Leiste: Deadline, Social Proof, Risk Reversal */}
           <div className="grid sm:grid-cols-3 gap-4 mb-14 max-w-4xl mx-auto">
-            {["clock", "chart", "check"].map((key, i) => {
+            {(["clock", "chart", "check"] as const).map((key, i) => {
               const TrustIcon = trustIcons[i % trustIcons.length];
+              const item: any = (t as any)(`kiPakete.trust.${key}`);
               return (
                 <div
                   key={key}
-                  className="flex items-start gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-4 py-3"
+                  className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-4 py-4"
                 >
-                  <TrustIcon className="w-4 h-4 mt-0.5 text-spektr-cyan shrink-0" />
-                  <p className="text-xs leading-relaxed text-slate-600 dark:text-slate-300">
-                    {ft(`kiPakete.trust.${key}`)}
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <TrustIcon className="w-4 h-4 text-spektr-cyan shrink-0" />
+                    <span className="text-sm font-semibold text-slate-800 dark:text-slate-100">
+                      {item?.title}
+                    </span>
+                  </div>
+                  <p className="text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+                    {item?.text}
                   </p>
                 </div>
               );
