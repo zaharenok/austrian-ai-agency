@@ -232,11 +232,11 @@ export function PaketeClient() {
                       ? "border-spektr-cyan bg-spektr-cyan/5 shadow-lg shadow-spektr-cyan/10"
                       : "border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-spektr-cyan/50",
                     recommended &&
-                      "border-spektr-cyan/60 ring-1 ring-spektr-cyan/40 dark:bg-slate-900"
+                      "pt-14 border-spektr-cyan/60 ring-1 ring-spektr-cyan/40 dark:bg-slate-900"
                   )}
                 >
                   {recommended && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 rounded-full bg-spektr-cyan text-white text-xs font-semibold px-3 py-1 shadow">
+                    <span className="absolute top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 rounded-full bg-spektr-cyan text-white text-xs font-semibold px-3 py-1 shadow">
                       <Sparkles className="w-3 h-3" />
                       {ft("kiPakete.recommendedLabel")}
                     </span>
