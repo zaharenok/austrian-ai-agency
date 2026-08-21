@@ -114,6 +114,9 @@ export function EuAiActReadinessClient() {
               </p>
 
               <div className="mx-auto max-w-2xl space-y-3">
+                <p className="animate-pulse rounded-xl border border-red-500/40 bg-red-600/20 px-5 py-3 text-base font-bold text-red-300 backdrop-blur-sm">
+                  {t("euAiActReadiness.hero.liveNow")}
+                </p>
                 <p className="rounded-xl border border-red-500/20 bg-red-500/10 px-5 py-3 text-lg font-semibold text-red-400 backdrop-blur-sm">
                   {t("euAiActReadiness.hero.deadline")}
                 </p>
