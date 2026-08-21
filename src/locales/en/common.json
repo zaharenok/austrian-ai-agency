@@ -425,12 +425,12 @@
     "steps": {
       "title": "How it works",
       "subtitle": "EU AI Act compliance in three simple steps",
-      "step1title": "Intro call",
-      "step1text": "A 30-minute intro call to assess your current maturity level and specific requirements.",
-      "step2title": "Analysis",
-      "step2text": "We review the AI tools you use across your recruiting process for EU AI Act compliance.",
-      "step3title": "Outcome report",
-      "step3text": "A detailed report with recommendations and concrete measures to achieve compliance."
+      "step1title": "Submit your website",
+      "step1text": "Just send us your website URL — no call, no meeting required. We take it from there.",
+      "step2title": "Automated analysis",
+      "step2text": "We automatically scan your website and recruiting processes for EU AI Act, GDPR and TKG violations.",
+      "step3title": "Free report",
+      "step3text": "You receive a concrete report with findings, legal references and recommended measures."
     },
     "check": {
       "title": "What we assess",
@@ -459,7 +459,7 @@
       "title": "Frequently asked questions",
       "subtitle": "Answers to the most important questions about the EU AI Act Readiness Check",
       "q1": "What does the check cost?",
-      "a1": "The intro call is free of charge. Afterwards, you will receive a tailored proposal based on the complexity of your AI landscape and the scope of the analysis.",
+      "a1": "The first report is free — you only pay when you start implementation.",
       "q2": "Is AI recruiting banned?",
       "a2": "No, AI recruiting is not banned. However, as a high-risk application it is subject to strict regulation. With the right compliance setup, you can continue to use AI tools safely.",
       "q3": "Who is liable – the provider or the employer?",
@@ -469,18 +469,18 @@
       "lawLink": "Read the official regulation text"
     },
     "form": {
-      "title": "Request a free initial assessment",
-      "subtitle": "Book your free intro call today",
+      "title": "Request a free website check",
+      "subtitle": "The first report is free — you only pay when you start implementation.",
       "nameLabel": "Name *",
       "namePh": "Your full name",
       "companyLabel": "Company *",
       "companyPh": "Your company name",
       "emailLabel": "E-mail *",
       "emailPh": "your.email@company.com",
-      "messageLabel": "Message",
-      "messagePh": "Tell us briefly about your situation and requirements...",
+      "messageLabel": "Your website *",
+      "messagePh": "e.g. your-company.com — we analyse it automatically",
       "submit": "Send request",
-      "toast": "Thank you! We will get back to you within 24 hours."
+      "toast": "Thank you! We scan your website and send you the report automatically."
     }
   },
   "cookieBanner": {

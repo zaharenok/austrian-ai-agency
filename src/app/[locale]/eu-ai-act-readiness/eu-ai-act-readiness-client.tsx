@@ -475,8 +475,9 @@ export function EuAiActReadinessClient() {
                   <textarea
                     id="message"
                     name="message"
-                    rows={4}
-                    placeholder={t("euAiActReadiness.form.messagePh")}
+                    rows={2}
+                    required
+                    placeholder={String(t("euAiActReadiness.form.messagePh"))}
                     className="w-full resize-none rounded-xl border border-border/60 bg-background px-4 py-3 text-foreground outline-none transition-colors focus:border-spektr-cyan-500"
                   />
                 </div>

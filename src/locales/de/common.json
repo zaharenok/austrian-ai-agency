@@ -425,12 +425,12 @@
     "steps": {
       "title": "So funktioniert's",
       "subtitle": "In drei einfachen Schritten zur EU AI Act Compliance",
-      "step1title": "Erstgespräch",
-      "step1text": "30-minütiges Erstgespräch zur Einschätzung Ihres aktuellen Reifegrads und Ihrer spezifischen Anforderungen.",
-      "step2title": "Analyse",
-      "step2text": "Wir prüfen Ihre eingesetzten KI-Tools im Recruiting-Prozess auf EU AI Act Konformität.",
-      "step3title": "Ergebnis-Report",
-      "step3text": "Detaillierter Bericht mit Handlungsempfehlungen und konkreten Maßnahmen zur Compliance."
+      "step1title": "Website einreichen",
+      "step1text": "Senden Sie uns einfach Ihre Website-URL — ganz ohne Gespräch oder Termin. Wir übernehmen den Rest.",
+      "step2title": "Automatisierte Analyse",
+      "step2text": "Wir prüfen Ihre Website und Recruiting-Prozesse automatisiert auf EU AI Act, DSGVO und TKG Verstöße.",
+      "step3title": "Kostenloser Bericht",
+      "step3text": "Sie erhalten einen konkreten Bericht mit gefundenen Verstößen, Gesetzesgrundlagen und Maßnahmen."
     },
     "check": {
       "title": "Was wir prüfen",
@@ -459,7 +459,7 @@
       "title": "Häufige Fragen",
       "subtitle": "Antworten auf die wichtigsten Fragen zum EU AI Act Readiness Check",
       "q1": "Was kostet der Check?",
-      "a1": "Das Erstgespräch ist kostenlos. Im Anschluss erhalten Sie ein maßgeschneidertes Angebot basierend auf der Komplexität Ihrer KI-Landschaft und dem Umfang der Analyse.",
+      "a1": "Der Check ist kostenlos und unverbindlich. Sie senden uns nur Ihre Website-URL — den Bericht erhalten Sie automatisch. Ein Gespräch erfolgt nur, wenn Sie es wünschen.",
       "q2": "Ist KI-Recruiting verboten?",
       "a2": "Nein, KI-Recruiting ist nicht verboten. Es unterliegt jedoch strengen Regulierungen als Hochrisiko-Anwendung. Mit der richtigen Compliance können Sie KI-Tools weiterhin sicher einsetzen.",
       "q3": "Wer haftet – Anbieter oder Arbeitgeber?",
@@ -469,18 +469,18 @@
       "lawLink": "Offiziellen Verordnungstext lesen"
     },
     "form": {
-      "title": "Kostenlosen Erst-Check anfordern",
-      "subtitle": "Vereinbaren Sie noch heute Ihr kostenloses Erstgespräch",
+      "title": "Kostenlosen Website-Check anfordern",
+      "subtitle": "Senden Sie uns jetzt Ihre Website — der erste Bericht ist kostenlos",
       "nameLabel": "Name *",
       "namePh": "Ihr vollständiger Name",
       "companyLabel": "Firma *",
       "companyPh": "Name Ihres Unternehmens",
       "emailLabel": "E-Mail *",
       "emailPh": "ihre.email@firma.de",
-      "messageLabel": "Nachricht",
-      "messagePh": "Erzählen Sie uns kurz über Ihre Situation und Anliegen...",
+      "messageLabel": "Ihre Website *",
+      "messagePh": "z. B. ihre-firma.at — wir analysieren sie automatisch",
       "submit": "Anfrage senden",
-      "toast": "Danke! Wir melden uns innerhalb von 24 Stunden."
+      "toast": "Danke! Wir scannen Ihre Website und senden Ihnen den Bericht automatisch zu."
     }
   },
   "cookieBanner": {
@@ -515,7 +515,7 @@
       },
       "check": {
         "title": "Risikofrei starten",
-        "text": "Erstgespräch kostenlos — Sie zahlen erst nach Ihrem Go."
+        "text": "Erster Bericht kostenlos — Sie zahlen erst bei Start der Umsetzung."
       }
     },
     "packages": [
