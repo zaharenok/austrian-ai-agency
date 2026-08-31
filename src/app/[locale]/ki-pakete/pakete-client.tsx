@@ -230,6 +230,7 @@ export function PaketeClient() {
                   }
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
+                  whileHover={{ scale: 1.03, y: -4 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08 }}
                   className={cn(
@@ -260,9 +261,9 @@ export function PaketeClient() {
                   <div className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
                     {pkg?.name}
                   </div>
-                  <div className="text-2xl font-bold text-slate-900 dark:text-white mb-1">
+                  <div className="text-4xl font-bold text-slate-900 dark:text-white mb-1">
                     {pkg?.price}
-                    <span className="text-sm font-normal text-slate-400"> {pkg?.period}</span>
+                    <span className="text-base font-normal text-slate-400"> {pkg?.period}</span>
                   </div>
                   <div className="text-sm text-slate-500 dark:text-slate-400 mb-3">
                     {pkg?.desc}
