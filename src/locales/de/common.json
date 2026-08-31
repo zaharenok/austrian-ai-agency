@@ -521,7 +521,7 @@
     "packages": [
       {
         "name": "KI-Inventur & Risiko-Einstufung",
-        "price": "€699",
+        "price": "€790",
         "period": "einmalig",
         "desc": "Alle KI-Systeme erfassen (ATS, Sourcing, ChatGPT-Nutzung) und nach EU AI Act einstufen",
         "features": [
@@ -533,7 +533,7 @@
       },
       {
         "name": "AI Act Readiness Audit",
-        "price": "€1.900",
+        "price": "€2.500",
         "period": "einmalig",
         "desc": "Tiefenprüfung aller Prozesse (ATS, KI-Screening) mit Maßnahmenkatalog",
         "recommended": true,
@@ -541,12 +541,12 @@
           "Alles aus der KI-Inventur",
           "Gap-Analyse nach Art. 9–14, 49, 50",
           "Maßnahmenkatalog mit Prioritäten",
-          "KI-Inventur (€699) wird vollständig angerechnet"
+          "KI-Inventur (€790) wird vollständig angerechnet"
         ]
       },
       {
         "name": "Umsetzung + Schulung",
-        "price": "€3.500",
+        "price": "€4.900",
         "period": "einmalig",
         "desc": "Maßnahmen umsetzen, Team schulen, Übergabe an DPO",
         "features": [
@@ -558,7 +558,7 @@
       },
       {
         "name": "AI-Register + Monitoring",
-        "price": "€290",
+        "price": "€390",
         "period": "/Monat",
         "monthly": true,
         "desc": "AI-Register führen, jährlich neu bewerten, bei Gesetzesänderungen informieren",

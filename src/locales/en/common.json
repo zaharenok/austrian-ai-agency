@@ -521,7 +521,7 @@
     "packages": [
       {
         "name": "AI Inventory & Risk Classification",
-        "price": "€699",
+        "price": "€790",
         "period": "one-time",
         "desc": "Map every AI system (ATS, sourcing, ChatGPT use) and classify it under the EU AI Act",
         "features": [
@@ -533,7 +533,7 @@
       },
       {
         "name": "AI Act Readiness Audit",
-        "price": "€1.900",
+        "price": "€2.500",
         "period": "one-time",
         "desc": "Deep audit of all processes (ATS, AI screening) with an action plan",
         "recommended": true,
@@ -541,12 +541,12 @@
           "Everything from the AI Inventory",
           "Gap analysis vs Art. 9–14, 49, 50",
           "Prioritised action plan",
-          "AI Inventory (€699) fully credited"
+          "AI Inventory (€790) fully credited"
         ]
       },
       {
         "name": "Implementation + Training",
-        "price": "€3.500",
+        "price": "€4.900",
         "period": "one-time",
         "desc": "Implement measures, train your team, handover to DPO",
         "features": [
@@ -558,7 +558,7 @@
       },
       {
         "name": "AI Register + Monitoring",
-        "price": "€290",
+        "price": "€390",
         "period": "/month",
         "monthly": true,
         "desc": "Maintain your AI register, annual re-assessment, regulatory updates",
