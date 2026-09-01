@@ -5,9 +5,9 @@ import { ContactClient } from "./contact-client";
 export const dynamicParams = false;
 
 const titles: Record<string, string> = {
-  de: 'Kontakt — KI-Chat & Anfrage — Austrian AI Agency',
-  en: 'Contact — AI Chat & Inquiry — Austrian AI Agency',
-  ru: 'Контакт — ИИ-чат и запрос — Austrian AI Agency',
+  de: 'Kontakt — KI-Chat & Anfrage',
+  en: 'Contact — AI Chat & Inquiry',
+  ru: 'Контакт — ИИ-чат и запрос',
 };
 
 const descriptions: Record<string, string> = {
@@ -28,9 +28,9 @@ export async function generateMetadata({
     alternates: {
       canonical: `/${locale}/contact/`,
       languages: {
-        'de': 'Kontakt — KI-Chat & Anfrage — Austrian AI Agency',
-        'en': 'Contact — AI Chat & Inquiry — Austrian AI Agency',
-        'ru': 'Контакт — ИИ-чат и запрос — Austrian AI Agency',
+        'de': 'Kontakt — KI-Chat & Anfrage',
+        'en': 'Contact — AI Chat & Inquiry',
+        'ru': 'Контакт — ИИ-чат и запрос',
       },
     },
   };
