@@ -6,34 +6,68 @@ import { useTranslations } from "@/context/language-context";
 
 const CONSENT_KEY = "aaa-cookie-consent";
 const GA_ID = (process.env.NEXT_PUBLIC_GA_ID || "").trim();
+const FB_PIXEL_ID = (process.env.NEXT_PUBLIC_FB_PIXEL_ID || "").trim();
 
 function loadAnalytics() {
-  if (!GA_ID || typeof window === "undefined") return;
-  const existing = document.getElementById("ga-consent-script");
-  if (existing) return;
+  if (typeof window === "undefined") return;
 
-  const script = document.createElement("script");
-  script.id = "ga-consent-script";
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-  document.head.appendChild(script);
+  // --- Google Analytics ---
+  if (GA_ID) {
+    const existing = document.getElementById("ga-consent-script");
+    if (!existing) {
+      const script = document.createElement("script");
+      script.id = "ga-consent-script";
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+      document.head.appendChild(script);
 
-  const w = window as unknown as { dataLayer: unknown[]; gtag?: (...args: unknown[]) => void };
-  w.dataLayer = w.dataLayer || [];
-  function gtag(...args: unknown[]) {
-    w.dataLayer.push(args);
+      const w = window as unknown as { dataLayer: unknown[]; gtag?: (...args: unknown[]) => void };
+      w.dataLayer = w.dataLayer || [];
+      function gtag(...args: unknown[]) {
+        w.dataLayer.push(args);
+      }
+      w.gtag = gtag;
+      gtag("js", new Date());
+      gtag("config", GA_ID);
+    }
   }
-  w.gtag = gtag;
-  gtag("js", new Date());
-  gtag("config", GA_ID);
+
+  // --- Meta Pixel ---
+  if (FB_PIXEL_ID) {
+    const existingFb = document.getElementById("fb-pixel-script");
+    if (!existingFb) {
+      const w = window as unknown as { fbq?: (...args: unknown[]) => void; _fbq?: unknown };
+      w.fbq =
+        w.fbq ||
+        function () {
+          // eslint-disable-next-line prefer-rest-params
+          (w.fbq as unknown as { q: unknown[] }).q = (w.fbq as unknown as { q: unknown[] }).q || [];
+          (w.fbq as unknown as { q: unknown[] }).q.push(arguments);
+        };
+      w._fbq = w.fbq;
+
+      const s = document.createElement("script");
+      s.id = "fb-pixel-script";
+      s.async = true;
+      s.src = `https://connect.facebook.net/en_US/fbevents.js`;
+      document.head.appendChild(s);
+
+      w.fbq("init", FB_PIXEL_ID);
+      w.fbq("track", "PageView");
+    }
+  }
 }
 
 function removeAnalytics() {
-  const script = document.getElementById("ga-consent-script");
-  if (script) script.remove();
-  // also remove gtag.js if it was loaded without consent id
+  // Remove GA
+  const gaScript = document.getElementById("ga-consent-script");
+  if (gaScript) gaScript.remove();
   const legacy = document.querySelector('script[src*="googletagmanager.com/gtag/js"]');
   if (legacy) legacy.remove();
+
+  // Remove Meta Pixel
+  const fbScript = document.getElementById("fb-pixel-script");
+  if (fbScript) fbScript.remove();
 }
 
 export function ConsentBanner() {
@@ -102,7 +136,7 @@ export function ConsentBanner() {
         </button>
         <Link
           href={`/${locale}/datenschutz`}
-          className="text-sm text-primary underline underline-offset-4 hover:text-primary/80"
+          className="ml-auto text-xs text-muted-foreground underline underline-offset-2 hover:text-foreground"
         >
           {privacyLabel}
         </Link>
