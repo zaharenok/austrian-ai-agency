@@ -4,9 +4,9 @@ import { PaketeClient } from "./pakete-client";
 export const dynamicParams = false;
 
 const titles: Record<string, string> = {
-  de: 'KI-Pakete & Preise — EU AI Act Compliance | Austrian AI Agency',
-  en: 'AI Packages & Pricing — EU AI Act Compliance | Austrian AI Agency',
-  ru: 'Пакеты ИИ и цены — EU AI Act комплаенс | Austrian AI Agency',
+  de: 'KI-Pakete & Preise — EU AI Act Compliance ',
+  en: 'AI Packages & Pricing — EU AI Act Compliance ',
+  ru: 'Пакеты ИИ и цены — EU AI Act комплаенс ',
 };
 
 const descriptions: Record<string, string> = {
