@@ -36,37 +36,28 @@ function loadAnalytics() {
   if (FB_PIXEL_ID) {
     const existingFb = document.getElementById("fb-pixel-script");
     if (!existingFb) {
-      // Standard Facebook Pixel implementation with queue
+      // Standard Facebook Pixel: queue first, script second
       /* eslint-disable */
-      const w = window as unknown as Record<string, unknown>;
-      const f = w.fbq as ((...args: unknown[]) => void) | undefined;
-      if (!f) {
-        (function (f: Record<string, unknown>, b: Document, e: string, v: string) {
-          if (f.fbq) return;
-          const n = (f.fbq = function () {
-            // eslint-disable-next-line prefer-rest-params
-            (n as unknown as { q: unknown[] }).q = (n as unknown as { q: unknown[] }).q || [];
-            (n as unknown as { q: unknown[] }).q.push(arguments);
-          }) as unknown as { q: unknown[] };
-          if (!f._fbq) f._fbq = n;
-          n.loaded = true;
-          n.version = "2.0";
-          n.queue = [];
-          const t = b.createElement(e) as HTMLScriptElement;
-          t.async = true;
-          t.src = v;
-          t.id = "fb-pixel-script";
-          const s = b.getElementsByTagName(e)[0];
-          s?.parentNode?.insertBefore(t, s);
-        })(w, b, "script", "https://connect.facebook.net/en_US/fbevents.js");
-      }
+      (function (w: Window & { fbq?: (...args: unknown[]) => void; _fbq?: unknown }, d: Document) {
+        if (w.fbq) return;
+        const n = function () {
+          // eslint-disable-next-line prefer-rest-params
+          (n as unknown as { q: unknown[] }).q = (n as unknown as { q: unknown[] }).q || [];
+          (n as unknown as { q: unknown[] }).q.push(arguments);
+        } as unknown as { q: unknown[] };
+        w.fbq = n as unknown as (...args: unknown[]) => void;
+        w._fbq = n;
+        const t = d.createElement("script") as HTMLScriptElement;
+        t.id = "fb-pixel-script";
+        t.async = true;
+        t.src = "https://connect.facebook.net/en_US/fbevents.js";
+        const s = d.getElementsByTagName("script")[0];
+        s?.parentNode?.insertBefore(t, s);
+      })(window, document);
       /* eslint-enable */
-
-      const fbq = w.fbq as (...args: unknown[]) => void;
-      if (fbq) {
-        fbq("init", FB_PIXEL_ID);
-        fbq("track", "PageView");
-      }
+      // fbq is now a queue — safe to call init/track immediately
+      window.fbq!("init", FB_PIXEL_ID);
+      window.fbq!("track", "PageView");
     }
   }
 }
