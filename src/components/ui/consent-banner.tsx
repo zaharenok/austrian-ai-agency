@@ -36,24 +36,37 @@ function loadAnalytics() {
   if (FB_PIXEL_ID) {
     const existingFb = document.getElementById("fb-pixel-script");
     if (!existingFb) {
-      const w = window as unknown as { fbq?: (...args: unknown[]) => void; _fbq?: unknown };
-      w.fbq =
-        w.fbq ||
-        function () {
-          // eslint-disable-next-line prefer-rest-params
-          (w.fbq as unknown as { q: unknown[] }).q = (w.fbq as unknown as { q: unknown[] }).q || [];
-          (w.fbq as unknown as { q: unknown[] }).q.push(arguments);
-        };
-      w._fbq = w.fbq;
+      // Standard Facebook Pixel implementation with queue
+      /* eslint-disable */
+      const w = window as unknown as Record<string, unknown>;
+      const f = w.fbq as ((...args: unknown[]) => void) | undefined;
+      if (!f) {
+        (function (f: Record<string, unknown>, b: Document, e: string, v: string) {
+          if (f.fbq) return;
+          const n = (f.fbq = function () {
+            // eslint-disable-next-line prefer-rest-params
+            (n as unknown as { q: unknown[] }).q = (n as unknown as { q: unknown[] }).q || [];
+            (n as unknown as { q: unknown[] }).q.push(arguments);
+          }) as unknown as { q: unknown[] };
+          if (!f._fbq) f._fbq = n;
+          n.loaded = true;
+          n.version = "2.0";
+          n.queue = [];
+          const t = b.createElement(e) as HTMLScriptElement;
+          t.async = true;
+          t.src = v;
+          t.id = "fb-pixel-script";
+          const s = b.getElementsByTagName(e)[0];
+          s?.parentNode?.insertBefore(t, s);
+        })(w, b, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      }
+      /* eslint-enable */
 
-      const s = document.createElement("script");
-      s.id = "fb-pixel-script";
-      s.async = true;
-      s.src = `https://connect.facebook.net/en_US/fbevents.js`;
-      document.head.appendChild(s);
-
-      w.fbq("init", FB_PIXEL_ID);
-      w.fbq("track", "PageView");
+      const fbq = w.fbq as (...args: unknown[]) => void;
+      if (fbq) {
+        fbq("init", FB_PIXEL_ID);
+        fbq("track", "PageView");
+      }
     }
   }
 }
