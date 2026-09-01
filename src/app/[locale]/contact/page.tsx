@@ -4,6 +4,8 @@ import { ContactClient } from "./contact-client";
 
 export const dynamicParams = false;
 
+const SITE_URL = 'https://aaagency.at';
+
 const titles: Record<string, string> = {
   de: 'Kontakt — KI-Chat & Anfrage',
   en: 'Contact — AI Chat & Inquiry',
@@ -26,11 +28,11 @@ export async function generateMetadata({
     title: titles[locale] || titles.en,
     description: descriptions[locale] || descriptions.en,
     alternates: {
-      canonical: `/${locale}/contact/`,
+      canonical: `${SITE_URL}/${locale}/contact/`,
       languages: {
-        'de': 'Kontakt — KI-Chat & Anfrage',
-        'en': 'Contact — AI Chat & Inquiry',
-        'ru': 'Контакт — ИИ-чат и запрос',
+        'de': `${SITE_URL}/de/contact/`,
+        'en': `${SITE_URL}/en/contact/`,
+        'ru': `${SITE_URL}/ru/contact/`,
       },
     },
   };

@@ -27,11 +27,11 @@ export async function generateMetadata({
     title: titles[locale] || titles.en,
     description: descriptions[locale] || descriptions.en,
     alternates: {
-      canonical: `/${locale}/`,
+      canonical: `${SITE_URL}/${locale}/`,
       languages: {
-        'de': 'KI-Compliance & EU AI Act für Recruiting — Austrian AI Agency',
-        'en': 'AI Compliance & EU AI Act for Recruiting — Austrian AI Agency',
-        'ru': 'AI-комплаенс и EU AI Act для рекрутинга — Austrian AI Agency',
+        'de': `${SITE_URL}/de/`,
+        'en': `${SITE_URL}/en/`,
+        'ru': `${SITE_URL}/ru/`,
       },
     },
   };

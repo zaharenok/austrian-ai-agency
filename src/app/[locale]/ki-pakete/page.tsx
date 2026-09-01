@@ -3,6 +3,8 @@ import { PaketeClient } from "./pakete-client";
 
 export const dynamicParams = false;
 
+const SITE_URL = 'https://aaagency.at';
+
 const titles: Record<string, string> = {
   de: 'KI-Pakete & Preise — EU AI Act Compliance',
   en: 'AI Packages & Pricing — EU AI Act Compliance',
@@ -25,11 +27,11 @@ export async function generateMetadata({
     title: titles[locale] || titles.en,
     description: descriptions[locale] || descriptions.en,
     alternates: {
-      canonical: `/${locale}/ki-pakete/`,
+      canonical: `${SITE_URL}/${locale}/ki-pakete/`,
       languages: {
-        'de': 'KI-Pakete & Preise — EU AI Act Compliance',
-        'en': 'AI Packages & Pricing — EU AI Act Compliance',
-        'ru': 'Пакеты ИИ и цены — EU AI Act комплаенс',
+        'de': `${SITE_URL}/de/ki-pakete/`,
+        'en': `${SITE_URL}/en/ki-pakete/`,
+        'ru': `${SITE_URL}/ru/ki-pakete/`,
       },
     },
   };

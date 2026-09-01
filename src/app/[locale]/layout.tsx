@@ -40,9 +40,9 @@ export async function generateMetadata({
     alternates: {
       canonical: `/${locale}/`,
       languages: {
-        'de': '/de/',
-        'en': '/en/',
-        'ru': '/ru/',
+        'de': `${SITE_URL}/de/`,
+        'en': `${SITE_URL}/en/`,
+        'ru': `${SITE_URL}/ru/`,
       },
     },
     openGraph: {
