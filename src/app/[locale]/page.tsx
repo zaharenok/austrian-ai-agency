@@ -6,9 +6,9 @@ export const dynamicParams = false;
 const SITE_URL = 'https://aaagency.at';
 
 const titles: Record<string, string> = {
-  de: 'KI-Compliance & EU AI Act für Recruiting ',
-  en: 'AI Compliance & EU AI Act for Recruiting ',
-  ru: 'AI-комплаенс и EU AI Act для рекрутинга ',
+  de: 'KI-Compliance & EU AI Act für Recruiting — Austrian AI Agency',
+  en: 'AI Compliance & EU AI Act for Recruiting — Austrian AI Agency',
+  ru: 'AI-комплаенс и EU AI Act для рекрутинга — Austrian AI Agency',
 };
 
 const descriptions: Record<string, string> = {
@@ -29,9 +29,9 @@ export async function generateMetadata({
     alternates: {
       canonical: `/${locale}/`,
       languages: {
-        'de': '/de/',
-        'en': '/en/',
-        'ru': '/ru/',
+        'de': 'KI-Compliance & EU AI Act für Recruiting — Austrian AI Agency',
+        'en': 'AI Compliance & EU AI Act for Recruiting — Austrian AI Agency',
+        'ru': 'AI-комплаенс и EU AI Act для рекрутинга — Austrian AI Agency',
       },
     },
   };

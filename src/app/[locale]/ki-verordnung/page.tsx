@@ -4,9 +4,9 @@ import { EuAiActReadinessClient } from "../eu-ai-act-readiness/eu-ai-act-readine
 export const dynamicParams = false;
 
 const titles: Record<string, string> = {
-  de: 'EU AI Act Readiness Check — Kostenloser KI-Check ',
-  en: 'EU AI Act Readiness Check — Free AI Assessment ',
-  ru: 'EU AI Act Readiness Check — Бесплатная оценка ИИ ',
+  de: 'EU AI Act Readiness Check — Kostenloser KI-Check — Austrian AI Agency',
+  en: 'EU AI Act Readiness Check — Free AI Assessment — Austrian AI Agency',
+  ru: 'EU AI Act Readiness Check — Бесплатная оценка ИИ — Austrian AI Agency',
 };
 
 const descriptions: Record<string, string> = {
@@ -27,9 +27,9 @@ export async function generateMetadata({
     alternates: {
       canonical: `/${locale}/ki-verordnung/`,
       languages: {
-        'de': '/de/ki-verordnung/',
-        'en': '/en/ki-verordnung/',
-        'ru': '/ru/ki-verordnung/',
+        'de': 'EU AI Act Readiness Check — Kostenloser KI-Check — Austrian AI Agency',
+        'en': 'EU AI Act Readiness Check — Free AI Assessment — Austrian AI Agency',
+        'ru': 'EU AI Act Readiness Check — Бесплатная оценка ИИ — Austrian AI Agency',
       },
     },
   };
