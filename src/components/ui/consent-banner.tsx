@@ -36,7 +36,7 @@ function loadAnalytics() {
   if (FB_PIXEL_ID) {
     const existingFb = document.getElementById("fb-pixel-script");
     if (!existingFb) {
-      // Standard Facebook Pixel: queue first, script second
+      // Standard Facebook Pixel: queue first, script second, init after load
       /* eslint-disable */
       (function (w: Window & { fbq?: (...args: unknown[]) => void; _fbq?: unknown }, d: Document) {
         if (w.fbq) return;
@@ -51,13 +51,15 @@ function loadAnalytics() {
         t.id = "fb-pixel-script";
         t.async = true;
         t.src = "https://connect.facebook.net/en_US/fbevents.js";
+        t.onload = function () {
+          // Script loaded — now safe to init
+          w.fbq!("init", FB_PIXEL_ID);
+          w.fbq!("track", "PageView");
+        };
         const s = d.getElementsByTagName("script")[0];
         s?.parentNode?.insertBefore(t, s);
       })(window, document);
       /* eslint-enable */
-      // fbq is now a queue — safe to call init/track immediately
-      window.fbq!("init", FB_PIXEL_ID);
-      window.fbq!("track", "PageView");
     }
   }
 }
