@@ -614,5 +614,12 @@
         "desc": "Ongoing monitoring, annual re-assessment, and regulatory updates — you stay compliant as laws evolve."
       }
     ]
+  },
+  "homeChat": {
+    "badge": "🤖 AI Agent — powered by Austrian AI Agency",
+    "title": "Chat with our AI agent",
+    "subtitle": "Ask anything about AI compliance, EU AI Act, or our services. Our AI agent responds instantly.",
+    "placeholder": "Ask about AI compliance...",
+    "disclaimer": "This is an AI agent — responses are automated and may not always be accurate. For official inquiries, use our contact form."
   }
 }

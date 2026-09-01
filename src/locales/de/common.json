@@ -614,5 +614,12 @@
         "desc": "Laufendes Monitoring, jährliche Neubewertung und regulatorische Updates — Sie bleiben konform."
       }
     ]
+  },
+  "homeChat": {
+    "badge": "🤖 KI-Agent — betrieben von Austrian AI Agency",
+    "title": "Chatten Sie mit unserem KI-Agenten",
+    "subtitle": "Fragen Sie alles zu KI-Compliance, EU AI Act oder unseren Dienstleistungen. Unser KI-Agent antwortet sofort.",
+    "placeholder": "Frage zur KI-Compliance...",
+    "disclaimer": "Dies ist ein KI-Agent — Antworten sind automatisiert und können nicht immer korrekt sein. Für offizielle Anfragen nutzen Sie bitte unser Kontaktformular."
   }
 }

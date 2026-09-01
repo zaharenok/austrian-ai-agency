@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/ui/site-footer";
 import { useTranslations } from "@/context/language-context";
 import { useScrollBoundary } from "@/hooks/use-scroll-boundary";
 import { BrainCircuit, ShieldCheck, Users2, Scan, Search, Rocket, Activity } from "lucide-react";
+import { HomeChatCTA } from "@/components/ui/home-chat-cta";
 
 const processIcons = [Scan, Search, Rocket, Activity];
 
@@ -92,6 +93,8 @@ export function HomeClient() {
             </div>
           </div>
         </section>
+
+        <HomeChatCTA />
       </div>
 
       <div
