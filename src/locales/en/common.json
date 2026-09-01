@@ -1,60 +1,63 @@
 {
   "hero": {
-    "button": "Learn about our approach",
+    "button": "See how we work",
     "title": "Austrian AI Agency:",
-    "subtitle": "Innovative AI solutions",
+    "subtitle": "AI Compliance & Automation",
     "titles": [
-      "innovative",
-      "cutting-edge",
-      "intelligent",
-      "creative",
+      "AI-compliant",
+      "audit-ready",
+      "automated",
+      "cost-effective",
       "Austrian"
     ],
-    "description": "We help companies implement modern artificial intelligence solutions for business automation, optimization, and scaling. Our experts create customized solutions tailored to your specific business needs.",
-    "badge": "Trusted AI partner",
+    "description": "From AI readiness audit to production deployment. We make your recruiting AI-compliant with the EU AI Act — faster and more affordably than any competitor. 58 projects delivered across 23+ companies.",
+    "badge": "58 projects · 23+ clients · EU AI Act experts",
     "stats": {
       "projects": "Projects delivered",
       "clients": "Clients served",
       "years": "Years in AI"
     },
-    "trustedBy": "Trusted by teams across Europe"
+    "trustedBy": "Trusted by recruiting teams across Europe"
   },
   "services": {
     "title": "Our Services",
     "strategy": {
-      "title": "AI Strategy",
-      "description": "We develop customized AI implementation strategies for your business, taking into account industry specifics and company needs.",
+      "title": "AI Readiness Audit",
+      "description": "Deep audit of all AI processes in your recruiting stack — ATS, sourcing, ChatGPT usage — with a prioritised action plan for EU AI Act compliance.",
       "features": [
-        "AI readiness diagnostics",
-        "Executive workshops",
-        "Roadmaps with ROI milestones"
+        "Full AI tool & process inventory",
+        "Risk classification per EU AI Act",
+        "Gap analysis vs Art. 9-14, 49, 50",
+        "Prioritised action plan with ROI"
       ]
     },
     "development": {
-      "title": "Solution Development",
-      "description": "We create custom AI applications, integrate existing models, and adapt them to your business processes.",
+      "title": "Implementation & Training",
+      "description": "We implement compliance measures, build technical documentation, and train your team — so your AI systems are production-ready and audit-proof.",
       "features": [
-        "MVP in 6-8 weeks",
-        "Model fine-tuning & evaluation",
-        "Secure integrations"
+        "Technical documentation (Art. 11)",
+        "Transparency & human oversight (Art. 13/14)",
+        "AI literacy training (Art. 4)",
+        "Handover to your DPO / legal counsel"
       ]
     },
     "training": {
-      "title": "Team Training",
-      "description": "We train your employees to effectively use new AI tools and develop artificial intelligence skills.",
+      "title": "AI Register & Monitoring",
+      "description": "Ongoing monitoring of your AI systems: annual re-assessment, regulatory updates, and incident hotline — so you stay compliant as laws evolve.",
       "features": [
-        "On-site enablement",
-        "Playbooks & templates",
-        "Ongoing advisory"
+        "AI register management (Art. 49)",
+        "Annual re-assessment of AI systems",
+        "Updates on regulatory changes",
+        "Incident hotline & support"
       ]
     },
-    "subtitle": "Tailored AI programs that move the metrics you care about"
+    "subtitle": "Compliance packages that move from audit to production — not just reports"
   },
   "cta": {
-    "contact": "Contact us",
-    "startProject": "Start a project",
-    "learnMore": "Learn more",
-    "bookIntro": "Book intro call"
+    "contact": "Get free AI audit",
+    "startProject": "Start with free scan",
+    "learnMore": "See pricing",
+    "bookIntro": "Get free AI audit"
   },
   "footer": {
     "contacts": "Contacts",
@@ -94,16 +97,16 @@
   "whyChoose": {
     "title": "Why Choose Austrian AI Agency?",
     "innovation": {
-      "title": "Innovation Excellence",
-      "description": "We leverage cutting-edge AI technologies to create future-ready solutions that drive real business transformation"
+      "title": "Recruiting AI Specialist",
+      "description": "8+ recruiting websites audited — we know your industry, your ATS stack, and the compliance pitfalls specific to HR tech"
     },
     "expertise": {
-      "title": "Deep Technical Expertise",
-      "description": "Our team comprises leading AI specialists with extensive experience in machine learning, deep learning, and enterprise AI deployment"
+      "title": "Faster Than Any Competitor",
+      "description": "From audit to production in 8 weeks, not 6 months. Our AI-powered workflow cuts compliance timelines by 60% vs traditional consultancies"
     },
     "support": {
-      "title": "Long-term Partnership",
-      "description": "We stay with you throughout the entire journey — from initial concept to full implementation and ongoing optimization"
+      "title": "Fixed Prices, No Surprises",
+      "description": "Transparent packages from €790. No hidden fees, no billable hours. You know the cost before you commit — and the inventory fee is fully credited toward the audit"
     }
   },
   "chatBot": {
@@ -585,5 +588,31 @@
       "agbLink": "View Terms and Conditions",
       "ref": "Your reference"
     }
+  },
+  "process": {
+    "title": "How It Works",
+    "subtitle": "From free scan to production compliance — in 4 steps",
+    "steps": [
+      {
+        "num": "1",
+        "title": "Free Scan",
+        "desc": "We scan your website for AI usage and give you a first assessment — free of charge, no strings attached."
+      },
+      {
+        "num": "2",
+        "title": "Audit",
+        "desc": "Deep audit of all AI processes with a prioritised action plan for EU AI Act compliance."
+      },
+      {
+        "num": "3",
+        "title": "Implement",
+        "desc": "We implement measures, build documentation, and train your team — production-ready in 8 weeks."
+      },
+      {
+        "num": "4",
+        "title": "Monitor",
+        "desc": "Ongoing monitoring, annual re-assessment, and regulatory updates — you stay compliant as laws evolve."
+      }
+    ]
   }
 }

@@ -6,11 +6,14 @@ import { ServicesSection } from "@/components/ui/services-section";
 import { SiteFooter } from "@/components/ui/site-footer";
 import { useTranslations } from "@/context/language-context";
 import { useScrollBoundary } from "@/hooks/use-scroll-boundary";
-import { BrainCircuit, ShieldCheck, Users2 } from "lucide-react";
+import { BrainCircuit, ShieldCheck, Users2, Scan, Search, Rocket, Activity } from "lucide-react";
+
+const processIcons = [Scan, Search, Rocket, Activity];
 
 export function HomeClient() {
   const { t } = useTranslations();
   const scrollBoundaryRef = useScrollBoundary();
+  const steps = (t("process.steps") as unknown as Array<{ num: string; title: string; desc: string }>) || [];
 
   return (
     <AuroraBackground className="flex flex-col">
@@ -19,6 +22,35 @@ export function HomeClient() {
 
         <section id="services" className="border-y border-primary/10 bg-white/80 py-20 backdrop-blur-md dark:bg-zinc-900/80">
           <ServicesSection />
+        </section>
+
+        <section id="process" className="py-20 bg-white/60 dark:bg-zinc-900/60">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="space-y-4 text-center mb-14">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-spektr-cyan-300">
+                {t("process.title")}
+              </p>
+              <h2 className="text-3xl font-bold text-foreground md:text-4xl">{t("process.subtitle")}</h2>
+            </div>
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {steps.map((step, i) => {
+                const Icon = processIcons[i % processIcons.length];
+                return (
+                  <div key={i} className="relative text-center">
+                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-spektr-cyan/10 text-spektr-cyan">
+                      <Icon className="h-7 w-7" />
+                    </div>
+                    <div className="mb-2 text-sm font-bold text-spektr-cyan">{step.num}</div>
+                    <h3 className="mb-2 text-lg font-semibold text-foreground">{step.title}</h3>
+                    <p className="text-sm text-muted-foreground">{step.desc}</p>
+                    {i < steps.length - 1 && (
+                      <div className="absolute right-0 top-8 hidden h-px w-full bg-gradient-to-r from-spektr-cyan/20 to-transparent lg:block" />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </section>
 
         <section id="why" className="py-20">

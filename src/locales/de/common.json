@@ -1,18 +1,18 @@
 {
   "hero": {
-    "button": "Erfahren Sie mehr über unseren Ansatz",
+    "button": "So arbeiten wir",
     "title": "Austrian AI Agency:",
-    "subtitle": "Innovative KI-Lösungen",
+    "subtitle": "KI-Compliance & Automatisierung",
     "titles": [
-      "innovativ",
-      "hochmodern",
-      "intelligent",
-      "kreativ",
+      "KI-konform",
+      "audit-ready",
+      "automatisiert",
+      "kosteneffizient",
       "österreichisch"
     ],
-    "description": "Wir helfen Unternehmen, moderne künstliche Intelligenzlösungen für Geschäftsautomatisierung, Optimierung und Skalierung zu implementieren. Unsere Experten erstellen maßgeschneiderte Lösungen, die auf Ihre spezifischen Geschäftsanforderungen zugeschnitten sind.",
-    "badge": "Vertrauenswürdiger KI-Partner",
-    "trustedBy": "Vertrauenswürdig für Teams in ganz Europa",
+    "description": "Von KI-Reifegrad-Audit bis zur produktiven Umsetzung. Wir machen Ihr Recruiting EU AI Act-konform — schneller und günstiger als jeder Wettbewerber. 58 Projekte für 23+ Unternehmen umgesetzt.",
+    "badge": "58 Projekte · 23+ Kunden · EU AI Act Experten",
+    "trustedBy": "Vertraut von Recruiting-Teams in ganz Europa",
     "stats": {
       "projects": "Umgesetzte Projekte",
       "clients": "Betreute Kunden",
@@ -22,39 +22,42 @@
   "services": {
     "title": "Unsere Dienstleistungen",
     "strategy": {
-      "title": "KI-Strategie",
-      "description": "Wir entwickeln maßgeschneiderte KI-Implementierungsstrategien für Ihr Unternehmen unter Berücksichtigung von Branchenspezifika und Unternehmensanforderungen.",
+      "title": "KI-Reifegrad-Audit",
+      "description": "Tiefenprüfung aller KI-Prozesse in Ihrem Recruiting-Stack — ATS, Sourcing, ChatGPT-Nutzung — mit priorisiertem Maßnahmenkatalog für EU AI Act Compliance.",
       "features": [
-        "KI-Reifegrad-Analyse",
-        "Workshops für Führungskräfte",
-        "Roadmaps mit ROI-Meilensteinen"
+        "Vollständiges KI-Inventar & Prozessmapping",
+        "Risikoeinstufung nach EU AI Act",
+        "Gap-Analyse nach Art. 9-14, 49, 50",
+        "Priorisierter Maßnahmenkatalog mit ROI"
       ]
     },
     "development": {
-      "title": "Lösungsentwicklung",
-      "description": "Wir erstellen benutzerdefinierte KI-Anwendungen, integrieren bestehende Modelle und passen sie an Ihre Geschäftsprozesse an.",
+      "title": "Umsetzung & Schulung",
+      "description": "Wir implementieren Compliance-Maßnahmen, erstellen technische Dokumentation und schulen Ihr Team — damit Ihre KI-Systeme produktions- und auditbereit sind.",
       "features": [
-        "MVP in 6–8 Wochen",
-        "Modell-Finetuning & Evaluation",
-        "Sichere Integrationen"
+        "Technische Dokumentation (Art. 11)",
+        "Transparenz & menschliche Aufsicht (Art. 13/14)",
+        "KI-Kompetenz-Schulung (Art. 4)",
+        "Übergabe an DPO / Rechtsberatung"
       ]
     },
     "training": {
-      "title": "Team-Training",
-      "description": "Wir schulen Ihre Mitarbeiter im effektiven Umgang mit neuen KI-Tools und entwickeln Fähigkeiten im Bereich der künstlichen Intelligenz.",
+      "title": "KI-Register & Monitoring",
+      "description": "Laufendes Monitoring Ihrer KI-Systeme: jährliche Neubewertung, regulatorische Updates und Incident-Hotline — damit Sie bei Gesetzesänderungen konform bleiben.",
       "features": [
-        "Enablement vor Ort",
-        "Playbooks & Templates",
-        "Laufende Beratung"
+        "KI-Register-Führung (Art. 49)",
+        "Jährliche Neubewertung der KI-Systeme",
+        "Updates bei Gesetzesänderungen",
+        "Incident-Hotline & Support"
       ]
     },
-    "subtitle": "Individuelle KI-Programme, die Ihre wichtigsten Kennzahlen verbessern"
+    "subtitle": "Compliance-Pakete vom Audit bis zur Produktion — nicht nur Reports"
   },
   "cta": {
-    "contact": "Kontaktieren Sie uns",
-    "startProject": "Projekt starten",
-    "learnMore": "Mehr erfahren",
-    "bookIntro": "Kennenlerntermin buchen"
+    "contact": "Kostenloses KI-Audit",
+    "startProject": "Kostenlosen Scan starten",
+    "learnMore": "Preise ansehen",
+    "bookIntro": "Kostenloses KI-Audit"
   },
   "footer": {
     "contacts": "Kontakte",
@@ -94,16 +97,16 @@
   "whyChoose": {
     "title": "Warum Austrian AI Agency wählen?",
     "innovation": {
-      "title": "Innovative Spitzenleistung",
-      "description": "Wir nutzen modernste KI-Technologien, um zukunftssichere Lösungen zu schaffen, die echte Geschäftstransformation bewirken"
+      "title": "Recruiting-KI-Spezialist",
+      "description": "8+ Recruiting-Websites geprüft — wir kennen Ihre Branche, Ihren ATS-Stack und die Compliance-Fallen im HR-Umfeld"
     },
     "expertise": {
-      "title": "Tiefe technische Expertise",
-      "description": "Unser Team besteht aus führenden KI-Spezialisten mit umfangreicher Erfahrung in maschinellem Lernen, Deep Learning und Enterprise-KI-Implementierung"
+      "title": "Schneller als jeder Wettbewerber",
+      "description": "Vom Audit zur Produktion in 8 Wochen, nicht 6 Monate. Unser KI-gestützter Workflow verkürzt Compliance-Zeitrahmen um 60% gegenüber traditionellen Beratern"
     },
     "support": {
-      "title": "Langfristige Partnerschaft",
-      "description": "Wir begleiten Sie auf der gesamten Reise — von der ersten Idee bis zur vollständigen Umsetzung und kontinuierlichen Optimierung"
+      "title": "Festpreise, keine Überraschungen",
+      "description": "Transparente Pakete ab €790. Keine versteckten Kosten, keine Stundenabrechnung. Sie kennen den Preis, bevor Sie sich entscheiden — und das Inventar wird voll angerechnet"
     }
   },
   "chatBot": {
@@ -585,5 +588,31 @@
       "agbLink": "Allgemeine Geschäftsbedingungen ansehen",
       "ref": "Ihre Referenz"
     }
+  },
+  "process": {
+    "title": "So funktioniert's",
+    "subtitle": "Vom kostenlosen Scan zur produktionsreifen Compliance — in 4 Schritten",
+    "steps": [
+      {
+        "num": "1",
+        "title": "Kostenloser Scan",
+        "desc": "Wir scannen Ihre Website auf KI-Nutzung und geben Ihnen eine erste Einschätzung — kostenlos und unverbindlich."
+      },
+      {
+        "num": "2",
+        "title": "Audit",
+        "desc": "Tiefenprüfung aller KI-Prozesse mit priorisiertem Maßnahmenkatalog für EU AI Act Compliance."
+      },
+      {
+        "num": "3",
+        "title": "Umsetzen",
+        "desc": "Wir implementieren Maßnahmen, erstellen Dokumentation und schulen Ihr Team — produktionsbereit in 8 Wochen."
+      },
+      {
+        "num": "4",
+        "title": "Monitor",
+        "desc": "Laufendes Monitoring, jährliche Neubewertung und regulatorische Updates — Sie bleiben konform."
+      }
+    ]
   }
 }
