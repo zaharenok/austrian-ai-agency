@@ -17,6 +17,9 @@ export function SiteFooter() {
           <p className="text-sm text-muted-foreground">
             {t("hero.description")}
           </p>
+          <a href="mailto:office@aaagency.at" className="block text-sm text-muted-foreground hover:text-primary">
+            office@aaagency.at
+          </a>
         </div>
 
         <div className="flex flex-col items-start gap-4 text-sm md:items-end">
