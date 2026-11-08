@@ -613,7 +613,7 @@
     "title": "Chat with our AI agent",
     "subtitle": "Ask anything about AI agents, automation, the EU AI Act or our services — our AI agent responds instantly.",
     "placeholder": "Ask about AI compliance...",
-    "disclaimer": "This is an AI agent — responses are automated and may not always be accurate. For official inquiries, use our contact form."
+    "disclaimer": "This is an AI agent — responses are automated and may not always be accurate. For official inquiries, email office@aaagency.at."
   },
   "builtBy": {
     "title": "Built by us",
@@ -630,7 +630,7 @@
   },
   "about": {
     "title": "Who is behind this",
-    "text": "Austrian AI Agency is run by Oleg Zakharchenko, Dr. techn., a Vienna-based engineer who builds and ships AI products himself — including GetHello, an AI receptionist for small businesses. You work directly with the person who builds your system.",
+    "text": "Austrian AI Agency is run by Oleg Zakharchenko, a Vienna-based engineer who builds and ships AI products himself — including GetHello, an AI receptionist for small businesses. You work directly with the person who builds your system.",
     "linkedinLabel": "LinkedIn"
   },
   "contactDirect": {
