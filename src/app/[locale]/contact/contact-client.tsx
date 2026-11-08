@@ -2,7 +2,7 @@
 
 import { useCallback, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, CornerDownLeft } from "lucide-react";
+import { ArrowLeft, CornerDownLeft, Mail, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   ChatBubble,
@@ -259,6 +259,27 @@ export function ContactClient() {
             {t("navigation.backToHome")}
           </Button>
         </Link>
+      </div>
+
+      <div className="flex flex-col items-start justify-between gap-3 rounded-2xl border border-primary/10 bg-white/80 p-4 backdrop-blur-lg dark:bg-white/10 sm:flex-row sm:items-center">
+        <div>
+          <p className="text-sm font-semibold text-foreground">{t("contactDirect.title")}</p>
+          <p className="text-sm text-muted-foreground">{t("contactDirect.text")}</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <a href="mailto:office@aaagency.at">
+            <Button variant="outline" size="sm" className="flex items-center gap-2">
+              <Mail className="h-4 w-4" />
+              office@aaagency.at
+            </Button>
+          </a>
+          <a href="https://www.linkedin.com/in/olegzakharchenko/" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" size="sm" className="flex items-center gap-2">
+              <Linkedin className="h-4 w-4" />
+              LinkedIn
+            </Button>
+          </a>
+        </div>
       </div>
 
       <div className="rounded-3xl border border-primary/10 bg-white/80 shadow-lg backdrop-blur-lg dark:bg-white/10">
