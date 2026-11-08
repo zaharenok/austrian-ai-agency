@@ -12,17 +12,20 @@ export function ServicesSection() {
     {
       key: "strategy" as const,
       icon: Target,
-      badge: "Strategy sprint",
+      badge: "Agents",
+      href: `/${locale}/contact`,
     },
     {
       key: "development" as const,
       icon: Code2,
-      badge: "Delivery",
+      badge: "Enablement",
+      href: `/${locale}/contact`,
     },
     {
       key: "training" as const,
       icon: GraduationCap,
-      badge: "Enablement",
+      badge: "EU AI Act",
+      href: `/${locale}/eu-ai-act-readiness`,
     },
   ];
   
@@ -39,13 +42,13 @@ export function ServicesSection() {
       </div>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {cards.map(({ key, icon: Icon, badge }) => {
+        {cards.map(({ key, icon: Icon, badge, href }) => {
           const title = t(`services.${key}.title`);
           const description = t(`services.${key}.description`);
           const features = t(`services.${key}.features`);
           return (
             <Link
-              href={`/${locale}/contact`}
+              href={href}
               key={key}
               className="group flex h-full flex-col rounded-3xl border border-primary/10 bg-white/80 p-8 shadow-sm backdrop-blur-md transition-transform hover:-translate-y-1 hover:shadow-xl dark:bg-white/10"
             >
