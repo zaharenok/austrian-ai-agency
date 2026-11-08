@@ -65,6 +65,9 @@ export const AuroraBackground = ({
         {showRadialGradient && (
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-background via-transparent to-transparent" />
         )}
+
+        {/* В тёмной теме приглушаем свечение, чтобы текст оставался читаемым */}
+        <div className="absolute inset-0 z-10 hidden bg-zinc-900/35 dark:block" />
         
         {/* Контент */}
         <div className="relative z-20 w-full">{children}</div>
