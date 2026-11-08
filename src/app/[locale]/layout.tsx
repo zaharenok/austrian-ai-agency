@@ -10,15 +10,15 @@ const SITE_URL = 'https://aaagency.at';
 const metadataByLocale: Record<string, { title: string; description: string }> = {
   de: {
     title: 'Austrian AI Agency — KI-Compliance & EU AI Act für Recruiting',
-    description: 'Wir machen Ihr Recruiting EU AI Act-konform. KI-Audit, Umsetzung und Monitoring — Fixpreise ab €790. 58 Projekte für 23+ Unternehmen.',
+    description: 'Individuelle KI-Agenten, Automatisierung und EU AI Act-Compliance — konzipiert und gebaut von einem Gründer in Wien, der selbst entwickelt.',
   },
   en: {
     title: 'Austrian AI Agency — AI Compliance & EU AI Act for Recruiting',
-    description: 'We make your recruiting EU AI Act-compliant. AI audit, implementation and monitoring — fixed prices from €790. 58 projects for 23+ companies.',
+    description: 'Custom AI agents, automation and EU AI Act compliance — designed, built and shipped by a hands-on founder in Vienna.',
   },
   ru: {
     title: 'Austrian AI Agency — AI-комплаенс и EU AI Act для рекрутинга',
-    description: 'Делаем ваш рекрутинг соответствующим EU AI Act. Аудит ИИ, внедрение и мониторинг — фиксированные цены от €790. 58 проектов.',
+    description: 'ИИ-агенты на заказ, автоматизация и комплаенс EU AI Act — проектирует и внедряет основатель-практик в Вене.',
   },
 };
 
