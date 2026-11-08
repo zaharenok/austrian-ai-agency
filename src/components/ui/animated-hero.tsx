@@ -16,12 +16,6 @@ function Hero() {
     () => t("hero.titles"),
     [t]
   );
-  const stats = useMemo(() => ({
-    projects: t("hero.stats.projects"),
-    clients: t("hero.stats.clients"),
-    years: t("hero.stats.years")
-  }), [t]);
-
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       if (titleNumber === titles.length - 1) {
@@ -71,38 +65,24 @@ function Hero() {
           </div>
 
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
-            <Link href={`/${locale}/contact`}>
+            <a href="mailto:office@aaagency.at">
               <Button size="lg" className="gap-2 px-8">
                 {t("cta.contact")}
                 <Mail className="h-5 w-5" />
               </Button>
+            </a>
+            <Link href={`/${locale}/eu-ai-act-readiness`}>
+              <Button
+                variant="outline"
+                size="lg"
+                className="gap-2 px-8"
+              >
+                {t("cta.learnMore")}
+                <ArrowRight className="h-5 w-5" />
+              </Button>
             </Link>
-            <Button
-              variant="outline"
-              size="lg"
-              className="gap-2 px-8"
-              onClick={() => {
-                const section = document.querySelector('#services');
-                section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }}
-            >
-              {t("cta.learnMore")}
-              <ArrowRight className="h-5 w-5" />
-            </Button>
           </div>
 
-          <div className="grid w-full gap-6 sm:grid-cols-3">
-            {Object.entries(stats).map(([key, label]) => (
-              <div
-                key={key}
-                className="rounded-2xl border border-primary/10 bg-white/80 p-6 text-left shadow-sm backdrop-blur-sm dark:bg-white/10"
-              >
-                <p className="text-4xl font-semibold text-primary">{
-                  key === 'projects' ? '58' : key === 'clients' ? '23+' : '5+'
-                }</p>
-                <p className="text-sm uppercase tracking-wider text-muted-foreground">{label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>
