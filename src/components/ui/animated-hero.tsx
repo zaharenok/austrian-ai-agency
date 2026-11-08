@@ -82,8 +82,6 @@ function Hero() {
               </Button>
             </Link>
           </div>
-
-          </div>
         </div>
       </div>
     </section>
