@@ -12,9 +12,9 @@ const titles: Record<string, string> = {
 };
 
 const descriptions: Record<string, string> = {
-  de: 'Von KI-Reifegrad-Audit bis zur produktiven Umsetzung. Wir machen Ihr Recruiting EU AI Act-konform — schneller und günstiger als jeder Wettbewerber. 58 Projekte für 23+ Unternehmen.',
-  en: 'From AI readiness audit to production deployment. We make your recruiting EU AI Act-compliant — faster and more affordably than any competitor. 58 projects for 23+ companies.',
-  ru: 'От аудита готовности ИИ до внедрения в продакшн. Делаем ваш рекрутинг соответствующим EU AI Act — быстрее и дешевле конкурентов. 58 проектов для 23+ компаний.',
+  de: 'Individuelle KI-Agenten, Automatisierung und EU AI Act-Compliance — konzipiert und gebaut von einem Gründer in Wien, der selbst entwickelt.',
+  en: 'Custom AI agents, automation and EU AI Act compliance — designed, built and shipped by a hands-on founder in Vienna.',
+  ru: 'ИИ-агенты на заказ, автоматизация и комплаенс EU AI Act — проектирует и внедряет основатель-практик в Вене.',
 };
 
 export async function generateMetadata({
