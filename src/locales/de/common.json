@@ -613,7 +613,7 @@
     "title": "Chatten Sie mit unserem KI-Agenten",
     "subtitle": "Fragen Sie zu KI-Agenten, Automatisierung, dem EU AI Act oder unseren Leistungen — unser KI-Agent antwortet sofort.",
     "placeholder": "Frage zur KI-Compliance...",
-    "disclaimer": "Dies ist ein KI-Agent — Antworten sind automatisiert und können nicht immer korrekt sein. Für offizielle Anfragen nutzen Sie bitte unser Kontaktformular."
+    "disclaimer": "Dies ist ein KI-Agent — Antworten sind automatisiert und nicht immer korrekt. Bei offiziellen Anfragen schreiben Sie an office@aaagency.at."
   },
   "builtBy": {
     "title": "Von uns gebaut",
@@ -630,7 +630,7 @@
   },
   "about": {
     "title": "Wer dahinter steht",
-    "text": "Austrian AI Agency wird von Oleg Zakharchenko, Dr. techn., geführt — einem Ingenieur in Wien, der KI-Produkte selbst baut und ausliefert, darunter GetHello, einen KI-Empfang für kleine Unternehmen. Sie arbeiten direkt mit der Person, die Ihr System baut.",
+    "text": "Austrian AI Agency wird von Oleg Zakharchenko geführt — einem Ingenieur in Wien, der KI-Produkte selbst baut und ausliefert, darunter GetHello, einen KI-Empfang für kleine Unternehmen. Sie arbeiten direkt mit der Person, die Ihr System baut.",
     "linkedinLabel": "LinkedIn"
   },
   "contactDirect": {
