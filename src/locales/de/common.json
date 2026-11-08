@@ -1,63 +1,56 @@
 {
   "hero": {
     "button": "So arbeiten wir",
-    "title": "Austrian AI Agency:",
-    "subtitle": "KI-Compliance & Automatisierung",
+    "title": "Wir bauen KI,",
+    "subtitle": "Agenten, Automatisierung & EU AI Act-Compliance",
     "titles": [
-      "KI-konform",
-      "audit-ready",
-      "automatisiert",
-      "kosteneffizient",
-      "österreichisch"
+      "die in Ihrem Unternehmen funktioniert",
+      "Agenten für Ihr Team",
+      "Automatisierung, die ankommt",
+      "EU AI Act-konform"
     ],
-    "description": "Von KI-Reifegrad-Audit bis zur produktiven Umsetzung. Wir machen Ihr Recruiting EU AI Act-konform — schneller und günstiger als jeder Wettbewerber. 58 Projekte für 23+ Unternehmen umgesetzt.",
-    "badge": "58 Projekte · 23+ Kunden · EU AI Act Experten",
-    "trustedBy": "Vertraut von Recruiting-Teams in ganz Europa",
-    "stats": {
-      "projects": "Umgesetzte Projekte",
-      "clients": "Betreute Kunden",
-      "years": "Jahre in der KI"
-    }
+    "description": "Individuelle KI-Agenten, Automatisierung und Integrationsarbeit — konzipiert, gebaut und betrieben von einem Gründer in Wien, der selbst entwickelt. EU AI Act-Compliance ist eine unserer Leistungslinien.",
+    "badge": "Individuelle KI-Agenten · Entwickelt in Wien"
   },
   "services": {
-    "title": "Unsere Dienstleistungen",
+    "title": "Unsere Leistungen",
     "strategy": {
-      "title": "KI-Reifegrad-Audit",
-      "description": "Tiefenprüfung aller KI-Prozesse in Ihrem Recruiting-Stack — ATS, Sourcing, ChatGPT-Nutzung — mit priorisiertem Maßnahmenkatalog für EU AI Act Compliance.",
+      "title": "KI-Agenten & Automatisierung",
+      "description": "Individuelle Chat-, Voice- und Back-Office-Agenten — integriert in Ihre bestehenden Tools und Workflows.",
       "features": [
-        "Vollständiges KI-Inventar & Prozessmapping",
-        "Risikoeinstufung nach EU AI Act",
-        "Gap-Analyse nach Art. 9-14, 49, 50",
-        "Priorisierter Maßnahmenkatalog mit ROI"
+        "Chat- & Voice-Agenten für den Kundenkontakt",
+        "Back-Office-Automatisierung und Integrationen",
+        "Erst ein Pilot, dann schrittweiser Rollout",
+        "Gebaut und betreut von der Person, mit der Sie sprechen"
       ]
     },
     "development": {
-      "title": "Umsetzung & Schulung",
-      "description": "Wir implementieren Compliance-Maßnahmen, erstellen technische Dokumentation und schulen Ihr Team — damit Ihre KI-Systeme produktions- und auditbereit sind.",
+      "title": "KI-Implementierung & Training",
+      "description": "Analyse Ihrer aktuellen Prozesse, ein Pilotprojekt, Rollout und Befähigung Ihres Teams — vom ersten Scan bis zum Produktiveinsatz.",
       "features": [
-        "Technische Dokumentation (Art. 11)",
-        "Transparenz & menschliche Aufsicht (Art. 13/14)",
-        "KI-Kompetenz-Schulung (Art. 4)",
-        "Übergabe an DPO / Rechtsberatung"
+        "Prozess- & Tool-Analyse",
+        "Pilotprojekt mit Ihrem Team",
+        "Rollout und Übergabe",
+        "Training und Befähigung Ihres Teams"
       ]
     },
     "training": {
-      "title": "KI-Register & Monitoring",
-      "description": "Laufendes Monitoring Ihrer KI-Systeme: jährliche Neubewertung, regulatorische Updates und Incident-Hotline — damit Sie bei Gesetzesänderungen konform bleiben.",
+      "title": "EU AI Act Compliance",
+      "description": "Readiness-Check, Audit, KI-Register und Monitoring für Recruiting und HR-Tech — als eigene Leistungslinie.",
       "features": [
-        "KI-Register-Führung (Art. 49)",
-        "Jährliche Neubewertung der KI-Systeme",
-        "Updates bei Gesetzesänderungen",
-        "Incident-Hotline & Support"
+        "Risikoklassifizierung nach EU AI Act",
+        "Gap-Analyse zu Art. 9-14, 49, 50",
+        "Führung des KI-Registers (Art. 49)",
+        "Laufendes Monitoring & Updates"
       ]
     },
-    "subtitle": "Compliance-Pakete vom Audit bis zur Produktion — nicht nur Reports"
+    "subtitle": "Praktische KI-Arbeit — von individuellen Agenten bis zur EU AI Act-Compliance"
   },
   "cta": {
-    "contact": "Kostenloses KI-Audit",
+    "contact": "Kontakt aufnehmen",
     "startProject": "Kostenlosen Scan starten",
-    "learnMore": "Preise ansehen",
-    "bookIntro": "Kostenloses KI-Audit"
+    "learnMore": "AI-Act-Readiness prüfen",
+    "bookIntro": "Kontakt aufnehmen"
   },
   "footer": {
     "contacts": "Kontakte",
@@ -95,18 +88,18 @@
     "backToHome": "Zurück zur Startseite"
   },
   "whyChoose": {
-    "title": "Warum Austrian AI Agency wählen?",
+    "title": "Warum mit uns arbeiten?",
     "innovation": {
-      "title": "Recruiting-KI-Spezialist",
-      "description": "8+ Recruiting-Websites geprüft — wir kennen Ihre Branche, Ihren ATS-Stack und die Compliance-Fallen im HR-Umfeld"
+      "title": "Hands-on-Gründer",
+      "description": "Sie arbeiten direkt mit der Person, die Ihr System baut — ohne Account Manager, ohne Übergaben."
     },
     "expertise": {
-      "title": "Schneller als jeder Wettbewerber",
-      "description": "Vom Audit zur Produktion in 8 Wochen, nicht 6 Monate. Unser KI-gestützter Workflow verkürzt Compliance-Zeitrahmen um 60% gegenüber traditionellen Beratern"
+      "title": "Echte Produkte statt Folien",
+      "description": "Wir bauen und betreiben eigene KI-Produkte — darunter GetHello, einen KI-Empfang für kleine Unternehmen — und bringen dieselbe Praxis in Ihr Projekt."
     },
     "support": {
-      "title": "Festpreise, keine Überraschungen",
-      "description": "Transparente Pakete ab €790. Keine versteckten Kosten, keine Stundenabrechnung. Sie kennen den Preis, bevor Sie sich entscheiden — und das Inventar wird voll angerechnet"
+      "title": "Compliance als Leistungslinie",
+      "description": "EU AI Act-Readiness für Recruiting und HR-Tech: Readiness-Check, Audit, KI-Register und Monitoring."
     }
   },
   "chatBot": {
@@ -618,8 +611,30 @@
   "homeChat": {
     "badge": "🤖 KI-Agent — betrieben von Austrian AI Agency",
     "title": "Chatten Sie mit unserem KI-Agenten",
-    "subtitle": "Fragen Sie alles zu KI-Compliance, EU AI Act oder unseren Dienstleistungen. Unser KI-Agent antwortet sofort.",
+    "subtitle": "Fragen Sie zu KI-Agenten, Automatisierung, dem EU AI Act oder unseren Leistungen — unser KI-Agent antwortet sofort.",
     "placeholder": "Frage zur KI-Compliance...",
     "disclaimer": "Dies ist ein KI-Agent — Antworten sind automatisiert und können nicht immer korrekt sein. Für offizielle Anfragen nutzen Sie bitte unser Kontaktformular."
+  },
+  "builtBy": {
+    "title": "Von uns gebaut",
+    "subtitle": "Produkte, die wir selbst entwickeln und betreiben",
+    "gethello": {
+      "title": "GetHello",
+      "description": "Ein KI-Telefonempfang für kleine Unternehmen: nimmt Anrufe entgegen und bucht Termine direkt in den Kalender.",
+      "linkLabel": "gethello.io"
+    },
+    "chat": {
+      "title": "Der Chat auf dieser Website",
+      "description": "Sprechen Sie hier direkt mit einem unserer Agenten — der Chat auf dieser Seite läuft auf unserer eigenen KI."
+    }
+  },
+  "about": {
+    "title": "Wer dahinter steht",
+    "text": "Austrian AI Agency wird von Oleg Zakharchenko, Dr. techn., geführt — einem Ingenieur in Wien, der KI-Produkte selbst baut und ausliefert, darunter GetHello, einen KI-Empfang für kleine Unternehmen. Sie arbeiten direkt mit der Person, die Ihr System baut.",
+    "linkedinLabel": "LinkedIn"
+  },
+  "contactDirect": {
+    "title": "Lieber per E-Mail?",
+    "text": "Schreiben Sie uns direkt — wir antworten selbst."
   }
 }
