@@ -1,63 +1,56 @@
 {
   "hero": {
     "button": "See how we work",
-    "title": "Austrian AI Agency:",
-    "subtitle": "AI Compliance & Automation",
+    "title": "We build AI",
+    "subtitle": "Agents, automation & EU AI Act compliance",
     "titles": [
-      "AI-compliant",
-      "audit-ready",
-      "automated",
-      "cost-effective",
-      "Austrian"
+      "that works in your business",
+      "agents for your team",
+      "automation that ships",
+      "EU AI Act compliance"
     ],
-    "description": "From AI readiness audit to production deployment. We make your recruiting AI-compliant with the EU AI Act — faster and more affordably than any competitor. 58 projects delivered across 23+ companies.",
-    "badge": "58 projects · 23+ clients · EU AI Act experts",
-    "stats": {
-      "projects": "Projects delivered",
-      "clients": "Clients served",
-      "years": "Years in AI"
-    },
-    "trustedBy": "Trusted by recruiting teams across Europe"
+    "description": "Custom AI agents, automation and integration work — designed, built and shipped by a hands-on founder in Vienna. EU AI Act compliance is one of our service lines.",
+    "badge": "Custom AI agents · Built in Vienna"
   },
   "services": {
     "title": "Our Services",
     "strategy": {
-      "title": "AI Readiness Audit",
-      "description": "Deep audit of all AI processes in your recruiting stack — ATS, sourcing, ChatGPT usage — with a prioritised action plan for EU AI Act compliance.",
+      "title": "AI Agents & Automation",
+      "description": "Custom chat, voice and back-office agents — integrated into your existing tools and workflows.",
       "features": [
-        "Full AI tool & process inventory",
-        "Risk classification per EU AI Act",
-        "Gap analysis vs Art. 9-14, 49, 50",
-        "Prioritised action plan with ROI"
+        "Chat & voice agents for customer-facing work",
+        "Back-office automation and integrations",
+        "Pilot first, then roll out step by step",
+        "Built and maintained by the person you talk to"
       ]
     },
     "development": {
-      "title": "Implementation & Training",
-      "description": "We implement compliance measures, build technical documentation, and train your team — so your AI systems are production-ready and audit-proof.",
+      "title": "AI Implementation & Training",
+      "description": "A review of your current processes, a pilot project, rollout and team enablement — from a first scan to production use.",
       "features": [
-        "Technical documentation (Art. 11)",
-        "Transparency & human oversight (Art. 13/14)",
-        "AI literacy training (Art. 4)",
-        "Handover to your DPO / legal counsel"
+        "Process & tool review",
+        "Pilot project with your team",
+        "Rollout and handover",
+        "Training and enablement for your team"
       ]
     },
     "training": {
-      "title": "AI Register & Monitoring",
-      "description": "Ongoing monitoring of your AI systems: annual re-assessment, regulatory updates, and incident hotline — so you stay compliant as laws evolve.",
+      "title": "EU AI Act Compliance",
+      "description": "Readiness check, audit, AI register and monitoring for recruiting and HR tech — as a dedicated service line.",
       "features": [
+        "Risk classification per EU AI Act",
+        "Gap analysis vs Art. 9-14, 49, 50",
         "AI register management (Art. 49)",
-        "Annual re-assessment of AI systems",
-        "Updates on regulatory changes",
-        "Incident hotline & support"
+        "Ongoing monitoring & updates"
       ]
     },
-    "subtitle": "Compliance packages that move from audit to production — not just reports"
+    "subtitle": "Practical AI work — from custom agents to EU AI Act compliance"
   },
   "cta": {
-    "contact": "Get free AI audit",
+    "contact": "Get in touch",
     "startProject": "Start with free scan",
-    "learnMore": "See pricing",
-    "bookIntro": "Get free AI audit"
+    "learnMore": "Check your AI Act readiness",
+    "bookIntro": "Get in touch"
   },
   "footer": {
     "contacts": "Contacts",
@@ -95,18 +88,18 @@
     "backToHome": "Back to Home"
   },
   "whyChoose": {
-    "title": "Why Choose Austrian AI Agency?",
+    "title": "Why work with us?",
     "innovation": {
-      "title": "Recruiting AI Specialist",
-      "description": "8+ recruiting websites audited — we know your industry, your ATS stack, and the compliance pitfalls specific to HR tech"
+      "title": "Hands-on founder",
+      "description": "You work directly with the person who builds your system — no account managers, no handoffs."
     },
     "expertise": {
-      "title": "Faster Than Any Competitor",
-      "description": "From audit to production in 8 weeks, not 6 months. Our AI-powered workflow cuts compliance timelines by 60% vs traditional consultancies"
+      "title": "Real products, not slide decks",
+      "description": "We build and run our own AI products — including GetHello, an AI receptionist for small businesses — and bring the same practice to your project."
     },
     "support": {
-      "title": "Fixed Prices, No Surprises",
-      "description": "Transparent packages from €790. No hidden fees, no billable hours. You know the cost before you commit — and the inventory fee is fully credited toward the audit"
+      "title": "Compliance as a service line",
+      "description": "EU AI Act readiness for recruiting and HR tech: readiness check, audit, AI register and monitoring."
     }
   },
   "chatBot": {
@@ -618,8 +611,30 @@
   "homeChat": {
     "badge": "🤖 AI Agent — powered by Austrian AI Agency",
     "title": "Chat with our AI agent",
-    "subtitle": "Ask anything about AI compliance, EU AI Act, or our services. Our AI agent responds instantly.",
+    "subtitle": "Ask anything about AI agents, automation, the EU AI Act or our services — our AI agent responds instantly.",
     "placeholder": "Ask about AI compliance...",
     "disclaimer": "This is an AI agent — responses are automated and may not always be accurate. For official inquiries, use our contact form."
+  },
+  "builtBy": {
+    "title": "Built by us",
+    "subtitle": "Products we build and run ourselves",
+    "gethello": {
+      "title": "GetHello",
+      "description": "An AI phone receptionist for small businesses: it answers calls and books appointments into the calendar.",
+      "linkLabel": "gethello.io"
+    },
+    "chat": {
+      "title": "The chat on this website",
+      "description": "You can talk to one of our agents right here — the chat on this site runs on our own AI."
+    }
+  },
+  "about": {
+    "title": "Who is behind this",
+    "text": "Austrian AI Agency is run by Oleg Zakharchenko, Dr. techn., a Vienna-based engineer who builds and ships AI products himself — including GetHello, an AI receptionist for small businesses. You work directly with the person who builds your system.",
+    "linkedinLabel": "LinkedIn"
+  },
+  "contactDirect": {
+    "title": "Prefer email?",
+    "text": "Write to us directly — we answer ourselves."
   }
 }
